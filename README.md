@@ -74,7 +74,7 @@ E2E проверяют сценарии форм и ширины 320, 375, 390, 
   SVG находятся в шаблоне DOM, размеры резервируются обёрткой, clipPath IDs уникальны.
   По умолчанию иконки декоративные; для смысловых задайте `decorative=false` и `aria-label`
   через prop `ariaLabel`. Варианты mobile переключаются на брейкпоинте 767 px.
-- `ProfileLogo` содержит полный экспортированный SVG (знак и надпись контурами) и ссылку `/`.
+- `ProfileLogo` содержит полный экспортированный SVG (знак и надпись контурами) и ссылку на `import.meta.env.BASE_URL`.
 - `ProfileLink` принимает `href`, по умолчанию `#`: заглушка не прокручивает страницу;
   настоящий URL работает как обычная ссылка. Навигация шапки и breadcrumbs используют ссылки.
 - `ProfileBreadcrumbs` принимает массив `{ label, href }`, последний элемент помечается `aria-current`.
@@ -106,7 +106,7 @@ CI=true pnpm test:e2e
 `check` проверяет границы FSD, запускает линтеры без изменения файлов, type-check, production build и unit-тесты.
 E2E с `CI=true` проверяют собранный `dist` через preview, а не dev-сервер.
 Публикуемый артефакт — содержимое `dist/`. Конфигурация Vercel находится в `vercel.json`.
-При размещении в подпапке задайте нужный Vite base при сборке; логотип по требованию ведёт на `/`.
+При размещении в подпапке задайте нужный Vite base при сборке; логотип ведёт на главную относительно `import.meta.env.BASE_URL`.
 Для обновлений размещайте HTML и новые assets согласованно, сохраняя старые hashed chunks
 на время существующих сессий: иконки загружаются динамически.
 
@@ -153,3 +153,31 @@ Preview и production создаются после подключения ре�
 Токены и идентификаторы проекта в исходники не добавлены; `.vercel/` исключена из git.
 Роутера пока нет, поэтому catch-all rewrite не нужен; при добавлении history routing
 нужно отдельно добавить SPA fallback. Здесь конфиги подготовлены, удалённый деплой не выполнялся.
+
+
+## Деплой на GitHub Pages
+
+Репозиторий: `afonasiev/test_slicing_vue`.
+Адрес после публикации: https://afonasiev.github.io/test_slicing_vue/.
+
+В GitHub откройте **Settings → Pages → Build and deployment → Source: GitHub Actions**.
+После сохранения файлов в ветке `main` workflow `.github/workflows/deploy.yml`
+проверит код, соберёт и протестирует сайт в трёх браузерах, затем опубликует Pages.
+Можно также запустить **Actions → Deploy GitHub Pages → Run workflow** на ветке `main`.
+Секреты вручную создавать не нужно: используется стандартный `GITHUB_TOKEN`.
+
+`pnpm build:pages` использует режим `github-pages` и base `/test_slicing_vue/`.
+Обычная сборка для Vercel и dev-сервер сохраняют base `/`.
+SVG chunks, CSS, шрифты, favicon и ссылка логотипа учитывают base автоматически.
+При переименовании репозитория обновите путь в `vite.config.ts` и `PLAYWRIGHT_BASE_PATH`
+в `deploy.yml`.
+
+Локальная проверка Pages-сборки:
+
+```sh
+pnpm build:pages
+CI=true PLAYWRIGHT_BASE_PATH=/test_slicing_vue/ pnpm test:e2e
+```
+
+Конфигурация подготовлена локально; workflow начнёт работу после push в GitHub
+и включения Pages. GitHub Pages и Vercel — независимые варианты публикации.

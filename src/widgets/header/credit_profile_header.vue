@@ -70,8 +70,9 @@ function assist() {
           :class="[$style.navItem, $style[item.id]]"
           :data-destination="item.id"
           @navigate="navigate"
-          >{{ item.mobile }}</ProfileLink
         >
+          {{ item.mobile }}
+        </ProfileLink>
       </nav>
     </div>
   </header>

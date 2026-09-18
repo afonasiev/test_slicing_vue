@@ -46,3 +46,5 @@ output/playwright/
 
 # Vercel project association and build output
 .vercel/
+
+.pnpm-store/

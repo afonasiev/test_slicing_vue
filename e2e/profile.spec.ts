@@ -1,9 +1,10 @@
+import process from 'node:process';
 import { test, expect } from '@playwright/test';
 
 test('profile interactions, OTP and keyboard-accessible dialogs', async ({ page }) => {
   const errors: string[] = [];
   page.on('pageerror', (error) => errors.push(error.message));
-  await page.goto('/');
+  await page.goto('./');
   const edit = page.getByRole('button', { name: 'Modifica nome' });
   await edit.click();
   await page.getByLabel('Nome', { exact: true }).fill('');
@@ -64,7 +65,7 @@ test('profile interactions, OTP and keyboard-accessible dialogs', async ({ page 
 
 test('resend cooldown and OTP editing', async ({ page }) => {
   await page.clock.install();
-  await page.goto('/');
+  await page.goto('./');
   await page.getByRole('button', { name: 'Invia di nuovo', exact: true }).click();
   await expect(page.getByRole('button', { name: 'Invia di nuovo (30s)' })).toBeDisabled();
   await page.clock.runFor(30_000);
@@ -79,7 +80,7 @@ test('resend cooldown and OTP editing', async ({ page }) => {
 for (const width of [320, 375, 390, 768, 1024, 1440, 1920]) {
   test(`responsive layout ${width}`, async ({ page }, testInfo) => {
     await page.setViewportSize({ width, height: width === 390 ? 1687 : 1212 });
-    await page.goto('/');
+    await page.goto('./');
     await page.evaluate(() => document.fonts.ready);
     await expect(page.getByRole('main')).toBeVisible();
     expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBe(width);
@@ -96,8 +97,11 @@ for (const width of [320, 375, 390, 768, 1024, 1440, 1920]) {
 }
 
 test('links, SVG accessibility and backdrop dismissal', async ({ page }) => {
-  await page.goto('/');
-  await expect(page.getByRole('link', { name: 'Avanti — Home' })).toHaveAttribute('href', '/');
+  await page.goto('./');
+  await expect(page.getByRole('link', { name: 'Avanti — Home' })).toHaveAttribute(
+    'href',
+    process.env.PLAYWRIGHT_BASE_PATH || '/',
+  );
   await expect(
     page.getByRole('navigation', { name: 'Percorso di navigazione' }).getByRole('link'),
   ).toHaveCount(2);
@@ -130,7 +134,7 @@ test('links, SVG accessibility and backdrop dismissal', async ({ page }) => {
 
 test('production assets, throttled cooldown and scroll locking', async ({ page, request }) => {
   await page.clock.install();
-  await page.goto('/');
+  await page.goto('./');
   const faviconHref = await page.locator('link[rel="icon"]').getAttribute('href');
   await expect(page.locator('link[rel="icon"]')).toHaveAttribute('href', /favicon\.svg$/);
   const favicon = await request.get(faviconHref!);

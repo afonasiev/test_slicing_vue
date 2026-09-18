@@ -1,8 +1,11 @@
 <script setup lang="ts">
 import { ProfileIcon } from './icons';
+const homeUrl = import.meta.env.BASE_URL;
 </script>
 <template>
-  <a href="/" :class="$style.logo" aria-label="Avanti — Home"><ProfileIcon name="logoFull" /></a>
+  <a :href="homeUrl" :class="$style.logo" aria-label="Avanti — Home">
+    <ProfileIcon name="logoFull" />
+  </a>
 </template>
 <style module lang="scss">
 .logo {

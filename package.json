@@ -17,7 +17,8 @@
     "format": "oxfmt src/",
     "lint:check": "eslint . && oxlint .",
     "check": "npm run check:architecture && npm run lint:check && npm run build && npm run test:unit -- --run",
-    "check:architecture": "node scripts/check-fsd.mjs"
+    "check:architecture": "node scripts/check-fsd.mjs",
+    "build:pages": "vue-tsc --build && vite build --mode github-pages"
   },
   "dependencies": {
     "pinia": "^4.0.3",
