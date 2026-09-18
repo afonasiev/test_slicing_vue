@@ -1,0 +1,251 @@
+.card {
+  border: 0;
+  outline: 1px solid var(--border);
+  outline-offset: -1px;
+  border-radius: 16px;
+  background: white;
+  overflow: hidden;
+  box-shadow: 0 4px 16px #1a233208;
+}
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+  gap: 10px;
+}
+.title {
+  flex: 1;
+  min-width: 0;
+  p {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.55px;
+    text-transform: uppercase;
+    color: var(--accent);
+    line-height: 13px;
+  }
+  h2 {
+    margin-top: 4px;
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 600;
+  }
+}
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.badge {
+  white-space: nowrap;
+  padding: 4px 12px;
+  background: var(--tint);
+  color: var(--accent);
+  border-radius: 99px;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 700;
+}
+.toggle {
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--background);
+  [data-profile-icon] {
+    width: 14px;
+    height: 14px;
+  }
+}
+.collapsed [data-profile-icon] {
+  transform: rotate(180deg);
+}
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.step {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 24px;
+  border-top: 1px solid #f0f2f5;
+}
+.stepIcon {
+  width: 44px;
+  height: 44px;
+  flex: none;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 4px 4px #2491aa30;
+  [data-profile-icon] {
+    width: 20px;
+    height: 20px;
+  }
+}
+.text {
+  flex: 1;
+  min-width: 0;
+  h3 {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 600;
+  }
+  p {
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 2px;
+    font-weight: 500;
+    color: var(--accent);
+  }
+}
+.done,
+.next,
+.waiting {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+.done [data-profile-icon] {
+  width: 14px;
+  height: 14px;
+}
+.next,
+.waiting {
+  width: 32px;
+  height: 32px;
+}
+.current {
+  background: var(--tint);
+  .stepIcon {
+    background: white;
+    border: 2px solid var(--accent);
+    box-shadow: none;
+  }
+  h3 {
+    font-weight: 700;
+  }
+  p {
+    font-weight: 600;
+  }
+}
+.pending {
+  .stepIcon,
+  .waiting {
+    background: #f4f4f5;
+    box-shadow: none;
+  }
+  h3 {
+    color: var(--muted);
+    font-weight: 500;
+  }
+  p {
+    color: var(--faint);
+    font-weight: 400;
+  }
+}
+.progress {
+  display: flex;
+  gap: 4px;
+  padding: 16px 24px 20px;
+  span {
+    flex: 1;
+    height: 6px;
+    border-radius: 99px;
+    background: var(--border);
+  }
+  .completed {
+    background: var(--accent);
+  }
+}
+@media (max-width: 767px) {
+  .heading {
+    padding: 16px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+  .controls {
+    justify-content: space-between;
+  }
+  .badge {
+    font-size: 11px;
+    line-height: 13px;
+  }
+  .step {
+    padding: 16px;
+    gap: 12px;
+  }
+  .stepIcon {
+    width: 40px;
+    height: 40px;
+    box-shadow: none;
+    [data-profile-icon] {
+      width: 18px;
+      height: 18px;
+    }
+  }
+  .text {
+    h3 {
+      font-size: 13px;
+      line-height: 16px;
+    }
+  }
+  .current .text p {
+    font-size: 11px;
+    line-height: 13px;
+  }
+  .done {
+    width: 24px;
+    height: 24px;
+    [data-profile-icon] {
+      width: 10px;
+      height: 10px;
+    }
+  }
+  .next,
+  .waiting {
+    width: 28px;
+    height: 28px;
+    [data-profile-icon] {
+      width: 14px;
+      height: 14px;
+    }
+  }
+  .progress {
+    padding: 12px 16px 16px;
+  }
+}
+@media (max-width: 767px) {
+  .stepIcon [data-profile-icon] {
+    width: 40px;
+    height: 40px;
+  }
+  .done [data-profile-icon] {
+    width: 24px;
+    height: 24px;
+  }
+  .next [data-profile-icon],
+  .waiting [data-profile-icon] {
+    width: 28px;
+    height: 28px;
+  }
+  .toggle {
+    border: 0;
+  }
+  .toggle [data-profile-icon] {
+    width: 32px;
+    height: 32px;
+  }
+  .current .stepIcon {
+    border: 0;
+  }
+}

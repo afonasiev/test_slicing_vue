@@ -1,0 +1,64 @@
+@font-face {
+  font-family: Inter;
+  src: url('../../shared/assets/fonts/InterVariable.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  font-family: Inter, sans-serif;
+  color: #1a2332;
+  background: #f8fafb;
+  font-synthesis: none;
+  font-optical-sizing: none;
+  --accent: #2491aa;
+  --ink: #1a2332;
+  --muted: #71717a;
+  --faint: #a1a1aa;
+  --surface: #fff;
+  --background: #f8fafb;
+  --tint: #eaf4f6;
+  --border: #e4e4e7;
+  --radius: 16px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  min-width: 320px;
+  -webkit-font-smoothing: antialiased;
+}
+button,
+input {
+  font: inherit;
+}
+button {
+  cursor: pointer;
+}
+button:disabled {
+  cursor: default;
+}
+h1,
+h2,
+h3,
+p,
+dl,
+dd {
+  margin: 0;
+}
+button,
+input {
+  -webkit-tap-highlight-color: transparent;
+}
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+img {
+  display: block;
+}

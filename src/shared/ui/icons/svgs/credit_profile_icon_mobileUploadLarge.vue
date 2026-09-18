@@ -1,0 +1,22 @@
+<template>
+  <svg
+    preserveAspectRatio="none"
+    overflow="visible"
+    width="40"
+    height="40"
+    viewBox="0 0 40 40"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g>
+      <rect x="1" y="1" width="38" height="38" rx="19" fill="white" />
+      <rect x="1" y="1" width="38" height="38" rx="19" stroke="#2491AA" stroke-width="2" />
+      <path
+        d="M20 11V23M15 16L20 11L25 16M29 23V27C29 27.5304 28.7893 28.0391 28.4142 28.4142C28.0391 28.7893 27.5304 29 27 29H13C12.4696 29 11.9609 28.7893 11.5858 28.4142C11.2107 28.0391 11 27.5304 11 27V23"
+        stroke="#2491AA"
+        stroke-width="2"
+        stroke-linecap="round"
+      />
+    </g>
+  </svg>
+</template>

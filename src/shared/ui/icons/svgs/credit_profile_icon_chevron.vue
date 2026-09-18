@@ -1,0 +1,20 @@
+<template>
+  <svg
+    preserveAspectRatio="none"
+    overflow="visible"
+    width="14"
+    height="14"
+    viewBox="0 0 14 14"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g>
+      <path
+        d="M10.5 8.75L7 5.25L3.5 8.75"
+        stroke="#71717A"
+        stroke-width="2"
+        stroke-linecap="round"
+      />
+    </g>
+  </svg>
+</template>
