@@ -9,8 +9,9 @@ export interface Profile {
   emailVerified: boolean;
 }
 export interface ProfileService {
+  reset(): Promise<Profile>;
   load(): Promise<Profile>;
-  update(data: Partial<Pick<Profile, 'name' | 'email'>>): Promise<Profile>;
+  update(data: Partial<Pick<Profile, 'name' | 'surname' | 'email' | 'iban'>>): Promise<Profile>;
   changePassword(password: string): Promise<void>;
   verifyEmail(code: string): Promise<Profile>;
   resendCode(): Promise<void>;

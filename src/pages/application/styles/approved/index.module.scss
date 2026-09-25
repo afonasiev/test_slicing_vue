@@ -1,0 +1,245 @@
+.content {
+  position: relative;
+  max-width: 1440px;
+  min-height: 891px;
+  margin: auto;
+  padding: 41px 100px 100px;
+  background: white;
+}
+.heading {
+  max-width: 1145px;
+}
+.heading h1 {
+  font-size: 52px;
+  line-height: 63px;
+  font-weight: 600;
+  color: #09090b;
+}
+.heading > p {
+  margin-top: 16px;
+  font-size: 42px;
+  line-height: 51px;
+  font-weight: 600;
+  color: var(--accent);
+}
+.offer {
+  width: 633px;
+  max-width: 100%;
+  margin-top: 48px;
+}
+.card {
+  padding: 32px 40px;
+  border: 1px solid var(--accent);
+  border-radius: 24px;
+  background: #f0fdff;
+  box-shadow: 0 8px 24px #2491aa1a;
+  color: var(--accent);
+}
+.card > p {
+  font-size: 22px;
+  line-height: 27px;
+  font-weight: 300;
+}
+.card > strong {
+  display: block;
+  margin: 16px 0;
+  font-size: 72px;
+  line-height: 87px;
+  font-weight: 700;
+}
+.card .terms {
+  color: #4b5563;
+}
+.notice {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 22px;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 300;
+  color: #6b7280;
+}
+.notice > [data-profile-icon] {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  flex: none;
+
+  color: var(--accent);
+  border-radius: 50%;
+  font-size: 25px;
+  font-weight: 600;
+}
+.button {
+  width: 375px;
+  max-width: 100%;
+  height: 64px;
+  margin-top: 64px;
+  font-size: 24px;
+  font-weight: 600;
+  border-radius: 12px;
+  box-shadow: 0 4px 11.6px #0004;
+}
+.illustration {
+  position: absolute;
+  top: 250px;
+  right: 17px;
+  width: 584px;
+  height: 550px;
+  pointer-events: none;
+}
+.message {
+  margin-top: 24px;
+  max-width: 633px;
+  color: #6b7280;
+}
+@media (min-width: 768px) and (max-width: 1399px) {
+  .content {
+    padding-inline: 24px;
+  }
+  .offer {
+    width: 54%;
+  }
+  .illustration {
+    width: 44%;
+    height: auto;
+    top: 320px;
+  }
+  .heading h1 {
+    font-size: 44px;
+  }
+  .heading > p {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .card {
+    padding: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .content {
+    padding: 24px 20px 32px;
+    min-height: 0;
+  }
+  .heading h1 {
+    max-width: 300px;
+    font-size: 28px;
+    line-height: 34px;
+  }
+  .heading > p {
+    margin-top: 12px;
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 400;
+  }
+  .offer {
+    width: 100%;
+    margin-top: 28px;
+  }
+  .card {
+    padding: 23px;
+    border-radius: 20px;
+  }
+  .card > p {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .card > strong {
+    margin: 4px 0;
+    font-size: 48px;
+    line-height: 58px;
+  }
+  .card .terms {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .notice {
+    margin-top: 28px;
+    gap: 12px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+  }
+  .notice > [data-profile-icon] {
+    width: 28px;
+    height: 28px;
+    font-size: 16px;
+  }
+  .button {
+    width: 100%;
+    height: 60px;
+    margin-top: 28px;
+    font-size: 18px;
+  }
+  .illustration {
+    display: none;
+  }
+}
+
+.terms {
+  white-space: pre-line;
+}
+@media (max-width: 767px) {
+  .register {
+    padding: 0 16px 24px;
+    min-height: calc(100dvh - 70px);
+  }
+  .register .heading h1 {
+    max-width: 280px;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 600;
+  }
+  .register .heading > p {
+    display: none;
+  }
+  .register .offer {
+    margin-top: 16px;
+  }
+  .register .card {
+    padding: 15px;
+  }
+  .register .card strong {
+    margin: 12px 0;
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .register .card .terms {
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 400;
+  }
+  .login {
+    padding: 24px 16px 56px;
+    min-height: calc(100dvh - 61px);
+  }
+  .login .heading h1 {
+    font-weight: 600;
+  }
+  .login .heading > p {
+    margin-top: 8px;
+    font-weight: 600;
+    line-height: 22px;
+  }
+  .login .offer {
+    margin-top: 24px;
+  }
+  .login .card {
+    padding: 19px;
+  }
+  .login .card strong {
+    margin: 12px 0;
+  }
+  .login .card .terms {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .register .notice,
+  .register .button,
+  .login .notice,
+  .login .button {
+    display: none;
+  }
+}

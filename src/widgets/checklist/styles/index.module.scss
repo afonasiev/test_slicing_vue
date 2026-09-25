@@ -249,3 +249,37 @@
     border: 0;
   }
 }
+
+@media (max-width: 767px) {
+  .compact {
+    .heading {
+      flex-direction: row;
+    }
+    .badge {
+      display: none;
+    }
+    .toggle {
+      width: 20px;
+      height: 20px;
+      border-radius: 5px;
+    }
+    .toggle [data-profile-icon] {
+      width: 20px;
+      height: 20px;
+    }
+    .stepIcon,
+    .stepIcon [data-profile-icon] {
+      width: 36px;
+      height: 36px;
+    }
+    .done,
+    .done [data-profile-icon] {
+      width: 22px;
+      height: 22px;
+    }
+    .text p {
+      font-size: 11px;
+      line-height: 13px;
+    }
+  }
+}

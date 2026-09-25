@@ -5,11 +5,18 @@ export function createProfileService(): ProfileService {
   let profile = { ...initialProfile };
   let resendAvailableAt = 0;
   return {
+    async reset() {
+      profile = { ...initialProfile };
+      resendAvailableAt = 0;
+      return { ...profile };
+    },
     async load() {
       return { ...profile };
     },
     async update(data) {
       if (data.name !== undefined && !data.name.trim()) throw new Error('Inserisci il nome.');
+      if (data.surname !== undefined && !data.surname.trim())
+        throw new Error('Inserisci il cognome.');
       if (data.email !== undefined && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)) {
         throw new Error('Inserisci un indirizzo email valido.');
       }

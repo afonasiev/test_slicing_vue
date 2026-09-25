@@ -1,0 +1,165 @@
+.dialog {
+  width: min(524px, calc(100% - 32px));
+  max-width: calc(100% - 32px);
+  padding: 0;
+  border: 0;
+  border-radius: 23px;
+  background: white;
+  &::backdrop {
+    background: #0006;
+  }
+}
+.header {
+  position: relative;
+  padding: 56px 24px 32px;
+  text-align: center;
+  h2 {
+    margin-top: 24px;
+    font-size: 26px;
+    line-height: 26px;
+    font-weight: 600;
+  }
+  p {
+    margin-top: 8px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #747474;
+    white-space: pre-line;
+  }
+}
+.logo {
+  display: flex;
+  margin-inline: auto;
+  width: 152px;
+  height: 39px;
+}
+.close {
+  position: absolute;
+  top: 12px;
+  right: 24px;
+  width: 32px;
+  height: 32px;
+  font-size: 32px;
+  color: #747474;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 0 24px 36px;
+  label {
+    color: #747474;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  input {
+    height: 50px;
+    background: white;
+    border-color: #747474;
+    font-size: 16px;
+  }
+}
+.name label {
+  text-transform: uppercase;
+}
+.hint {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 32px;
+  margin-top: 6px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #747474;
+}
+.hint [data-profile-icon] {
+  flex: none;
+  width: 16px;
+  height: 16px;
+}
+.actions {
+  display: flex;
+  gap: 36px;
+  button {
+    flex: 1;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+.error {
+  font-size: 13px;
+  color: #b42318;
+}
+@media (max-width: 767px) {
+  .dialog {
+    width: min(350px, calc(100% - 32px));
+    border-radius: 16px;
+  }
+  .header {
+    padding: 16px 16px 20px;
+    h2 {
+      margin-top: 16px;
+      font-size: 20px;
+      line-height: 20px;
+    }
+    p {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+  .name .header h2 {
+    line-height: 24px;
+  }
+  .logo {
+    width: 117px;
+    height: 32px;
+  }
+  .close {
+    top: 16px;
+    right: 16px;
+  }
+  .form {
+    gap: 12px;
+    padding: 0 16px 24px;
+    label {
+      font-size: 12px;
+    }
+  }
+  .name .form {
+    gap: 16px;
+    label {
+      line-height: 15px;
+    }
+    input {
+      height: 44px;
+    }
+  }
+  .name .form > div:not(.actions) {
+    gap: 6px;
+  }
+  .hint {
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 4px;
+  }
+  .email .hint {
+    margin-top: 12px;
+  }
+  .actions {
+    gap: 12px;
+    margin-top: 4px;
+    button {
+      height: 44px;
+      font-size: 14px;
+    }
+  }
+  .name .actions {
+    margin-top: 0;
+  }
+}
+
+.close [data-profile-icon] {
+  width: 32px;
+  height: 32px;
+}

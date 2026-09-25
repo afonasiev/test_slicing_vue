@@ -12,3 +12,7 @@ export { default as ProfileCollapsible } from './credit_profile_collapsible.vue'
 
 export { default as ProfileLogo } from './credit_profile_logo.vue';
 export type { IconName } from './icons';
+export { ProfileRange } from './range';
+export { ProfileSelect } from './select';
+
+export { default as ProfilePasswordField } from './credit_profile_password_field.vue';

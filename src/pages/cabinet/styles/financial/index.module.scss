@@ -1,0 +1,93 @@
+.layout {
+  max-width: 1440px;
+  margin: 20px auto 40px;
+  padding: 0 72px;
+  display: grid;
+  grid-template-columns: minmax(0, 792px) 464px;
+  gap: 40px;
+}
+.column {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.card {
+  padding: 32px;
+  background: linear-gradient(90deg, #2491aa, #1a7488);
+  color: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px #2491aa30;
+  outline: 1px solid #e2edf0;
+  outline-offset: -1px;
+  h1 {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 500;
+    margin-bottom: 16px;
+  }
+}
+.amount {
+  display: block;
+  font-size: 52px;
+  line-height: 63px;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+.caption {
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--tint);
+  margin-top: 4px;
+}
+.withdraw {
+  background: var(--background);
+  color: var(--accent);
+  border-radius: 9px;
+  width: 100%;
+  height: 64px;
+  margin: 16px 0;
+  justify-content: flex-start;
+  padding: 0 24px;
+  font-size: 15px;
+  span:last-child {
+    margin-left: auto;
+  }
+}
+@media (max-width: 1199px) {
+  .layout {
+    padding-inline: 24px;
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+@media (max-width: 767px) {
+  .layout {
+    margin-top: 16px;
+    padding: 0 16px 32px;
+    gap: 20px;
+  }
+  .column {
+    gap: 20px;
+  }
+  .card {
+    padding: 12px;
+    h1 {
+      margin-bottom: 6px;
+    }
+  }
+  .withdraw {
+    height: 58px;
+  }
+}
+
+@media (max-width: 767px) {
+  .summary {
+    min-height: 104px;
+    header {
+      margin-bottom: 12px;
+    }
+    dl {
+      gap: 10px;
+    }
+  }
+}

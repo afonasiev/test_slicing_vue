@@ -1,0 +1,88 @@
+.panel {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  color: #e2e8f0;
+  font:
+    12px/1.45 Inter,
+    sans-serif;
+  text-align: left;
+}
+.toggle {
+  background: #292442;
+  color: white;
+  border-radius: 0 10px 10px 0;
+  border: 1px solid #9385c4;
+  padding: 10px 12px;
+}
+.content {
+  width: min(320px, calc(100vw - 16px));
+  max-height: min(720px, calc(100dvh - 80px));
+  overflow: auto;
+  overscroll-behavior: contain;
+  background: #211d33;
+  border: 1px solid #9385c4;
+  border-radius: 0 12px 12px 0;
+  padding: 16px;
+  box-shadow: 0 12px 48px #0005;
+}
+.content header {
+  margin-bottom: 14px;
+}
+.content p {
+  color: #beb6d4;
+  margin: 6px 0;
+  font-size: 11px;
+}
+.search {
+  display: grid;
+  gap: 5px;
+}
+.search input {
+  width: 100%;
+  min-width: 0;
+  padding: 8px;
+  border: 1px solid #837497;
+  border-radius: 6px;
+  color: white;
+  background: #342c47;
+}
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 12px 0;
+}
+.actions button {
+  font-size: 11px;
+  padding: 6px 8px;
+}
+.page {
+  padding: 12px 0;
+  border-top: 1px solid #ffffff20;
+}
+.pageLink {
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.states {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.state {
+  padding: 5px 7px;
+  border-radius: 5px;
+  border: 1px solid #ffffff25;
+  color: #d6cbe9;
+  overflow-wrap: anywhere;
+}
+.active {
+  background: #78609e;
+  color: white;
+  border-color: #cbb4ec;
+}

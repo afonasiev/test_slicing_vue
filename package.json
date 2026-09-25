@@ -18,11 +18,13 @@
     "lint:check": "eslint . && oxlint .",
     "check": "npm run check:architecture && npm run lint:check && npm run build && npm run test:unit -- --run",
     "check:architecture": "node scripts/check-fsd.mjs",
-    "build:pages": "vue-tsc --build && vite build --mode github-pages"
+    "build:pages": "vue-tsc --build && vite build --mode github-pages && node scripts/build-page-entries.mjs",
+    "check:pages": "node scripts/check-page-entries.mjs"
   },
   "dependencies": {
     "pinia": "^4.0.3",
-    "vue": "^3.5.42"
+    "vue": "^3.6.0-rc.8",
+    "vue-router": "^4.6.4"
   },
   "devDependencies": {
     "@playwright/test": "^1.63.0",

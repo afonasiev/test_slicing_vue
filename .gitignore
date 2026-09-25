@@ -48,3 +48,6 @@ output/playwright/
 .vercel/
 
 .pnpm-store/
+
+# Offline design data (large binary/reference files)
+output/figma-local/

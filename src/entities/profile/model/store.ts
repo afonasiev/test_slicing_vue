@@ -8,11 +8,14 @@ export const useProfileStore = defineStore('profile', () => {
   async function load() {
     profile.value = await profileService.load();
   }
-  async function update(data: Partial<Pick<Profile, 'name' | 'email'>>) {
+  async function update(data: Partial<Pick<Profile, 'name' | 'surname' | 'email' | 'iban'>>) {
     profile.value = await profileService.update(data);
   }
   async function verify(code: string) {
     profile.value = await profileService.verifyEmail(code);
   }
-  return { profile, load, update, verify };
+  async function reset() {
+    profile.value = await profileService.reset();
+  }
+  return { profile, load, update, verify, reset };
 });

@@ -1,0 +1,56 @@
+{
+  "introduction": "Intesa Sanpaolo S.p.A., con sede in Milano (Italia), di seguito «il Prestatore», e la persona fisica di seguito indicata, di seguito «il Prenditore», convengono e si stipula quanto segue.",
+  "rows": [
+    ["1", "24/09/2026", "213,48 €", "175,48 €", "38,00 €", "11824,52 €"],
+    ["2", "24/10/2026", "213,48 €", "176,03 €", "37,44 €", "11648,49 €"],
+    ["3", "24/11/2026", "213,48 €", "176,59 €", "36,89 €", "11471,91 €"],
+    ["4", "24/12/2026", "213,48 €", "177,15 €", "36,33 €", "11294,76 €"],
+    ["5", "24/01/2027", "213,48 €", "177,71 €", "35,77 €", "11117,05 €"],
+    ["6", "24/02/2027", "213,48 €", "178,27 €", "35,20 €", "10938,78 €"],
+    ["7", "24/03/2027", "213,48 €", "178,84 €", "34,64 €", "10759,94 €"],
+    ["8", "24/04/2027", "213,48 €", "179,40 €", "34,07 €", "10580,54 €"],
+    ["9", "24/05/2027", "213,48 €", "179,97 €", "33,51 €", "10400,57 €"],
+    ["10", "24/06/2027", "213,48 €", "180,54 €", "32,94 €", "10220,03 €"],
+    ["11", "24/07/2027", "213,48 €", "181,11 €", "32,36 €", "10038,92 €"],
+    ["12", "24/08/2027", "213,48 €", "181,69 €", "31,79 €", "9857,24 €"],
+    ["13", "24/09/2027", "213,48 €", "182,26 €", "31,21 €", "9674,98 €"],
+    ["14", "24/10/2027", "213,48 €", "182,84 €", "30,64 €", "9492,14 €"],
+    ["15", "24/11/2027", "213,48 €", "183,42 €", "30,06 €", "9308,72 €"],
+    ["16", "24/12/2027", "213,48 €", "184,00 €", "29,48 €", "9124,72 €"],
+    ["17", "24/01/2028", "213,48 €", "184,58 €", "28,89 €", "8940,14 €"],
+    ["18", "24/02/2028", "213,48 €", "185,16 €", "28,31 €", "8754,98 €"],
+    ["19", "24/03/2028", "213,48 €", "185,75 €", "27,72 €", "8569,23 €"],
+    ["20", "24/04/2028", "213,48 €", "186,34 €", "27,14 €", "8382,89 €"],
+    ["21", "24/05/2028", "213,48 €", "186,93 €", "26,55 €", "8195,96 €"],
+    ["22", "24/06/2028", "213,48 €", "187,52 €", "25,95 €", "8008,44 €"]
+  ],
+  "sections": [
+    {
+      "title": "1. OGGETTO DEL CONTRATTO",
+      "paragraphs": [
+        "1.1. Il presente contratto è stipulato con l’obiettivo di fornire sostegno sociale ai cittadini e di concedere un credito sulla base delle leggi e dei regolamenti vigenti del Governo italiano che disciplinano il credito agevolato."
+      ]
+    },
+    {
+      "title": "2. DIRITTI E OBBLIGHI DELLE PARTI",
+      "paragraphs": [
+        "Obblighi del Mutuatario:",
+        "2.1. Garantire l’utilizzo dei fondi del credito per lo scopo previsto, in conformità ai termini del presente contratto.\n\n2.2. Pagare puntualmente e integralmente il capitale e gli interessi, secondo il piano di rimborso.\n\n2.3. Fornire alla Banca informazioni veritiere sulla propria situazione finanziaria e sulle fonti di reddito.\n\n2.4. Accettare le sanzioni e le multe applicate dalla Banca in caso di ritardo nel pagamento del debito.\n\n2.5. Presentare mensilmente le ricevute di pagamento e i rendiconti finanziari.\n\n2.6. Il Prenditore si impegna a rimborsare il capitale erogato unitamente agli interessi calcolati al TAN fisso del 3,8% annuo, mediante rate mensili costanti nella misura sopra indicata.",
+        "Obblighi della Banca:",
+        "2.7. Concedere il credito nella forma stabilita nel contratto.\n\n2.8. Aprire un conto o utilizzare un conto esistente per la registrazione del prestito a nome del Mutuatario.\n\n2.9. Fornire al Mutuatario informazioni relative al credito.\n\n2.10. Notificare al Mutuatario l’ammortamento anticipato del debito.\n\n2.11. Informare circa le modifiche nei documenti normativi che incidono sulle condizioni del credito.\n\n2.12. Il Prestatore si impegna a erogare il capitale approvato entro 24 ore dall’avvenuta firma elettronica del presente contratto e dalla verifica positiva dei documenti."
+      ]
+    },
+    {
+      "title": "3. PROCEDURA DI CONCESSIONE E AMMORTAMENTO DEL CREDITO",
+      "paragraphs": [
+        "3.1. La data di concessione del credito è considerata la data di accredito dei fondi sul conto bancario del Mutuatario.\n\n3.2. L’ammortamento del capitale e il pagamento degli interessi sono effettuati mensilmente dal Mutuatario, secondo il piano di rimborso allegato al presente contratto.\n\n3.3. Se la data indicata nel piano non è un giorno lavorativo bancario, il pagamento viene rinviato al giorno lavorativo successivo.\n\n3.4. In caso di ritardo nel rimborso del debito, il saldo dovuto viene trasferito sul conto delle posizioni scadute della Banca e maturano interessi al tasso stabilito."
+      ]
+    },
+    {
+      "title": "4. CLAUSOLE PRINCIPALI",
+      "paragraphs": [
+        "4.4. L’accredito dei fondi del credito viene effettuato in conformità con le regole, gli standard e i regolamenti del sistema di pagamento internazionale SEPA.\n\n4.5. Il presente contratto è garantito dalla polizza assicurativa CPI fornita dal Servizio Centrale Tutela Credito."
+      ]
+    }
+  ]
+}

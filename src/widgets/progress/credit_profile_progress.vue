@@ -1,24 +1,37 @@
 <script setup lang="ts">
-import { steps } from '@/entities/profile';
+import { computed } from 'vue';
+import { getSteps } from '@/entities/application';
 import { ProfileButton, ProfileIcon } from '@/shared/ui';
+const props = withDefaults(defineProps<{ compact?: boolean; completed?: number }>(), {
+  completed: 3,
+});
+const displayedSteps = computed(() => getSteps(props.completed));
+const currentIcon = computed(() => (props.completed === 4 ? 'pen' : 'upload'));
+const currentLabel = computed(() => (props.completed === 4 ? 'Firma' : 'Documenti'));
+const currentStep = computed(() => Math.min(props.completed + 1, 5));
 const emit = defineEmits<{ navigate: [destination: string] }>();
 function documents() {
-  emit('navigate', 'documents');
+  emit('navigate', props.completed === 4 ? 'contract' : 'documents');
 }
 </script>
 <template>
-  <section :class="$style.progress" aria-label="Avanzamento della richiesta">
-    <div :class="$style.heading"><strong>Passo 4 di 5</strong><span>3 / 5 completati</span></div>
+  <section
+    :class="[$style.progress, compact && $style.compact, completed === 5 && $style.finished]"
+    aria-label="Avanzamento della richiesta"
+  >
+    <div :class="$style.heading">
+      <strong>Passo {{ currentStep }} di 5</strong><span>{{ completed }} / 5 completati</span>
+    </div>
     <ol :class="$style.steps">
-      <li v-for="step in steps" :key="step.id" :class="[$style.step, $style[step.status]]">
+      <li v-for="step in displayedSteps" :key="step.id" :class="[$style.step, $style[step.status]]">
         <ProfileButton
           v-if="step.status === 'current'"
           variant="plain"
           :class="$style.circle"
-          aria-label="Documenti"
+          :aria-label="currentLabel"
           @click="documents"
         >
-          <ProfileIcon name="upload" />
+          <ProfileIcon :name="currentIcon" />
         </ProfileButton>
         <span v-else :class="$style.circle">
           <ProfileIcon v-if="step.status === 'completed'" name="check" />
@@ -70,6 +83,9 @@ function documents() {
     background: linear-gradient(to right, var(--accent) 75%, #d4d4d8 75%);
   }
 }
+.finished .steps::before {
+  background: var(--accent);
+}
 .step {
   position: relative;
   display: flex;
@@ -115,6 +131,21 @@ function documents() {
   }
 }
 @media (max-width: 767px) {
+  .compact.progress {
+    height: 92px;
+  }
+  .compact .heading {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .compact .circle,
+  .compact .circle [data-profile-icon] {
+    width: 20px;
+    height: 20px;
+  }
+  .compact .steps::before {
+    top: 10px;
+  }
   .progress {
     padding: 16px;
     height: 104px;

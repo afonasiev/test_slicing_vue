@@ -1,0 +1,80 @@
+.dialog {
+  width: min(650px, calc(100% - 32px));
+  max-width: calc(100% - 32px);
+  padding: 0;
+  border: 0;
+  border-radius: 16px;
+}
+.close {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  width: 32px;
+  height: 32px;
+}
+.close [data-profile-icon] {
+  width: 32px;
+  height: 32px;
+}
+.next {
+  display: block;
+  margin: 0 16px 20px;
+  text-align: center;
+}
+.mobile {
+  padding: 16px 16px 94px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  h1 {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+  }
+}
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 12px;
+  border: 1px solid #c7e3ea;
+  border-radius: 12px;
+  background: #eaf4f6;
+  font-size: 12px;
+  line-height: 15px;
+  a {
+    padding: 6px 12px;
+    white-space: nowrap;
+  }
+}
+.contract {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  padding: 16px;
+  border: 1px solid #e2edf0;
+  border-radius: 16px;
+  background: white;
+  h2 {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  small {
+    font-size: 9px;
+  }
+  a {
+    font-size: 12px;
+    border-radius: 8px;
+    background: #eaf4f6;
+    padding: 10px;
+    text-align: center;
+  }
+}
+.document {
+  margin-inline: -15px;
+}
+
+.dialog::backdrop {
+  background: #0006;
+}

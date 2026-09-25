@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { onMounted, onBeforeUnmount, useId, useTemplateRef } from 'vue';
 import ProfileButton from './credit_profile_button.vue';
-defineProps<{ title: string }>();
+defineProps<{ title: string; dialogClass?: string }>();
 const emit = defineEmits<{ close: [] }>();
 const dialog = useTemplateRef('dialog');
 const titleId = useId();
@@ -11,6 +11,7 @@ function close() {
 }
 let pointerStartedOutside = false;
 function outside(event: PointerEvent | MouseEvent) {
+  if (event.target instanceof Element && event.target.closest('[data-demo-panel]')) return false;
   const bounds = dialog.value?.getBoundingClientRect();
   return (
     !!bounds &&
@@ -42,16 +43,19 @@ onBeforeUnmount(() => {
   <Teleport to="body">
     <dialog
       ref="dialog"
-      :class="$style.dialog"
+      :class="[$style.dialog, dialogClass]"
       :aria-labelledby="titleId"
+      :aria-label="title"
       @cancel.prevent="close"
       @pointerdown="pointerDown"
       @click="backdropClick"
     >
-      <header :class="$style.header">
-        <h2 :id="titleId">{{ title }}</h2>
-        <ProfileButton variant="plain" aria-label="Chiudi" @click="close">×</ProfileButton>
-      </header>
+      <slot name="header" :title-id="titleId" :close="close">
+        <header :class="$style.header">
+          <h2 :id="titleId">{{ title }}</h2>
+          <ProfileButton variant="plain" aria-label="Chiudi" @click="close">×</ProfileButton>
+        </header>
+      </slot>
       <slot />
     </dialog>
   </Teleport>

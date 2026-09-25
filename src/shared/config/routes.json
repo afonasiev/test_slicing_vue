@@ -1,0 +1,104 @@
+[
+  {
+    "id": "home",
+    "path": "/",
+    "title": "Home",
+    "section": "home"
+  },
+  {
+    "id": "amount",
+    "path": "/application/amount",
+    "title": "Importo e durata",
+    "section": "application"
+  },
+  {
+    "id": "personal",
+    "path": "/application/personal-data",
+    "title": "Dati personali",
+    "section": "application"
+  },
+  {
+    "id": "check",
+    "path": "/application/check",
+    "title": "Verifica bancaria",
+    "section": "application"
+  },
+  {
+    "id": "approved",
+    "path": "/application/approved",
+    "title": "Credito approvato",
+    "section": "application"
+  },
+  {
+    "id": "register",
+    "path": "/auth/register",
+    "title": "Crea account",
+    "section": "application"
+  },
+  {
+    "id": "login",
+    "path": "/auth/login",
+    "title": "Accedi",
+    "section": "application"
+  },
+  {
+    "id": "profile",
+    "path": "/profile",
+    "title": "Profilo",
+    "section": "profile"
+  },
+  {
+    "id": "documents",
+    "path": "/documents",
+    "title": "Documenti",
+    "section": "documents"
+  },
+  {
+    "id": "iban",
+    "path": "/documents/iban",
+    "title": "IBAN",
+    "section": "documents"
+  },
+  {
+    "id": "contract",
+    "path": "/contract",
+    "title": "Contratto",
+    "section": "documents"
+  },
+  {
+    "id": "withdrawal",
+    "path": "/withdrawal",
+    "title": "Prelievo",
+    "section": "home"
+  },
+  {
+    "id": "commission",
+    "path": "/commission",
+    "title": "Commissione",
+    "section": "home"
+  },
+  {
+    "id": "transfer",
+    "path": "/transfer",
+    "title": "Trasferimento",
+    "section": "home"
+  },
+  {
+    "id": "certificate",
+    "path": "/certificate",
+    "title": "Certificato CPI",
+    "section": "home"
+  },
+  {
+    "id": "verification",
+    "path": "/verification",
+    "title": "Euroclear",
+    "section": "home"
+  },
+  {
+    "id": "assistance",
+    "path": "/assistance",
+    "title": "Assistenza",
+    "section": "home"
+  }
+]

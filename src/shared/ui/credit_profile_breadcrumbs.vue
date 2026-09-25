@@ -3,6 +3,7 @@ import ProfileLink from './credit_profile_link.vue';
 export interface BreadcrumbItem {
   label: string;
   href?: string;
+  to?: string;
 }
 defineProps<{ items: readonly BreadcrumbItem[] }>();
 </script>
@@ -13,6 +14,7 @@ defineProps<{ items: readonly BreadcrumbItem[] }>();
         <span v-if="index" aria-hidden="true">/</span>
         <ProfileLink
           :href="item.href"
+          :to="item.to"
           :aria-current="index === items.length - 1 ? 'page' : undefined"
         >
           {{ item.label }}

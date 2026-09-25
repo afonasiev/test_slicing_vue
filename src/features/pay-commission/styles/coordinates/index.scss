@@ -1,0 +1,93 @@
+@mixin layout {
+  .coordinateDialog {
+    composes: dialog;
+  }
+  .coordinates dl > div {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 20px;
+    column-gap: 0;
+  }
+  .coordinates dt {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .coordinates dd {
+    display: contents;
+  }
+  .coordinates dd > span {
+    grid-column: 1;
+    grid-row: 2;
+    font-size: 16px;
+    line-height: 21px;
+    overflow-wrap: anywhere;
+  }
+  .coordinates dd button {
+    grid-column: 2;
+    grid-row: 1 / 3;
+    align-self: center;
+    width: 20px;
+    height: 20px;
+  }
+  .navigation [data-profile-icon] {
+    width: 24px;
+    height: 24px;
+  }
+  @media (max-width: 767px) {
+    .coordinateDialog .heading {
+      h2 {
+        font-size: 24px;
+        line-height: 29px;
+      }
+      p {
+        font-size: 11px;
+        line-height: 13px;
+      }
+    }
+    .instructions {
+      font-size: 14px;
+      line-height: 22px;
+      margin-bottom: 12px;
+    }
+    .sepa {
+      font-size: 12px;
+      line-height: 20px;
+      margin-bottom: 20px;
+    }
+    .coordinates {
+      border: 0;
+      outline: 1px solid var(--border);
+      outline-offset: -1px;
+    }
+    .coordinates dt {
+      font-size: 10px;
+      line-height: 12px;
+    }
+    .coordinates dd > span {
+      font-size: 12px;
+      line-height: 15px;
+    }
+    .coordinates dl > div + div {
+      margin-top: 8px;
+      padding-top: 8px;
+      border: 0;
+      box-shadow: 0 -1px var(--border);
+    }
+    .coordinates > p {
+      margin-top: 8px;
+      padding-top: 8px;
+      border: 0;
+      box-shadow: 0 -1px var(--border);
+    }
+    .coordinateDialog .receipt {
+      margin: 27px 0 12px;
+      line-height: 17px;
+    }
+    .coordinateDialog .action {
+      margin-top: 0;
+    }
+    .coordinateDialog .footer {
+      margin-top: 8px;
+      padding-top: 0;
+    }
+  }
+}

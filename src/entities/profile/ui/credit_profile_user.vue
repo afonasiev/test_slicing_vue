@@ -1,13 +1,23 @@
 <script setup lang="ts">
+import { computed } from 'vue';
 import { ProfileImage } from '@/shared/ui';
-defineProps<{ name: string; email: string; avatar: string }>();
+const props = defineProps<{ name: string; email: string; avatar: string; compact?: boolean }>();
+const initials = computed(() =>
+  props.name
+    .split(/\s+/)
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((part) => part[0])
+    .join(''),
+);
+const size = computed(() => (props.compact ? 32 : 40));
 </script>
 <template>
-  <div :class="$style.user">
-    <ProfileImage :src="avatar" :alt="name" :width="40" :height="40" :class="$style.avatar" />
+  <div :class="[$style.user, compact && $style.compact]">
+    <ProfileImage :src="avatar" :alt="name" :width="size" :height="size" :class="$style.avatar" />
     <div :class="$style.userText">
-      <p>{{ name }}</p>
-      <span>{{ email }}</span>
+      <p>{{ compact ? initials : name }}</p>
+      <span v-if="!compact">{{ email }}</span>
     </div>
   </div>
 </template>
@@ -41,6 +51,14 @@ defineProps<{ name: string; email: string; avatar: string }>();
     text-overflow: ellipsis;
     white-space: nowrap;
   }
+}
+.compact {
+  gap: 6px;
+}
+.compact .avatar {
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--accent);
 }
 @media (max-width: 767px) {
   .userText span {

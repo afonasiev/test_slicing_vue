@@ -1,0 +1,149 @@
+.card[data-bank='BNP Paribas'] .logo img {
+  object-fit: fill;
+  width: 122.469127%;
+  height: 100%;
+  transform: translate(-8.496962%, 0%);
+}
+.card[data-bank='HSBC'] .logo img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  transform: none;
+}
+.card[data-bank='Societe Generale'] .logo img {
+  object-fit: fill;
+  width: 99.426243%;
+  height: 64.947786%;
+  transform: translate(0.577068%, 27.012548%);
+}
+.card[data-bank='Revolut'] .logo img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transform: none;
+}
+.card[data-bank='Credit Agricole'] .logo img {
+  object-fit: fill;
+  width: 82.186617%;
+  height: 116.129033%;
+  transform: translate(5.88168%, -4.166666%);
+}
+.card[data-bank='ING'] .logo img {
+  object-fit: fill;
+  width: 125.746112%;
+  height: 69.515461%;
+  transform: translate(-13.602121%, 21.788949%);
+}
+.card[data-bank='Santander'] .logo img {
+  object-fit: fill;
+  width: 98.346831%;
+  height: 69.35484%;
+  transform: translate(0.840477%, 20.970567%);
+}
+.card[data-bank='BBVA'] .logo img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transform: none;
+}
+.card[data-bank='UniCredit'] .logo img {
+  object-fit: fill;
+  width: 108.024695%;
+  height: 141.129031%;
+  transform: translate(-3.714286%, -14.906159%);
+}
+.card[data-bank='Intesa Sanpaolo'] .logo img {
+  object-fit: fill;
+  width: 377.957629%;
+  height: 370.337531%;
+  transform: translate(-3.196255%, -67.200053%);
+}
+.card[data-bank='Commerzbank'] .logo img {
+  object-fit: fill;
+  width: 107.12247%;
+  height: 78.722055%;
+  transform: translate(-7.217465%, 12.518698%);
+}
+.card[data-bank='Barclays'] .logo img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transform: none;
+}
+@media (max-width: 767px) {
+  .card[data-bank='BNP Paribas'] .logo img {
+    object-fit: fill;
+    width: 40.023566%;
+    height: 138.474398%;
+    transform: translate(74.926394%, -15.154669%);
+  }
+  .card[data-bank='Societe Generale'] .logo img {
+    object-fit: fill;
+    width: 52.051414%;
+    height: 144.070873%;
+    transform: translate(46.058875%, -15.391208%);
+  }
+  .card[data-bank='Credit Agricole'] .logo img {
+    object-fit: fill;
+    width: 21.725603%;
+    height: 130.074421%;
+    transform: translate(180.143201%, -9.392529%);
+  }
+  .card[data-bank='Santander'] .logo img {
+    object-fit: fill;
+    width: 31.249108%;
+    height: 93.375807%;
+    transform: translate(111.093187%, 1.995467%);
+  }
+  .card[data-bank='HSBC'] .logo img {
+    object-fit: fill;
+    width: 42.392978%;
+    height: 132.004924%;
+    transform: translate(67.944056%, -8.012092%);
+  }
+  .card[data-bank='Revolut'] .logo img {
+    object-fit: fill;
+    width: 40.305725%;
+    height: 148.747318%;
+    transform: translate(74.700874%, -15.576647%);
+  }
+  .card[data-bank='ING'] .logo img {
+    object-fit: fill;
+    width: 59.235525%;
+    height: 138.755247%;
+    transform: translate(34.408808%, -12.487222%);
+  }
+  .card[data-bank='BBVA'] .logo img {
+    object-fit: fill;
+    width: 30.684108%;
+    height: 169.858446%;
+    transform: translate(112.950802%, -19.791061%);
+  }
+  .card[data-bank='UniCredit'] .logo img {
+    object-fit: fill;
+    width: 56.451612%;
+    height: 312.500007%;
+    transform: translate(39.70688%, -34%);
+  }
+  .card[data-bank='Intesa Sanpaolo'] .logo img {
+    object-fit: fill;
+    width: 261.621126%;
+    height: 497.547356%;
+    transform: translate(2.694762%, -71.011567%);
+  }
+  .card[data-bank='Intesa Sanpaolo'] .logo {
+    width: 71px;
+  }
+  .card[data-bank='Commerzbank'] .logo img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    transform: none;
+  }
+  .card[data-bank='Barclays'] .logo img {
+    object-fit: fill;
+    width: 60.967744%;
+    height: 224.999998%;
+    transform: translate(32.550916%, -27.777779%);
+  }
+}

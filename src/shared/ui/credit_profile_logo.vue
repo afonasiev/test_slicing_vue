@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import { ProfileIcon } from './icons';
-const homeUrl = import.meta.env.BASE_URL;
+import ProfileLink from './credit_profile_link.vue';
 </script>
 <template>
-  <a :href="homeUrl" :class="$style.logo" aria-label="Avanti — Home">
+  <ProfileLink to="/" :class="$style.logo" aria-label="Avanti — Home">
     <ProfileIcon name="logoFull" />
-  </a>
+  </ProfileLink>
 </template>
 <style module lang="scss">
 .logo {

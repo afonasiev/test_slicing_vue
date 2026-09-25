@@ -1,5 +1,7 @@
 <script setup lang="ts">
-import { onMounted, onBeforeUnmount, nextTick, ref } from 'vue';
+import { onMounted, onBeforeUnmount, nextTick, ref, watch } from 'vue';
+import { useRoute, useRouter } from 'vue-router';
+import { routePaths } from '@/shared/config';
 import { ProfileHeader } from '@/widgets/header';
 import { ProfileProgress } from '@/widgets/progress';
 import { ProfilePersonalData } from '@/widgets/personal-data';
@@ -7,9 +9,17 @@ import { ProfileSecurity } from '@/widgets/security';
 import { ProfileChecklist } from '@/widgets/checklist';
 import { ProfileEditDialog, type ProfileEditKind } from '@/features/edit-profile';
 import { useProfileStore } from '@/entities/profile';
-const emit = defineEmits<{ navigate: [destination: string] }>();
+const route = useRoute();
+const router = useRouter();
 const store = useProfileStore();
 const editKind = ref<ProfileEditKind | null>(null);
+watch(
+  () => route.query.overlay,
+  (value) => {
+    editKind.value = value === 'name' || value === 'email' || value === 'password' ? value : null;
+  },
+  { immediate: true },
+);
 const status = ref('');
 let statusTimer: ReturnType<typeof setTimeout> | undefined;
 onBeforeUnmount(() => clearTimeout(statusTimer));
@@ -21,13 +31,15 @@ onMounted(async () => {
   }
 });
 function editName() {
-  editKind.value = 'name';
+  edit('name');
 }
 function edit(kind: ProfileEditKind) {
-  editKind.value = kind;
+  void router.push({ path: route.path, query: { ...route.query, overlay: kind } });
 }
 function close() {
-  editKind.value = null;
+  const query = { ...route.query };
+  delete query.overlay;
+  void router.replace({ path: route.path, query });
 }
 async function saved(message: string) {
   close();
@@ -40,11 +52,11 @@ async function saved(message: string) {
   }, 5000);
 }
 function navigate(destination: string) {
-  emit('navigate', destination);
+  void router.push(routePaths[destination] ?? '/');
 }
 </script>
 <template>
-  <ProfileHeader @navigate="navigate" />
+  <ProfileHeader />
   <main :class="$style.layout" aria-label="Profilo Avanti">
     <div :class="$style.left">
       <ProfileProgress @navigate="navigate" />
@@ -57,7 +69,13 @@ function navigate(destination: string) {
     </aside>
   </main>
   <p :class="$style.status" role="status">{{ status }}</p>
-  <ProfileEditDialog v-if="editKind" :kind="editKind" @close="close" @saved="saved" />
+  <ProfileEditDialog
+    v-if="editKind"
+    :key="editKind"
+    :kind="editKind"
+    @close="close"
+    @saved="saved"
+  />
 </template>
 <style module lang="scss">
 .layout {

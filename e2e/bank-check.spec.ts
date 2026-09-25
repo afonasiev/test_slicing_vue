@@ -1,0 +1,34 @@
+import { test, expect } from '@playwright/test';
+
+test('bank simulation pauses, completes and opens approved offer', async ({ page }) => {
+  const errors: string[] = [];
+  page.on('pageerror', (error) => errors.push(error.message));
+  await page.clock.install();
+  await page.goto('./application/check');
+  const progress = page.getByRole('progressbar', { name: 'Banche verificate' });
+  await expect(progress).toHaveAttribute('value', '6');
+  await page.clock.fastForward(5000);
+  await expect(progress).toHaveAttribute('value', '6');
+  await page.getByRole('button', { name: 'Avvia la verifica' }).click();
+  await page.clock.runFor(2000);
+  await expect(progress).toHaveAttribute('value', '8');
+  await page.getByRole('button', { name: 'Pausa', exact: true }).click();
+  await page.clock.fastForward(5000);
+  await expect(progress).toHaveAttribute('value', '8');
+  await page.getByRole('button', { name: '◈ Меню', exact: true }).click();
+  await page.getByRole('button', { name: 'Запустить', exact: true }).click();
+  await page.clock.runFor(4000);
+  await expect(progress).toHaveAttribute('value', '12');
+  await page.getByRole('button', { name: '× Закрыть', exact: true }).click();
+  await page.getByRole('button', { name: 'Continua', exact: true }).click();
+  await expect(page).toHaveURL(/\/application\/approved$/);
+  await expect(page.getByRole('heading', { name: 'Il tuo credito è approvato' })).toBeVisible();
+  await page.goBack();
+  await expect(progress).toHaveAttribute('value', '12');
+  await page.getByRole('button', { name: '◈ Меню', exact: true }).click();
+  await page.getByRole('button', { name: 'Сбросить', exact: true }).click();
+  await expect(progress).toHaveAttribute('value', '6');
+  await page.reload();
+  await expect(progress).toHaveAttribute('value', '6');
+  expect(errors).toEqual([]);
+});

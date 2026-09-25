@@ -1,5 +1,6 @@
 <script setup lang="ts">
-withDefaults(defineProps<{ href?: string }>(), { href: '#' });
+import { RouterLink, type RouteLocationRaw } from 'vue-router';
+withDefaults(defineProps<{ href?: string; to?: RouteLocationRaw }>(), { href: '#' });
 const emit = defineEmits<{ navigate: [event: MouseEvent] }>();
 function navigate(event: MouseEvent) {
   if ((event.currentTarget as HTMLAnchorElement).getAttribute('href') === '#')
@@ -8,7 +9,8 @@ function navigate(event: MouseEvent) {
 }
 </script>
 <template>
-  <a :href="href" :class="$style.link" @click="navigate"><slot /></a>
+  <RouterLink v-if="to" :to="to" :class="$style.link" @click="navigate"><slot /></RouterLink>
+  <a v-else :href="href" :class="$style.link" @click="navigate"><slot /></a>
 </template>
 <style module lang="scss">
 .link {

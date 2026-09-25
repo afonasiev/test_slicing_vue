@@ -1,0 +1,128 @@
+.card {
+  padding: 32px;
+  border-radius: 20px;
+  background: linear-gradient(#2491aa, #1a7488);
+  color: white;
+  box-shadow: 0 8px 12px #2491aa30;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.card header {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 16px;
+}
+.card header p {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.13px;
+  color: #eaf4f6;
+  margin-bottom: 22px;
+}
+.card h1 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #eaf4f6;
+}
+.badge {
+  color: white;
+  flex-shrink: 0;
+  background: #ffffff33;
+  text-transform: none;
+}
+.amount {
+  font-size: 52px;
+  letter-spacing: -0.78px;
+  line-height: 1.2;
+}
+.description {
+  color: #eaf4f6;
+  font-size: 14px;
+  margin-top: 4px;
+}
+.withdraw {
+  width: 100%;
+  background: #f8fafb;
+  color: #2491aa;
+  font-size: 18px;
+  border: 0;
+  border-radius: 14px;
+  padding: 18px 24px;
+  min-height: 64px;
+}
+.withdraw:disabled {
+  opacity: 0.5;
+}
+.note {
+  color: #eaf4f6;
+  font-size: 12px;
+  padding-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.note::before {
+  content: '';
+  width: 100px;
+  height: 1px;
+  background: #ffffff4d;
+}
+@media (max-width: 767px) {
+  .card {
+    padding: 20px;
+    gap: 12px;
+  }
+  .card header p {
+    text-transform: none;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .card h1 {
+    font-size: 10px;
+    max-width: 155px;
+  }
+  .amount {
+    font-size: 36px;
+  }
+  .badge {
+    font-size: 10px;
+  }
+  .withdraw {
+    border-radius: 8px;
+    padding: 12px;
+    min-height: 46px;
+    font-size: 16px;
+  }
+  .note::before {
+    display: none;
+  }
+  .note {
+    padding: 0;
+  }
+}
+
+.withdraw [data-profile-icon] {
+  width: 28px;
+  height: 28px;
+}
+@media (max-width: 767px) {
+  .withdraw [data-profile-icon] {
+    width: 20px;
+    height: 20px;
+  }
+  .description {
+    font-size: 12px;
+  }
+  .card header p {
+    font-size: 13px;
+    font-weight: 300;
+  }
+  .badge {
+    font-size: 11px;
+  }
+}

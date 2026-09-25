@@ -1,0 +1,180 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 60px;
+  background: white;
+  border-radius: 32px;
+  box-shadow: 0 10px 15px #0000000a;
+}
+.heading {
+  display: grid;
+  gap: 12px;
+  line-height: normal;
+}
+.heading p {
+  font-size: 18px;
+  letter-spacing: 0.72px;
+  color: #747474;
+}
+.heading h1 {
+  font-size: 32px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #09090b;
+}
+.names {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 37px;
+}
+.field {
+  gap: 12px;
+}
+.label,
+.field label,
+.document > label {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: #464646;
+}
+.field input {
+  height: 85px;
+  border: 1.5px solid var(--accent);
+  border-radius: 19px;
+  padding: 0 24px;
+  font-size: 18px;
+  box-shadow: 0 4px 6px #0000000d;
+}
+.field input::placeholder {
+  color: #747474;
+  opacity: 1;
+}
+.gender {
+  display: grid;
+  gap: 16px;
+}
+.description {
+  margin-top: 12px;
+  color: #747474;
+  font-size: 18px;
+  line-height: normal;
+  letter-spacing: 0.72px;
+}
+.choices {
+  display: flex;
+  gap: 16px;
+}
+.choice {
+  flex: 1;
+  height: 85px;
+  border-radius: 19px;
+  gap: 16px;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+.choice span {
+  font-size: 40px;
+}
+.selected {
+  color: white;
+  background: var(--accent);
+  box-shadow: 0 8px 8px #2491aa33;
+}
+.consent {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 0.56px;
+  color: #747474;
+}
+.consent span {
+  display: grid;
+  place-items: center;
+  flex: 0 0 24px;
+  height: 24px;
+  border: 1px solid var(--accent);
+  border-radius: 50%;
+  font-size: 14px;
+  color: var(--accent);
+  font-weight: 600;
+}
+@media (max-width: 1199px) {
+  .form {
+    padding: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .form {
+    gap: 28px;
+    padding: 20px;
+    border-radius: 24px;
+  }
+  .heading {
+    gap: 6px;
+  }
+  .heading p {
+    font-size: 14px;
+    letter-spacing: 0.56px;
+  }
+  .heading h1 {
+    font-size: 24px;
+  }
+  .names {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .field {
+    gap: 8px;
+  }
+  .label,
+  .field label,
+  .document > label {
+    font-size: 15px;
+    letter-spacing: 0.6px;
+  }
+  .field input {
+    height: 58px;
+    padding: 0 16px;
+    border-radius: 14px;
+    font-size: 16px;
+  }
+  .gender {
+    gap: 12px;
+  }
+  .description {
+    margin-top: 6px;
+    font-size: 14px;
+    letter-spacing: 0.56px;
+  }
+  .choices {
+    gap: 10px;
+  }
+  .choice {
+    height: 58px;
+    border-radius: 14px;
+    font-size: 16px;
+    gap: 10px;
+    padding: 12px;
+  }
+  .choice span {
+    font-size: 23px;
+  }
+  .consent {
+    gap: 10px;
+    font-size: 12px;
+    letter-spacing: 0.48px;
+  }
+  .consent span {
+    flex-basis: 20px;
+    height: 20px;
+    font-size: 12px;
+    border-width: 1.5px;
+  }
+}

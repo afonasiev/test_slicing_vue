@@ -1,13 +1,24 @@
 <script setup lang="ts">
-import { steps } from '@/entities/profile';
+import { computed } from 'vue';
+import { getSteps } from '@/entities/application';
 import { ProfileButton, ProfileIcon, ProfileBadge, ProfileCollapsible } from '@/shared/ui';
+const props = withDefaults(defineProps<{ compact?: boolean; completed?: number }>(), {
+  completed: 3,
+});
+const steps = computed(() => getSteps(props.completed));
+const actionLabel = computed(() =>
+  props.completed === 4 ? 'Vai al contratto' : 'Vai ai documenti',
+);
 const emit = defineEmits<{ navigate: [destination: string] }>();
 function documents() {
-  emit('navigate', 'documents');
+  emit('navigate', props.completed === 4 ? 'contract' : 'documents');
 }
 </script>
 <template>
-  <ProfileCollapsible :class="$style.card" aria-label="Checklist di verifica">
+  <ProfileCollapsible
+    :class="[$style.card, compact && $style.compact]"
+    aria-label="Checklist di verifica"
+  >
     <template #header="{ expanded, toggle, contentId }">
       <header :class="$style.heading">
         <div :class="$style.title">
@@ -15,7 +26,7 @@ function documents() {
           <h2>Per il prelievo dei fondi, completa tutti gli step</h2>
         </div>
         <div :class="$style.controls">
-          <ProfileBadge :class="$style.badge">3 / 5 completati</ProfileBadge>
+          <ProfileBadge :class="$style.badge">{{ completed }} / 5 completati</ProfileBadge>
           <ProfileButton
             variant="plain"
             :class="[$style.toggle, !expanded && $style.collapsed]"
@@ -46,7 +57,7 @@ function documents() {
             v-else-if="step.status === 'current'"
             variant="plain"
             :class="$style.next"
-            aria-label="Vai ai documenti"
+            :aria-label="actionLabel"
             @click="documents"
           >
             <ProfileIcon name="arrow" />
@@ -60,7 +71,7 @@ function documents() {
         :class="$style.progress"
         role="progressbar"
         aria-label="Step completati"
-        :aria-valuenow="3"
+        :aria-valuenow="completed"
         :aria-valuemin="0"
         :aria-valuemax="5"
       >

@@ -30,6 +30,9 @@ importers:
       vue:
         specifier: rc
         version: 3.6.0-rc.8(typescript-native-bridge@6.0.3-bridge.17.tsgo.7.0.2)
+      vue-router:
+        specifier: ^4.6.4
+        version: 4.6.4(vue@3.6.0-rc.8(typescript-native-bridge@6.0.3-bridge.17.tsgo.7.0.2))
     devDependencies:
       '@playwright/test':
         specifier: ^1.63.0
@@ -1056,6 +1059,9 @@ packages:
 
   '@vue/compiler-vapor@3.6.0-rc.8':
     resolution: {integrity: sha512-N2G2U/e4PAfm/B7r3+EiVMS0m43l+60kavf5NeHH7sW9wexqjJG/XNOjoQw3S+rkkoT6rCydlIlqzmupL/eqRw==}
+
+  '@vue/devtools-api@6.6.4':
+    resolution: {integrity: sha512-sGhTPMuXqZ1rVOk32RylztWkfXTRhuS7vgAKv0zjqk8gbsHkJ7xfFf+jbySxt7tWObEJwyKaHMikV/WGDiQm8g==}
 
   '@vue/devtools-api@8.2.1':
     resolution: {integrity: sha512-6u4vXBlIBAC1wMplIZgpyPn7uh/s4Bf6F5bMzvLv+EdJ0aHs/+4B7Ygv864EStQSjRbsRzTko/kUG1A1IejQ3A==}
@@ -2175,6 +2181,11 @@ packages:
     peerDependencies:
       eslint: ^8.57.0 || ^9.0.0 || ^10.0.0
 
+  vue-router@4.6.4:
+    resolution: {integrity: sha512-Hz9q5sa33Yhduglwz6g9skT8OBPii+4bFn88w6J+J4MfEo4KRRpmiNG/hHHkdbRFlLBOqxN8y8gf2Fb0MTUgVg==}
+    peerDependencies:
+      vue: ^3.2.0
+
   vue-tsc@3.3.11:
     resolution: {integrity: sha512-gOb0B9rtU2+f1dszwPqSH5kAieIF9ReeLhD3kSRNHv5WZZUQz/JdVXW0RTdqhNTMlQkqKzrTTviqKr/4FYZraQ==}
     hasBin: true
@@ -3089,6 +3100,8 @@ snapshots:
       '@vue/shared': 3.6.0-rc.8
       estree-walker: 2.0.2
       source-map-js: 1.2.1
+
+  '@vue/devtools-api@6.6.4': {}
 
   '@vue/devtools-api@8.2.1':
     dependencies:
@@ -4128,6 +4141,11 @@ snapshots:
       semver: 7.8.5
     transitivePeerDependencies:
       - supports-color
+
+  vue-router@4.6.4(vue@3.6.0-rc.8(typescript-native-bridge@6.0.3-bridge.17.tsgo.7.0.2)):
+    dependencies:
+      '@vue/devtools-api': 6.6.4
+      vue: 3.6.0-rc.8(typescript-native-bridge@6.0.3-bridge.17.tsgo.7.0.2)
 
   vue-tsc@3.3.11(typescript-native-bridge@6.0.3-bridge.17.tsgo.7.0.2):
     dependencies:

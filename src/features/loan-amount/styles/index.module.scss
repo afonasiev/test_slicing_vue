@@ -1,0 +1,211 @@
+.grid {
+  display: grid;
+  grid-template-columns: minmax(0, 610fr) minmax(0, 505fr);
+  gap: clamp(40px, 8.68vw, 125px);
+}
+.fields {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 60px;
+  min-height: 506px;
+}
+.fields header {
+  margin-bottom: 22px;
+}
+.fields header p {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #747474;
+  letter-spacing: 0.72px;
+  margin-bottom: 12px;
+}
+.fields h1,
+.fields h2 {
+  font-size: 32px;
+  text-transform: uppercase;
+  color: black;
+  font-weight: 600;
+}
+.amount {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  border: 1px solid var(--accent);
+  border-radius: 19px;
+  height: 85px;
+  color: var(--accent);
+  font-size: 40px;
+  font-weight: 600;
+}
+.amount input {
+  min-width: 0;
+  width: 100%;
+  background: transparent;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  outline-offset: 4px;
+}
+.limits {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #747474;
+  margin-top: 18px;
+}
+.card {
+  padding: 44px;
+  border-radius: 14px;
+  min-height: 420px;
+  background: linear-gradient(var(--accent), #1a7488);
+  color: white;
+  box-shadow: 3px 6px 15.4px #0004;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+.card dt {
+  font-size: 28px;
+  color: #f3f3f3;
+  margin-bottom: 4px;
+}
+.card dd {
+  font-size: 40px;
+  font-weight: 600;
+}
+.card small {
+  font-size: 24px;
+}
+.note {
+  margin-top: 42px;
+  display: flex;
+  align-items: start;
+  gap: 8px;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 0.72px;
+  color: #747474;
+}
+.note > span:first-child {
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  flex: none;
+  font-weight: 600;
+  font-size: 32px;
+}
+.note strong {
+  font-weight: 600;
+}
+.mobile {
+  display: none;
+}
+.error {
+  color: #b42318;
+  margin-top: 8px;
+  font-size: 13px;
+}
+@media (max-width: 1199px) {
+  .grid {
+    gap: 32px;
+  }
+  .card {
+    padding: 32px;
+  }
+  .fields h1,
+  .fields h2 {
+    font-size: 26px;
+  }
+  .card dt {
+    font-size: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .grid {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+  .fields {
+    min-height: 0;
+    gap: 28px;
+  }
+  .fields header {
+    margin-bottom: 16px;
+  }
+  .fields header p {
+    font-size: 12px;
+    letter-spacing: 0.48px;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .fields h1,
+  .fields h2 {
+    font-size: 20px;
+    text-transform: none;
+    font-weight: 700;
+    color: #111827;
+  }
+  .amount {
+    height: 57px;
+    border-radius: 14px;
+    background: white;
+    font-size: 24px;
+    padding: 14px 16px;
+    box-shadow: 0 4px 5px #0000000d;
+  }
+  .limits {
+    font-size: 13px;
+    margin-top: 12px;
+  }
+  .fields section:last-child .limits {
+    margin-top: 16px;
+  }
+  .card {
+    min-height: 0;
+    padding: 20px;
+    gap: 8px;
+    border-radius: 16px;
+    background: var(--accent);
+    box-shadow: 0 8px 10px #0003;
+  }
+  .card > div + div {
+    border-top: 1px solid #ffffff33;
+    padding-top: 8px;
+  }
+  .card dt {
+    font-size: 14px;
+  }
+  .card dd {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .card small {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: inline;
+  }
+  .note {
+    margin-top: 28px;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0;
+    gap: 12px;
+  }
+  .note > span:first-child {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+  }
+}

@@ -36,7 +36,9 @@ jobs:
           pnpm lint:check
           pnpm test:unit --run
       - name: Build for repository path
-        run: pnpm build:pages
+        run: |
+          pnpm build:pages
+          pnpm check:pages
       - name: Install browsers
         run: pnpm exec playwright install --with-deps chromium firefox webkit
       - name: Test GitHub Pages build
