@@ -1,0 +1,506 @@
+const img = "https://www.figma.com/api/mcp/asset/36c91e62-e57a-4106-bbb5-84c00307e509.svg";
+const img1 = "https://www.figma.com/api/mcp/asset/0fa0f6ff-f824-46ab-b83e-eb2d8c63faae.svg";
+const img2 = "https://www.figma.com/api/mcp/asset/4e4493f0-9011-4b75-b6c1-9e529775c7d7.svg";
+const imgLine = "https://www.figma.com/api/mcp/asset/81afa30d-2978-4f07-9852-0a5fc24379d7.svg";
+const img3 = "https://www.figma.com/api/mcp/asset/6698eec0-00b3-41ee-9f02-35e268b525a7.svg";
+const img4 = "https://www.figma.com/api/mcp/asset/b81884c1-2daf-4c3b-abfd-e9aabdcb2831.svg";
+const img5 = "https://www.figma.com/api/mcp/asset/ae1eef43-8ef8-4cc5-925a-1f1f676ebb6a.svg";
+const img10 = "https://www.figma.com/api/mcp/asset/6bf63d2d-ae28-41f0-8c46-d76129ef4c2a.png";
+const imgVector44 = "https://www.figma.com/api/mcp/asset/41bf28e3-6929-48d4-896f-edefe00f2202.svg";
+const img6 = "https://www.figma.com/api/mcp/asset/c62bf03c-fe78-4585-8b5e-0bcc381e590c.svg";
+const img7 = "https://www.figma.com/api/mcp/asset/f0520b64-7828-42a9-be72-2797d12c0bfc.svg";
+const img8 = "https://www.figma.com/api/mcp/asset/1310fc36-ba23-4c07-afea-2099bd24d0ad.svg";
+const img9 = "https://www.figma.com/api/mcp/asset/e155f6f0-8bdc-4577-9818-f40345cce7d5.svg";
+const img11 = "https://www.figma.com/api/mcp/asset/7a0bc2ff-c18a-4ba9-9418-2557878fbcfd.svg";
+const img12 = "https://www.figma.com/api/mcp/asset/f488b726-eb5c-413b-81b1-228f71c08a63.svg";
+const img13 = "https://www.figma.com/api/mcp/asset/7abaf041-5f09-4f57-a1f3-37b8581ae381.svg";
+const img14 = "https://www.figma.com/api/mcp/asset/cb888a3c-c4f0-491f-8239-c56c6e2bb294.svg";
+const img15 = "https://www.figma.com/api/mcp/asset/70e157fa-27d5-4c99-a8f4-11f499a1971f.svg";
+const img16 = "https://www.figma.com/api/mcp/asset/424178bc-f0be-4530-b2aa-94409f42461e.svg";
+const img17 = "https://www.figma.com/api/mcp/asset/2e9faa98-7859-4ebf-83db-b4d2b245d82d.svg";
+const img18 = "https://www.figma.com/api/mcp/asset/ec366362-0460-4449-b154-7044c2991f25.svg";
+const img19 = "https://www.figma.com/api/mcp/asset/10c6c492-aaeb-48b6-b8d3-1e0ed0f45777.svg";
+
+type ComponentProps = {
+  className?: string;
+  property1?: "Default";
+};
+
+function Component({ className, property1 = "Default" }: ComponentProps) {
+  return (
+    <div className={className || "bg-[#eaf4f6] border border-[#c7e3ea] border-solid content-stretch flex gap-[16px] items-center px-[20px] py-[16px] relative rounded-[16px] w-[792px]"} data-node-id="246:4940">
+      <div className="content-stretch flex flex-[1_0_0] gap-[16px] items-start min-w-px relative" data-node-id="246:4920" data-name="Содержимое баннера">
+        <div className="bg-[#2491aa] content-stretch drop-shadow-[0px_4px_4px_rgba(36,145,170,0.19)] flex flex-col items-center justify-center relative rounded-[22px] shrink-0 size-[44px]" data-node-id="246:4921" data-name="Иконка замок">
+          <div className="relative shrink-0 size-[20px]" data-node-id="246:4922" data-name="Обёртка иконки">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={img} />
+          </div>
+        </div>
+        <div className="content-stretch flex flex-[1_0_0] flex-col gap-[6px] items-start min-w-px relative" data-node-id="246:4924" data-name="Текст баннера">
+          <div className="content-stretch flex gap-[10px] items-center relative shrink-0 w-full" data-node-id="246:4925" data-name="Строка заголовка">
+            <p className="[word-break:break-word] flex-[1_0_0] font-['Geist:SemiBold'] font-semibold leading-[normal] min-w-px relative text-[#1a2332] text-[13px]" data-node-id="246:4926">
+              Per il prelievo dei fondi, completa tutti gli step
+            </p>
+            <div className="bg-[#2491aa] content-stretch flex items-start px-[12px] py-[4px] relative rounded-[99px] shrink-0" data-node-id="246:4927" data-name="Бейдж — Счётчик">
+              <p className="[word-break:break-word] font-['Geist:Bold'] font-bold leading-[normal] relative shrink-0 text-[11px] text-white tracking-[0.33px] uppercase whitespace-nowrap" data-node-id="246:4928">
+                3 / 5 Completati
+              </p>
+            </div>
+          </div>
+          <p className="[word-break:break-word] font-['Geist:Medium'] font-medium leading-[normal] relative shrink-0 text-[#71717a] text-[12px] whitespace-nowrap" data-node-id="246:4929">
+            Step ancora da completare
+          </p>
+          <div className="content-stretch flex flex-col gap-[6px] items-start relative shrink-0 w-full" data-node-id="246:4930" data-name="Чекбоксы">
+            <div className="content-stretch flex gap-[8px] items-center relative shrink-0" data-node-id="246:4931" data-name="Чекбокс — Документы">
+              <div className="bg-white border border-[#2491aa] border-solid relative rounded-[4px] shrink-0 size-[18px]" data-node-id="246:4932" data-name="Флажок 1" />
+              <p className="[word-break:break-word] font-['Geist:Medium'] font-medium leading-[normal] relative shrink-0 text-[#1a2332] text-[13px] whitespace-nowrap" data-node-id="246:4933">
+                Documenti
+              </p>
+            </div>
+            <div className="content-stretch flex gap-[8px] items-center relative shrink-0" data-node-id="246:4934" data-name="Чекбокс — Подпись">
+              <div className="bg-white border border-[#2491aa] border-solid relative rounded-[4px] shrink-0 size-[18px]" data-node-id="246:4935" data-name="Флажок 2" />
+              <p className="[word-break:break-word] font-['Geist:Medium'] font-medium leading-[normal] relative shrink-0 text-[#1a2332] text-[13px] whitespace-nowrap" data-node-id="246:4936">
+                Firma
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="bg-[#2491aa] content-stretch drop-shadow-[0px_4px_4px_rgba(36,145,170,0.25)] flex flex-col items-center justify-center relative rounded-[18px] shrink-0 size-[36px]" data-node-id="246:4937" data-name="Кнопка — Стрелка">
+        <div className="relative shrink-0 size-[16px]" data-node-id="246:4938" data-name="Иконка стрелка">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={img1} />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+type Component1Props = {
+  className?: string;
+  property1?: "Default";
+};
+
+function Component1({ className, property1 = "Default" }: Component1Props) {
+  return (
+    <div className={className || "content-stretch flex flex-col h-[340px] items-start relative w-[792px]"} data-node-id="1:106">
+      <div className="bg-gradient-to-b content-stretch drop-shadow-[0px_8px_12px_rgba(36,145,170,0.19)] flex flex-col from-[#2491aa] gap-[16px] items-center justify-center p-[32px] relative rounded-[20px] shrink-0 to-[#1a7488] w-full" data-node-id="1:107" data-name="Карточка — Одобренная сумма">
+        <div className="content-stretch flex items-start justify-between relative shrink-0 w-full" data-node-id="1:108" data-name="Мета-информация">
+          <div className="[word-break:break-word] content-stretch flex flex-col font-['Inter:Semi_Bold'] font-semibold gap-[22px] items-start leading-[normal] not-italic relative shrink-0 text-[#eaf4f6] uppercase w-[361px] whitespace-nowrap" data-node-id="1:109" data-name="Текст мета">
+            <p className="relative shrink-0 text-[13px] tracking-[0.13px]" data-node-id="1:110">
+              Il tuo saldo
+            </p>
+            <p className="relative shrink-0 text-[16px] tracking-[0.16px]" data-node-id="1:111">
+              Importo approvato dai nostri partner
+            </p>
+          </div>
+          <div className="bg-[rgba(255,255,255,0.2)] content-stretch flex items-start px-[10px] py-[4px] relative rounded-[99px] shrink-0" data-node-id="1:112" data-name="Бейдж статуса">
+            <p className="[word-break:break-word] font-['Inter:Bold'] font-bold leading-[normal] not-italic relative shrink-0 text-[11px] text-white whitespace-nowrap" data-node-id="1:113">
+              Completa i passaggi
+            </p>
+          </div>
+        </div>
+        <div className="[word-break:break-word] content-stretch flex flex-col gap-[4px] items-start leading-[normal] not-italic relative shrink-0 w-full whitespace-nowrap" data-node-id="1:114" data-name="Блок суммы">
+          <p className="font-['Inter:Bold'] font-bold relative shrink-0 text-[52px] text-white tracking-[-0.78px]" data-node-id="1:115">
+            € 12 000
+          </p>
+          <p className="font-['Inter:Regular'] font-normal relative shrink-0 text-[#eaf4f6] text-[14px]" data-node-id="1:116">
+            Prestito personale • TAN 3,8%
+          </p>
+        </div>
+        <div className="bg-[#f8fafb] content-stretch flex gap-[12px] items-center justify-center opacity-50 px-[24px] py-[18px] relative rounded-[14px] shrink-0 w-full" data-node-id="1:117" data-name="Кнопка — Получить средства">
+          <div className="content-stretch flex gap-[10px] items-center justify-center relative shrink-0" data-node-id="1:118" data-name="Иконка и текст кнопки">
+            <div className="relative shrink-0 size-[28px]" data-node-id="1:119" data-name="Иконка банк">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={img2} />
+            </div>
+            <p className="[word-break:break-word] bg-clip-text bg-gradient-to-b font-['Inter:Semi_Bold'] font-semibold from-[#2491aa] leading-[normal] not-italic relative shrink-0 text-[18px] text-[transparent] to-[#1a7488] tracking-[0.036px] whitespace-nowrap" data-node-id="1:121">
+              Preleva i fondi
+            </p>
+          </div>
+          <p className="[word-break:break-word] bg-clip-text bg-gradient-to-b font-['Inter:Medium'] font-medium from-[#2491aa] leading-[normal] not-italic opacity-85 relative shrink-0 text-[18px] text-[transparent] to-[#1a7488] whitespace-nowrap" data-node-id="1:122">
+            →
+          </p>
+        </div>
+        <div className="content-stretch flex gap-[16px] items-center pt-[8px] relative shrink-0 w-full" data-node-id="1:123" data-name="Информация внизу карточки">
+          <div className="h-0 relative shrink-0 w-[100px]" data-node-id="1:124" data-name="Line">
+            <div className="absolute inset-[-1px_0_0_0]">
+              <img alt="" className="block max-w-none size-full" src={imgLine} />
+            </div>
+          </div>
+          <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[normal] not-italic relative shrink-0 text-[#eaf4f6] text-[12px] whitespace-nowrap" data-node-id="1:125">{`Fondi disponibili dopo l'approvazione dei documenti`}</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Component2({ className }: { className?: string }) {
+  return (
+    <div className={className || "bg-white border border-[#e2edf0] border-solid content-stretch drop-shadow-[0px_2px_4px_rgba(26,35,50,0.06)] flex flex-col gap-[16px] items-start px-[24px] py-[20px] relative rounded-[16px] w-[792px]"} data-node-id="1:61" data-name="Компонент шагов">
+      <div className="[word-break:break-word] content-stretch flex items-center justify-between leading-[normal] not-italic relative shrink-0 text-[13px] w-full whitespace-nowrap" data-node-id="1:62" data-name="Заголовок шагов">
+        <p className="font-['Inter:Bold'] font-bold relative shrink-0 text-[#1a2332]" data-node-id="1:63">
+          Passo 4 di 5
+        </p>
+        <p className="font-['Inter:Medium'] font-medium relative shrink-0 text-[#71717a]" data-node-id="1:64">
+          3 / 5 completati
+        </p>
+      </div>
+      <div className="h-[58px] relative shrink-0 w-full" data-node-id="1:65" data-name="Полоса шагов">
+        <div className="absolute content-stretch flex gap-[51px] items-center left-0 top-0 w-[744px]" data-node-id="1:66" data-name="Ряд шагов">
+          <div className="flex-[1_0_0] h-[58px] min-w-px relative" data-node-id="1:67" data-name="Шаг — Симуляция">
+            <div className="absolute h-[36px] left-0 right-0 top-0" data-node-id="1:68" data-name="Круг и линии шага 1">
+              <div className="absolute bg-white h-[2px] left-0 top-[17px] w-[22px]" data-node-id="1:69" data-name="Линия слева" />
+              <div className="-translate-x-1/2 absolute bg-[#2491aa] content-stretch flex flex-col items-center justify-center left-1/2 rounded-[18px] size-[36px] top-0" data-node-id="1:70" data-name="Круг шага">
+                <div className="relative shrink-0 size-[16px]" data-node-id="1:71" data-name="Иконка галочка">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={img3} />
+                </div>
+              </div>
+              <div className="absolute bg-[#2491aa] h-[2px] left-[58px] top-[17px] w-[468px]" data-node-id="1:73" data-name="Линия справа" />
+            </div>
+            <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Inter:Semi_Bold'] font-semibold leading-[normal] left-[calc(50%+0.5px)] not-italic text-[#2491aa] text-[11px] text-center top-[44px] whitespace-nowrap" data-node-id="1:74">
+              Simul.
+            </p>
+          </div>
+          <div className="flex-[1_0_0] h-[58px] min-w-px relative" data-node-id="1:75" data-name="Шаг — Одобрение">
+            <div className="absolute h-[36px] left-0 right-0 top-0" data-node-id="1:76" data-name="Круг и линии шага 2">
+              <div className="absolute bg-[#2491aa] h-[2px] left-0 top-[17px] w-[22px]" data-node-id="1:77" data-name="Линия слева" />
+              <div className="-translate-x-1/2 absolute bg-[#2491aa] content-stretch flex flex-col items-center justify-center left-1/2 rounded-[18px] size-[36px] top-0" data-node-id="1:78" data-name="Круг шага">
+                <div className="relative shrink-0 size-[16px]" data-node-id="1:79" data-name="Иконка галочка">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={img3} />
+                </div>
+              </div>
+            </div>
+            <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Inter:Semi_Bold'] font-semibold leading-[normal] left-1/2 not-italic text-[#2491aa] text-[11px] text-center top-[44px] whitespace-nowrap" data-node-id="1:81">
+              Approv.
+            </p>
+          </div>
+          <div className="flex-[1_0_0] h-[58px] min-w-px relative" data-node-id="1:82" data-name="Шаг — Аккаунт">
+            <div className="absolute content-stretch flex h-[36px] items-center left-0 right-0 top-0" data-node-id="1:83" data-name="Круг и линии шага 3">
+              <div className="bg-[#2491aa] flex-[1_0_0] h-[2px] min-w-px relative" data-node-id="1:84" data-name="Линия слева" />
+              <div className="bg-[#2491aa] content-stretch flex flex-col items-center justify-center relative rounded-[18px] shrink-0 size-[36px]" data-node-id="1:85" data-name="Круг шага">
+                <div className="relative shrink-0 size-[16px]" data-node-id="1:86" data-name="Иконка галочка">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={img3} />
+                </div>
+              </div>
+              <div className="bg-[#2491aa] flex-[1_0_0] h-[2px] min-w-px relative" data-node-id="1:88" data-name="Линия справа" />
+            </div>
+            <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Inter:Semi_Bold'] font-semibold leading-[normal] left-[calc(50%+0.5px)] not-italic text-[#2491aa] text-[11px] text-center top-[44px] whitespace-nowrap" data-node-id="1:89">
+              Account
+            </p>
+          </div>
+          <a className="block cursor-pointer flex-[1_0_0] h-[58px] min-w-px relative" data-node-id="1:90" data-name="Шаг — Документы">
+            <div className="absolute h-[36px] left-0 right-0 top-0" data-node-id="1:91" data-name="Круг и линии шага 4">
+              <div className="absolute bg-[#2491aa] h-[2px] left-0 top-[17px] w-[22px]" data-node-id="1:92" data-name="Линия слева" />
+              <div className="-translate-x-1/2 absolute bg-[#eaf4f6] border-2 border-[#2491aa] border-solid content-stretch flex flex-col items-center justify-center left-1/2 rounded-[18px] size-[36px] top-0" data-node-id="1:93" data-name="Круг шага">
+                <div className="relative shrink-0 size-[16px]" data-node-id="1:94" data-name="Иконка загрузки">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={img4} />
+                </div>
+              </div>
+              <div className="absolute bg-[#d4d4d8] h-[2px] left-[72px] top-[17px] w-[101px]" data-node-id="1:96" data-name="Линия справа" />
+            </div>
+            <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Inter:Bold'] font-bold leading-[normal] left-1/2 not-italic text-[#2491aa] text-[11px] text-center top-[44px] whitespace-nowrap" data-node-id="1:97">
+              Docum.
+            </p>
+          </a>
+          <div className="flex-[1_0_0] h-[58px] min-w-px relative" data-node-id="1:98" data-name="Шаг — Подпись">
+            <div className="absolute content-stretch flex h-[36px] items-center left-0 right-0 top-0" data-node-id="1:99" data-name="Круг и линии шага 5">
+              <div className="bg-[#d4d4d8] flex-[1_0_0] h-[2px] min-w-px relative" data-node-id="1:100" data-name="Линия слева" />
+              <div className="bg-[#f4f4f5] border-[#d4d4d8] border-[1.5px] border-solid content-stretch flex flex-col items-center justify-center relative rounded-[18px] shrink-0 size-[36px]" data-node-id="1:101" data-name="Круг шага">
+                <div className="relative shrink-0 size-[16px]" data-node-id="1:102" data-name="Иконка ручка">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={img5} />
+                </div>
+              </div>
+              <div className="bg-white flex-[1_0_0] h-[2px] min-w-px relative" data-node-id="1:104" data-name="Линия справа" />
+            </div>
+            <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Inter:Medium'] font-medium leading-[normal] left-1/2 not-italic text-[#a1a1aa] text-[11px] text-center top-[44px] whitespace-nowrap" data-node-id="1:105">
+              Firma
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Component3({ className }: { className?: string }) {
+  return (
+    <div className={className || "content-stretch flex flex-col items-start relative w-[1440px]"} data-node-id="1:17" data-name="Компонент шапки">
+      <div className="bg-[var(--background,white)] border-[#e4e4e7] border-b border-solid content-stretch flex items-start justify-between px-[32px] py-[16px] relative shrink-0 w-full" data-node-id="1:18" data-name="Верхняя панель">
+        <div className="bg-white content-stretch flex flex-[1_0_0] flex-col items-start min-w-px relative" data-node-id="1:19" data-name="Панель шапки">
+          <div className="content-stretch flex items-center justify-between px-[40px] relative shrink-0 w-full" data-node-id="1:20" data-name="Строка навигации">
+            <div className="content-stretch flex gap-[52px] items-center py-[20px] relative shrink-0" data-node-id="1:21" data-name="Внутренняя навигация">
+              <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[0] place-items-start relative shrink-0" data-node-id="1:22" data-name="Логотип">
+                <div className="col-1 h-[37.566px] ml-0 mt-[0.87px] relative row-1 w-[48.147px]" data-node-id="1:23">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector44} />
+                </div>
+                <p className="[word-break:break-word] col-1 font-['Inter:Bold'] font-bold leading-[normal] ml-[60.01px] mt-0 not-italic relative row-1 text-[32px] text-black tracking-[-1.6px] whitespace-nowrap" data-node-id="1:24">
+                  Avanti
+                </p>
+              </div>
+              <div className="content-stretch flex gap-[12px] items-start relative shrink-0 w-[660px]" data-node-id="1:25" data-name="Пункты меню">
+                <div className="bg-[#eaf4f6] content-stretch flex flex-[1_0_0] gap-[12px] items-center min-w-px px-[12px] py-[10px] relative rounded-[8px]" data-node-id="1:26" data-name="Пункт — Главная">
+                  <div className="content-stretch flex flex-col items-center justify-center overflow-clip relative shrink-0 size-[18px]" data-node-id="1:27" data-name="Иконка главная">
+                    <div className="relative shrink-0 size-[16px]" data-node-id="1:28" data-name="Обёртка иконки">
+                      <img alt="" className="absolute block inset-0 max-w-none size-full" src={img6} />
+                    </div>
+                  </div>
+                  <p className="[word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[normal] not-italic relative shrink-0 text-[#2491aa] text-[14px] whitespace-nowrap" data-node-id="1:30">
+                    Home
+                  </p>
+                </div>
+                <a className="bg-[#f8fafb] border border-[#eaf4f6] border-solid content-stretch cursor-pointer flex flex-[1_0_0] gap-[12px] items-center min-w-px px-[12px] py-[10px] relative rounded-[8px]" data-node-id="1:31" data-name="Пункт — Документы">
+                  <div className="content-stretch flex flex-col items-center justify-center overflow-clip relative shrink-0 size-[18px]" data-node-id="1:32" data-name="Иконка документы">
+                    <div className="relative shrink-0 size-[16px]" data-node-id="1:33" data-name="Обёртка иконки">
+                      <img alt="" className="absolute block inset-0 max-w-none size-full" src={img7} />
+                    </div>
+                  </div>
+                  <p className="[word-break:break-word] font-['Inter:Medium'] font-medium leading-[normal] not-italic relative shrink-0 text-[#1a2332] text-[14px] text-left whitespace-nowrap" data-node-id="1:35">
+                    Documenti
+                  </p>
+                </a>
+                <a className="bg-[#f8fafb] border border-[#eaf4f6] border-solid content-stretch cursor-pointer flex flex-[1_0_0] gap-[12px] items-center min-w-px px-[12px] py-[10px] relative rounded-[8px]" data-node-id="1:36" data-name="Пункт — Профиль">
+                  <div className="content-stretch flex flex-col items-center justify-center overflow-clip relative shrink-0 size-[18px]" data-node-id="1:37" data-name="Иконка профиль">
+                    <div className="relative shrink-0 size-[16px]" data-node-id="1:38" data-name="Обёртка иконки">
+                      <img alt="" className="absolute block inset-0 max-w-none size-full" src={img8} />
+                    </div>
+                  </div>
+                  <p className="[word-break:break-word] font-['Inter:Medium'] font-medium leading-[normal] not-italic relative shrink-0 text-[#1a2332] text-[14px] text-left whitespace-nowrap" data-node-id="1:40">
+                    Profilo
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div className="bg-[#2491aa] content-stretch flex gap-[12px] items-center px-[12px] py-[10px] relative rounded-[8px] shrink-0" data-node-id="1:41" data-name="Пункт — Ассистенция">
+              <div className="content-stretch flex flex-col items-center justify-center overflow-clip relative shrink-0 size-[18px]" data-node-id="1:42" data-name="Иконка чат">
+                <div className="relative shrink-0 size-[16px]" data-node-id="1:43" data-name="Обёртка иконки">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={img9} />
+                </div>
+              </div>
+              <p className="[word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[normal] not-italic relative shrink-0 text-[16px] text-white uppercase whitespace-nowrap" data-node-id="1:45">
+                Assistenza
+              </p>
+              <div className="absolute bg-[#ef4444] border-2 border-solid border-white content-stretch flex items-center justify-center left-[145px] overflow-clip rounded-[11px] size-[22px] top-[-10px]" data-node-id="1:46" data-name="Бейдж уведомлений">
+                <div className="[word-break:break-word] flex flex-col font-['Inter:Bold'] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[11px] text-center text-white whitespace-nowrap" data-node-id="1:47">
+                  <p className="leading-[normal]">4</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="content-stretch flex items-center justify-between px-[72px] py-[10px] relative shrink-0 w-full" data-node-id="1:48" data-name="Нижняя панель">
+        <div className="content-stretch flex items-center relative shrink-0" data-node-id="1:49" data-name="Профиль и уведомления">
+          <div className="content-stretch flex gap-[12px] items-center relative shrink-0" data-node-id="1:50" data-name="Блок профиля">
+            <div className="relative rounded-[20px] shrink-0 size-[40px]" data-node-id="1:51" data-name="Аватар профиля">
+              <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[20px] size-full" src={img10} />
+            </div>
+            <div className="[word-break:break-word] content-stretch flex flex-col items-start leading-[normal] not-italic relative shrink-0 whitespace-nowrap" data-node-id="1:52" data-name="Данные пользователя">
+              <p className="font-['Inter:Semi_Bold'] font-semibold relative shrink-0 text-[#1a2332] text-[14px]" data-node-id="1:53">
+                Marco Rossi
+              </p>
+              <p className="font-['Inter:Regular'] font-normal relative shrink-0 text-[#71717a] text-[12px]" data-node-id="1:54">
+                ikoei@09gmail.com
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="[word-break:break-word] content-stretch flex gap-[8px] items-center leading-[normal] not-italic relative shrink-0 text-[14px] whitespace-nowrap" data-node-id="1:55" data-name="Хлебные крошки">
+          <p className="font-['Inter:Medium'] font-medium relative shrink-0 text-[#71717a]" data-node-id="1:56">
+            Piattaforma
+          </p>
+          <p className="font-['Inter:Medium'] font-medium relative shrink-0 text-[#a1a1aa]" data-node-id="1:57">
+            /
+          </p>
+          <p className="font-['Inter:Semi_Bold'] font-semibold relative shrink-0 text-[#1a2332]" data-node-id="1:58">
+            Home
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default function Home() {
+  return (
+    <div className="bg-[#f8fafb] content-stretch flex items-start relative size-full" data-node-id="1:15" data-name="Home">
+      <div className="content-stretch flex flex-[1_0_0] flex-col gap-[20px] items-start min-w-px relative" data-node-id="1:16" data-name="Основной контент">
+        <Component3 className="content-stretch flex flex-col items-start relative shrink-0 w-full" />
+        <div className="content-stretch flex gap-[40px] items-start pb-[40px] px-[72px] relative shrink-0 w-full" data-node-id="1:59" data-name="Контент страницы">
+          <div className="content-stretch flex flex-[1_0_0] flex-col gap-[32px] items-start min-w-px relative" data-node-id="1:60" data-name="Левая колонка">
+            <Component2 className="bg-white border border-[#e2edf0] border-solid content-stretch drop-shadow-[0px_2px_4px_rgba(26,35,50,0.06)] flex flex-col gap-[16px] items-start px-[24px] py-[20px] relative rounded-[16px] shrink-0 w-full" />
+            <Component1 className="content-stretch flex flex-col h-[340px] items-start relative shrink-0 w-[792px]" />
+            <Component className="bg-[#eaf4f6] border border-[#c7e3ea] border-solid content-stretch cursor-pointer flex gap-[16px] items-center px-[20px] py-[16px] relative rounded-[16px] shrink-0 w-[792px]" />
+          </div>
+          <div className="content-stretch flex flex-col gap-[32px] items-end relative shrink-0 w-[464px]" data-node-id="1:147" data-name="Правая колонка">
+            <div className="[word-break:break-word] bg-[var(--background,white)] border border-[#e4e4e7] border-solid content-stretch flex flex-col gap-[16px] h-[131px] items-start leading-[normal] not-italic p-[24px] relative rounded-[16px] shrink-0 w-full whitespace-nowrap" data-node-id="1:148" data-name="Карточка — Личные данные">
+              <p className="font-['Inter:Semi_Bold'] font-semibold relative shrink-0 text-[#1a2332] text-[15px]" data-node-id="1:149">
+                Dati personali
+              </p>
+              <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0 w-full" data-node-id="1:150" data-name="Список данных">
+                <div className="content-stretch flex items-center justify-between relative shrink-0 w-full" data-node-id="1:151" data-name="Строка — Фамилия">
+                  <p className="font-['Inter:Regular'] font-normal relative shrink-0 text-[#71717a] text-[12px]" data-node-id="1:152">
+                    Cognome
+                  </p>
+                  <p className="font-['Inter:Semi_Bold'] font-semibold relative shrink-0 text-[#1a2332] text-[13px]" data-node-id="1:153">
+                    Intesa Sanpaolo S.p.A.
+                  </p>
+                </div>
+                <div className="content-stretch flex items-center justify-between relative shrink-0 w-full" data-node-id="1:154" data-name="Строка — Имя">
+                  <p className="font-['Inter:Regular'] font-normal relative shrink-0 text-[#71717a] text-[12px]" data-node-id="1:155">
+                    Nome
+                  </p>
+                  <p className="font-['Inter:Semi_Bold'] font-semibold relative shrink-0 text-[#1a2332] text-[13px]" data-node-id="1:156">
+                    Marco Rossi
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="bg-[var(--background,white)] border border-[#e4e4e7] border-solid content-stretch flex flex-col items-start overflow-clip relative rounded-[16px] shadow-[0px_4px_16px_0px_rgba(26,35,50,0.03)] shrink-0 w-[464px]" data-node-id="246:4625" data-name="Карточка — Чеклист верификации">
+              <div className="content-stretch flex items-center justify-between p-[16px] relative shrink-0 w-full" data-node-id="I246:4625;246:4393" data-name="Заголовок чеклиста">
+                <div className="content-stretch flex flex-[1_0_0] items-center justify-between min-w-px relative" data-node-id="I246:4625;246:4394">
+                  <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[4px] items-start leading-[normal] min-w-px not-italic relative" data-node-id="I246:4625;246:4395" data-name="Текст заголовка">
+                    <p className="font-['Inter:Bold'] font-bold relative shrink-0 text-[#2491aa] text-[11px] tracking-[0.55px] uppercase whitespace-nowrap" data-node-id="I246:4625;246:4396">
+                      Completa tutti gli step
+                    </p>
+                    <p className="font-['Inter:Semi_Bold'] font-semibold min-w-full relative shrink-0 text-[#1a2332] text-[13px] w-[min-content]" data-node-id="I246:4625;246:4397">
+                      Per il prelievo dei fondi, completa tutti gli step
+                    </p>
+                  </div>
+                  <button className="bg-[#f8fafb] border border-[#e4e4e7] border-solid content-stretch cursor-pointer flex flex-col items-center justify-center relative rounded-[8px] shrink-0 size-[32px]" data-node-id="I246:4625;246:4398" data-name="Кнопка свернуть">
+                    <div className="relative shrink-0 size-[14px]" data-node-id="I246:4625;246:4399" data-name="Иконка шеврон">
+                      <img alt="" className="absolute block inset-0 max-w-none size-full" src={img11} />
+                    </div>
+                  </button>
+                </div>
+              </div>
+              <div className="bg-[#f0f2f5] h-px relative shrink-0 w-full" data-node-id="I246:4625;246:4401" data-name="Rectangle" />
+              <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="I246:4625;246:4402" data-name="Список шагов верификации">
+                <div className="content-stretch flex gap-[12px] items-center p-[16px] relative shrink-0 w-full" data-node-id="I246:4625;246:4403" data-name="Шаг — Симуляция завершена">
+                  <div className="bg-[#2491aa] content-stretch flex flex-col items-center justify-center relative rounded-[22px] shrink-0 size-[44px]" data-node-id="I246:4625;246:4404" data-name="Иконка шага">
+                    <div className="relative shrink-0 size-[19.556px]" data-node-id="I246:4625;246:4405" data-name="Обёртка иконки">
+                      <img alt="" className="absolute block inset-0 max-w-none size-full" src={img12} />
+                    </div>
+                  </div>
+                  <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[2px] items-start leading-[normal] min-w-px not-italic relative" data-node-id="I246:4625;246:4407" data-name="Текст шага">
+                    <p className="font-['Inter:Semi_Bold'] font-semibold min-w-full relative shrink-0 text-[#1a2332] text-[14px] w-[min-content]" data-node-id="I246:4625;246:4408">
+                      Simulazione completata
+                    </p>
+                    <p className="font-['Inter:Medium'] font-medium relative shrink-0 text-[#2491aa] text-[11px] whitespace-nowrap" data-node-id="I246:4625;246:4409">
+                      Completato
+                    </p>
+                  </div>
+                  <div className="bg-[#2491aa] content-stretch flex flex-col items-center justify-center relative rounded-[14px] shrink-0 size-[28px]" data-node-id="I246:4625;246:4410" data-name="Статус — Выполнено">
+                    <div className="relative shrink-0 size-[12.727px]" data-node-id="I246:4625;246:4411" data-name="Иконка галочка">
+                      <img alt="" className="absolute block inset-0 max-w-none size-full" src={img13} />
+                    </div>
+                  </div>
+                </div>
+                <div className="bg-[#f0f2f5] h-px relative shrink-0 w-full" data-node-id="I246:4625;246:4413" data-name="Rectangle" />
+                <div className="content-stretch flex gap-[12px] items-center p-[16px] relative shrink-0 w-full" data-node-id="I246:4625;246:4414" data-name="Шаг — Кредит одобрен">
+                  <div className="bg-[#2491aa] content-stretch flex flex-col items-center justify-center relative rounded-[22px] shrink-0 size-[44px]" data-node-id="I246:4625;246:4415" data-name="Иконка шага">
+                    <div className="relative shrink-0 size-[19.556px]" data-node-id="I246:4625;246:4416" data-name="Обёртка иконки">
+                      <img alt="" className="absolute block inset-0 max-w-none size-full" src={img14} />
+                    </div>
+                  </div>
+                  <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[2px] items-start leading-[normal] min-w-px not-italic relative" data-node-id="I246:4625;246:4418" data-name="Текст шага">
+                    <p className="font-['Inter:Semi_Bold'] font-semibold min-w-full relative shrink-0 text-[#1a2332] text-[14px] w-[min-content]" data-node-id="I246:4625;246:4419">
+                      Credito approvato
+                    </p>
+                    <p className="font-['Inter:Medium'] font-medium relative shrink-0 text-[#2491aa] text-[11px] whitespace-nowrap" data-node-id="I246:4625;246:4420">
+                      Completato
+                    </p>
+                  </div>
+                  <div className="bg-[#2491aa] content-stretch flex flex-col items-center justify-center relative rounded-[14px] shrink-0 size-[28px]" data-node-id="I246:4625;246:4421" data-name="Статус — Выполнено">
+                    <div className="relative shrink-0 size-[12.727px]" data-node-id="I246:4625;246:4422" data-name="Иконка галочка">
+                      <img alt="" className="absolute block inset-0 max-w-none size-full" src={img13} />
+                    </div>
+                  </div>
+                </div>
+                <div className="bg-[#f0f2f5] h-px relative shrink-0 w-full" data-node-id="I246:4625;246:4424" data-name="Rectangle" />
+                <div className="content-stretch flex gap-[12px] items-center p-[16px] relative shrink-0 w-full" data-node-id="I246:4625;246:4425" data-name="Шаг — Аккаунт создан">
+                  <div className="bg-[#2491aa] content-stretch flex flex-col items-center justify-center relative rounded-[22px] shrink-0 size-[44px]" data-node-id="I246:4625;246:4426" data-name="Иконка шага">
+                    <div className="relative shrink-0 size-[19.556px]" data-node-id="I246:4625;246:4427" data-name="Обёртка иконки">
+                      <img alt="" className="absolute block inset-0 max-w-none size-full" src={img15} />
+                    </div>
+                  </div>
+                  <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[2px] items-start leading-[normal] min-w-px not-italic relative" data-node-id="I246:4625;246:4429" data-name="Текст шага">
+                    <p className="font-['Inter:Semi_Bold'] font-semibold min-w-full relative shrink-0 text-[#1a2332] text-[14px] w-[min-content]" data-node-id="I246:4625;246:4430">
+                      Account creato
+                    </p>
+                    <p className="font-['Inter:Medium'] font-medium relative shrink-0 text-[#2491aa] text-[11px] whitespace-nowrap" data-node-id="I246:4625;246:4431">
+                      Completato
+                    </p>
+                  </div>
+                  <div className="bg-[#2491aa] content-stretch flex flex-col items-center justify-center relative rounded-[14px] shrink-0 size-[28px]" data-node-id="I246:4625;246:4432" data-name="Статус — Выполнено">
+                    <div className="relative shrink-0 size-[12.727px]" data-node-id="I246:4625;246:4433" data-name="Иконка галочка">
+                      <img alt="" className="absolute block inset-0 max-w-none size-full" src={img13} />
+                    </div>
+                  </div>
+                </div>
+                <div className="bg-[#f0f2f5] h-px relative shrink-0 w-full" data-node-id="I246:4625;246:4435" data-name="Rectangle" />
+                <a className="content-stretch cursor-pointer flex gap-[12px] items-center p-[16px] relative shrink-0 w-full" data-node-id="I246:4625;246:4436" data-name="Шаг — Загрузка документов">
+                  <div className="bg-[var(--background,white)] border-[#2491aa] border-[2.444px] border-solid content-stretch flex flex-col items-center justify-center relative rounded-[22px] shrink-0 size-[44px]" data-node-id="I246:4625;246:4437" data-name="Иконка шага">
+                    <div className="relative shrink-0 size-[19.556px]" data-node-id="I246:4625;246:4438" data-name="Обёртка иконки">
+                      <img alt="" className="absolute block inset-0 max-w-none size-full" src={img16} />
+                    </div>
+                  </div>
+                  <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[2px] items-start leading-[normal] min-w-px not-italic relative text-left" data-node-id="I246:4625;246:4440" data-name="Текст шага">
+                    <p className="font-['Inter:Bold'] font-bold relative shrink-0 text-[#1a2332] text-[14px] w-full" data-node-id="I246:4625;246:4441">
+                      Documenti caricati
+                    </p>
+                    <p className="font-['Inter:Semi_Bold'] font-semibold relative shrink-0 text-[#2491aa] text-[11px] w-full" data-node-id="I246:4625;246:4442">
+                      Step attuale • Azione richiesta
+                    </p>
+                  </div>
+                  <div className="bg-[#2491aa] content-stretch flex flex-col items-start justify-center relative rounded-[14px] shrink-0 size-[28px]" data-node-id="I246:4625;246:4443" data-name="Кнопка — Перейти">
+                    <div className="relative shrink-0 size-[14px]" data-node-id="I246:4625;246:4444" data-name="Иконка стрелка">
+                      <img alt="" className="absolute block inset-0 max-w-none size-full" src={img17} />
+                    </div>
+                  </div>
+                </a>
+                <div className="bg-[#f0f2f5] h-px relative shrink-0 w-full" data-node-id="I246:4625;246:4446" data-name="Rectangle" />
+                <div className="content-stretch flex gap-[12px] items-center p-[16px] relative shrink-0 w-full" data-node-id="I246:4625;246:4447" data-name="Шаг — Подписание договора">
+                  <div className="bg-[#f4f4f5] content-stretch flex flex-col items-center justify-center relative rounded-[22px] shrink-0 size-[44px]" data-node-id="I246:4625;246:4448" data-name="Иконка шага">
+                    <div className="relative shrink-0 size-[19.556px]" data-node-id="I246:4625;246:4449" data-name="Обёртка иконки">
+                      <img alt="" className="absolute block inset-0 max-w-none size-full" src={img18} />
+                    </div>
+                  </div>
+                  <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[2px] items-start leading-[normal] min-w-px not-italic relative" data-node-id="I246:4625;246:4451" data-name="Текст шага">
+                    <p className="font-['Inter:Medium'] font-medium relative shrink-0 text-[#71717a] text-[14px] w-full" data-node-id="I246:4625;246:4452">
+                      Contratto firmato
+                    </p>
+                    <p className="font-['Inter:Regular'] font-normal relative shrink-0 text-[#a1a1aa] text-[11px] w-full" data-node-id="I246:4625;246:4453">
+                      In attesa
+                    </p>
+                  </div>
+                  <div className="bg-[#f4f4f5] content-stretch flex flex-col items-center justify-center relative rounded-[14px] shrink-0 size-[28px]" data-node-id="I246:4625;246:4454" data-name="Кнопка — Перейти">
+                    <div className="relative shrink-0 size-[14px]" data-node-id="I246:4625;246:4455" data-name="Иконка стрелка">
+                      <img alt="" className="absolute block inset-0 max-w-none size-full" src={img19} />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-[#f0f2f5] h-px relative shrink-0 w-full" data-node-id="I246:4625;246:4457" data-name="Rectangle" />
+              <div className="content-stretch flex gap-[4px] items-center pb-[16px] pt-[12px] px-[16px] relative shrink-0 w-full" data-node-id="I246:4625;246:4458" data-name="Индикатор прогресса">
+                <div className="bg-[#2491aa] flex-[1_0_0] h-[4px] min-w-px relative rounded-[99px]" data-node-id="I246:4625;246:4459" data-name="Seg1" />
+                <div className="bg-[#2491aa] flex-[1_0_0] h-[4px] min-w-px relative rounded-[99px]" data-node-id="I246:4625;246:4460" data-name="Seg2" />
+                <div className="bg-[#2491aa] flex-[1_0_0] h-[4px] min-w-px relative rounded-[99px]" data-node-id="I246:4625;246:4461" data-name="Seg3" />
+                <div className="bg-gradient-to-r flex-[1_0_0] from-[#2491aa] h-[4px] min-w-px relative rounded-[99px] to-[#e4e4e7]" data-node-id="I246:4625;246:4462" data-name="Seg4" />
+                <div className="bg-[#e4e4e7] flex-[1_0_0] h-[4px] min-w-px relative rounded-[99px]" data-node-id="I246:4625;246:4463" data-name="Seg5" />
+              </div>
+            </div>
+          </div>
+          <div className="absolute h-[69.333px] left-[1307px] top-[595px] w-[52px]" data-node-id="270:8234" data-name="messages-list" />
+        </div>
+      </div>
+    </div>
+  );
+}
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+These styles are contained in the design: 1: .
+Images and SVGs will be stored as constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.

@@ -67,7 +67,7 @@ for (const width of [320, 390, 1440]) {
             path: `output/playwright/scenarios/${scenario.id}-${width}.png`,
             fullPage: true,
           });
-          await hiddenPanel.evaluate((element) => element.remove());
+          await hiddenPanel.evaluate((element) => element.parentNode?.removeChild(element));
         }
       }
     });

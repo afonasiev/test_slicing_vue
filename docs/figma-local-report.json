@@ -1,0 +1,1814 @@
+{
+  "sourceSha256": "ef489ff431a9d133f184c41e5ecd2d092ab1dce73853fb66136b5733d17be00c",
+  "canvasVersion": 106,
+  "nodeCount": 20945,
+  "matchedFrames": 129,
+  "frames": [
+    {
+      "id": "0:918",
+      "found": true,
+      "name": "Взятие кредита",
+      "size": {
+        "x": 1440,
+        "y": 920
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 920
+      },
+      "nodes": 59
+    },
+    {
+      "id": "0:977",
+      "found": true,
+      "name": "Personal Data Form",
+      "size": {
+        "x": 1440,
+        "y": 1116
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 1116
+      },
+      "nodes": 48
+    },
+    {
+      "id": "0:1021",
+      "found": true,
+      "name": "Personal Data Form розворот",
+      "size": {
+        "x": 1440,
+        "y": 1358
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 1358
+      },
+      "nodes": 49
+    },
+    {
+      "id": "263:7568",
+      "found": true,
+      "name": "Personal Data Form розворот",
+      "size": {
+        "x": 1440,
+        "y": 1277
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 1277
+      },
+      "nodes": 53
+    },
+    {
+      "id": "0:1077",
+      "found": true,
+      "name": "Банк прогрузка",
+      "size": {
+        "x": 1440,
+        "y": 920
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 920
+      },
+      "nodes": 100
+    },
+    {
+      "id": "0:1177",
+      "found": true,
+      "name": "Кредит апрув",
+      "size": {
+        "x": 1440,
+        "y": 1001
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 1001
+      },
+      "nodes": 58
+    },
+    {
+      "id": "0:1235",
+      "found": true,
+      "name": "Создать аккаунт",
+      "size": {
+        "x": 1440,
+        "y": 1001
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 1001
+      },
+      "nodes": 103
+    },
+    {
+      "id": "0:1338",
+      "found": true,
+      "name": "Войти в аккаунт",
+      "size": {
+        "x": 1440,
+        "y": 1001
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 1001
+      },
+      "nodes": 98
+    },
+    {
+      "id": "1:15",
+      "found": true,
+      "name": "Home",
+      "size": {
+        "x": 1440,
+        "y": 889
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 889
+      },
+      "nodes": 105
+    },
+    {
+      "id": "241:25321",
+      "found": true,
+      "name": "Дом готовые этапы",
+      "size": {
+        "x": 1440,
+        "y": 1089
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 1089
+      },
+      "nodes": 20
+    },
+    {
+      "id": "246:7825",
+      "found": true,
+      "name": "комиссия 2",
+      "size": {
+        "x": 1440,
+        "y": 1097
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 1097
+      },
+      "nodes": 7
+    },
+    {
+      "id": "256:11462",
+      "found": true,
+      "name": "комиссия 3",
+      "size": {
+        "x": 1440,
+        "y": 880
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 880
+      },
+      "nodes": 30
+    },
+    {
+      "id": "256:12837",
+      "found": true,
+      "name": "комиссия ",
+      "size": {
+        "x": 1440,
+        "y": 747
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 747
+      },
+      "nodes": 96
+    },
+    {
+      "id": "256:13251",
+      "found": true,
+      "name": "комиссия ",
+      "size": {
+        "x": 1440,
+        "y": 850
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 850
+      },
+      "nodes": 146
+    },
+    {
+      "id": "256:13848",
+      "found": true,
+      "name": "комиссия",
+      "size": {
+        "x": 1440,
+        "y": 924
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 924
+      },
+      "nodes": 162
+    },
+    {
+      "id": "256:14170",
+      "found": true,
+      "name": "комиссия",
+      "size": {
+        "x": 1440,
+        "y": 924
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 924
+      },
+      "nodes": 171
+    },
+    {
+      "id": "256:13554",
+      "found": true,
+      "name": "комиссия ",
+      "size": {
+        "x": 1440,
+        "y": 850
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 850
+      },
+      "nodes": 170
+    },
+    {
+      "id": "256:12475",
+      "found": true,
+      "name": "комиссия ",
+      "size": {
+        "x": 1440,
+        "y": 880
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 880
+      },
+      "nodes": 30
+    },
+    {
+      "id": "258:14783",
+      "found": true,
+      "name": "Уровень 4",
+      "size": {
+        "x": 1440,
+        "y": 857
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 857
+      },
+      "nodes": 51
+    },
+    {
+      "id": "258:16652",
+      "found": true,
+      "name": "Уровень 5",
+      "size": {
+        "x": 1440,
+        "y": 857
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 857
+      },
+      "nodes": 39
+    },
+    {
+      "id": "258:17043",
+      "found": true,
+      "name": "комиссия ",
+      "size": {
+        "x": 1440,
+        "y": 900
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 900
+      },
+      "nodes": 40
+    },
+    {
+      "id": "258:17512",
+      "found": true,
+      "name": "комиссия ",
+      "size": {
+        "x": 1440,
+        "y": 1417
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 1417
+      },
+      "nodes": 77
+    },
+    {
+      "id": "258:17836",
+      "found": true,
+      "name": "комиссия ",
+      "size": {
+        "x": 1440,
+        "y": 1417
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 1417
+      },
+      "nodes": 75
+    },
+    {
+      "id": "258:18018",
+      "found": true,
+      "name": "комиссия ",
+      "size": {
+        "x": 1440,
+        "y": 1417
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 1417
+      },
+      "nodes": 126
+    },
+    {
+      "id": "258:18694",
+      "found": true,
+      "name": "комиссия",
+      "size": {
+        "x": 1440,
+        "y": 1417
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 1417
+      },
+      "nodes": 142
+    },
+    {
+      "id": "258:18982",
+      "found": true,
+      "name": "комиссия",
+      "size": {
+        "x": 1440,
+        "y": 1417
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 1417
+      },
+      "nodes": 151
+    },
+    {
+      "id": "258:18239",
+      "found": true,
+      "name": "комиссия ",
+      "size": {
+        "x": 1440,
+        "y": 1417
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 1417
+      },
+      "nodes": 146
+    },
+    {
+      "id": "258:17357",
+      "found": true,
+      "name": "комиссия ",
+      "size": {
+        "x": 1440,
+        "y": 900
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 900
+      },
+      "nodes": 58
+    },
+    {
+      "id": "258:16821",
+      "found": true,
+      "name": "Уровень 6",
+      "size": {
+        "x": 1440,
+        "y": 857
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 857
+      },
+      "nodes": 89
+    },
+    {
+      "id": "258:15000",
+      "found": true,
+      "name": "комиссия ",
+      "size": {
+        "x": 1440,
+        "y": 857
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 857
+      },
+      "nodes": 89
+    },
+    {
+      "id": "256:12648",
+      "found": true,
+      "name": "комиссия ",
+      "size": {
+        "x": 1440,
+        "y": 856
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 856
+      },
+      "nodes": 20
+    },
+    {
+      "id": "258:15222",
+      "found": true,
+      "name": "комиссия ",
+      "size": {
+        "x": 1440,
+        "y": 900
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 900
+      },
+      "nodes": 39
+    },
+    {
+      "id": "256:14444",
+      "found": true,
+      "name": "комиссия ",
+      "size": {
+        "x": 1440,
+        "y": 856
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 856
+      },
+      "nodes": 70
+    },
+    {
+      "id": "256:11916",
+      "found": true,
+      "name": "комиссия ",
+      "size": {
+        "x": 1440,
+        "y": 827
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 827
+      },
+      "nodes": 54
+    },
+    {
+      "id": "256:12255",
+      "found": true,
+      "name": "комиссия ",
+      "size": {
+        "x": 1440,
+        "y": 827
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 827
+      },
+      "nodes": 71
+    },
+    {
+      "id": "246:8267",
+      "found": true,
+      "name": "комиссия ",
+      "size": {
+        "x": 1440,
+        "y": 1286
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 1286
+      },
+      "nodes": 7
+    },
+    {
+      "id": "246:8463",
+      "found": true,
+      "name": "комиссия ",
+      "size": {
+        "x": 1440,
+        "y": 1263
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 1263
+      },
+      "nodes": 63
+    },
+    {
+      "id": "258:15407",
+      "found": true,
+      "name": "комиссия ",
+      "size": {
+        "x": 1440,
+        "y": 924
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 924
+      },
+      "nodes": 95
+    },
+    {
+      "id": "258:15657",
+      "found": true,
+      "name": "комиссия ",
+      "size": {
+        "x": 1440,
+        "y": 924
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 924
+      },
+      "nodes": 116
+    },
+    {
+      "id": "258:16335",
+      "found": true,
+      "name": "комиссия 5",
+      "size": {
+        "x": 1440,
+        "y": 924
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 924
+      },
+      "nodes": 123
+    },
+    {
+      "id": "246:8687",
+      "found": true,
+      "name": "комиссия ",
+      "size": {
+        "x": 1440,
+        "y": 1229
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 1229
+      },
+      "nodes": 61
+    },
+    {
+      "id": "246:8972",
+      "found": true,
+      "name": "комиссия ",
+      "size": {
+        "x": 1440,
+        "y": 924
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 924
+      },
+      "nodes": 111
+    },
+    {
+      "id": "246:10479",
+      "found": true,
+      "name": "комиссия ",
+      "size": {
+        "x": 1440,
+        "y": 924
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 924
+      },
+      "nodes": 127
+    },
+    {
+      "id": "256:10785",
+      "found": true,
+      "name": "комиссия ",
+      "size": {
+        "x": 1440,
+        "y": 924
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 924
+      },
+      "nodes": 136
+    },
+    {
+      "id": "256:11100",
+      "found": true,
+      "name": "комиссия ",
+      "size": {
+        "x": 1440,
+        "y": 924
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 924
+      },
+      "nodes": 110
+    },
+    {
+      "id": "246:10018",
+      "found": true,
+      "name": "комиссия ",
+      "size": {
+        "x": 1440,
+        "y": 924
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 924
+      },
+      "nodes": 131
+    },
+    {
+      "id": "1:230",
+      "found": true,
+      "name": "Комиссия",
+      "size": {
+        "x": 1440,
+        "y": 910
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 910
+      },
+      "nodes": 159
+    },
+    {
+      "id": "241:23346",
+      "found": true,
+      "name": "Комиссия",
+      "size": {
+        "x": 1440,
+        "y": 910
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 910
+      },
+      "nodes": 159
+    },
+    {
+      "id": "246:6880",
+      "found": true,
+      "name": "Комиссия",
+      "size": {
+        "x": 1440,
+        "y": 910
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 910
+      },
+      "nodes": 178
+    },
+    {
+      "id": "1:389",
+      "found": true,
+      "name": "Комиссия 2",
+      "size": {
+        "x": 1440,
+        "y": 910
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 910
+      },
+      "nodes": 176
+    },
+    {
+      "id": "241:23505",
+      "found": true,
+      "name": "Комиссия 3",
+      "size": {
+        "x": 1440,
+        "y": 910
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 910
+      },
+      "nodes": 178
+    },
+    {
+      "id": "246:7170",
+      "found": true,
+      "name": "Комиссия ",
+      "size": {
+        "x": 1440,
+        "y": 910
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 910
+      },
+      "nodes": 161
+    },
+    {
+      "id": "246:6568",
+      "found": true,
+      "name": "Комиссия 4",
+      "size": {
+        "x": 1440,
+        "y": 910
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 910
+      },
+      "nodes": 187
+    },
+    {
+      "id": "31:6355",
+      "found": true,
+      "name": "Ввод айбана после шагов",
+      "size": {
+        "x": 1440,
+        "y": 1204
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 1204
+      },
+      "nodes": 180
+    },
+    {
+      "id": "1:935",
+      "found": true,
+      "name": "Документы всплывашка",
+      "size": {
+        "x": 1440,
+        "y": 910
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 910
+      },
+      "nodes": 113
+    },
+    {
+      "id": "1:1254",
+      "found": true,
+      "name": "Документы Iban",
+      "size": {
+        "x": 1440,
+        "y": 910
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 910
+      },
+      "nodes": 150
+    },
+    {
+      "id": "1:1409",
+      "found": true,
+      "name": "Документы Iban проверка",
+      "size": {
+        "x": 1440,
+        "y": 910
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 910
+      },
+      "nodes": 156
+    },
+    {
+      "id": "22:4780",
+      "found": true,
+      "name": "Договор",
+      "size": {
+        "x": 1440,
+        "y": 3541
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 3541
+      },
+      "nodes": 491
+    },
+    {
+      "id": "1:2060",
+      "found": true,
+      "name": "Подпись",
+      "size": {
+        "x": 1440,
+        "y": 3541
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 3541
+      },
+      "nodes": 523
+    },
+    {
+      "id": "1:2583",
+      "found": true,
+      "name": "Profilo",
+      "size": {
+        "x": 1440,
+        "y": 1092
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 1092
+      },
+      "nodes": 202
+    },
+    {
+      "id": "1:2773",
+      "found": true,
+      "name": "Modifica nome",
+      "size": {
+        "x": 1440,
+        "y": 1092
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 1092
+      },
+      "nodes": 224
+    },
+    {
+      "id": "1:2997",
+      "found": true,
+      "name": "Cambia email",
+      "size": {
+        "x": 1440,
+        "y": 1092
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 1092
+      },
+      "nodes": 229
+    },
+    {
+      "id": "1:3226",
+      "found": true,
+      "name": "Cambia password",
+      "size": {
+        "x": 1440,
+        "y": 1092
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 1092
+      },
+      "nodes": 237
+    },
+    {
+      "id": "1:3463",
+      "found": true,
+      "name": "Verifica email",
+      "size": {
+        "x": 1440,
+        "y": 1212
+      },
+      "expectedSize": {
+        "x": 1440,
+        "y": 1212
+      },
+      "nodes": 209
+    },
+    {
+      "id": "1:4612",
+      "found": true,
+      "name": "Frame 1000003509",
+      "size": {
+        "x": 390,
+        "y": 857
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 857
+      },
+      "nodes": 57
+    },
+    {
+      "id": "1:4669",
+      "found": true,
+      "name": "Frame 1000003511",
+      "size": {
+        "x": 390,
+        "y": 1136
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 1136
+      },
+      "nodes": 99
+    },
+    {
+      "id": "4:963",
+      "found": true,
+      "name": "personal-data-form-mobile",
+      "size": {
+        "x": 390,
+        "y": 845
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 845
+      },
+      "nodes": 53
+    },
+    {
+      "id": "246:5258",
+      "found": true,
+      "name": "personal-data-form-mobile",
+      "size": {
+        "x": 390,
+        "y": 996
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 996
+      },
+      "nodes": 54
+    },
+    {
+      "id": "6:966",
+      "found": true,
+      "name": "credit-approval-mobile",
+      "size": {
+        "x": 390,
+        "y": 653
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 653
+      },
+      "nodes": 22
+    },
+    {
+      "id": "7:1017",
+      "found": true,
+      "name": "mobile-create-account",
+      "size": {
+        "x": 390,
+        "y": 844
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 844
+      },
+      "nodes": 50
+    },
+    {
+      "id": "8:1017",
+      "found": true,
+      "name": "mobile-login",
+      "size": {
+        "x": 390,
+        "y": 844
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 844
+      },
+      "nodes": 44
+    },
+    {
+      "id": "18:967",
+      "found": true,
+      "name": "home-mobile",
+      "size": {
+        "x": 390,
+        "y": 1139
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 1139
+      },
+      "nodes": 45
+    },
+    {
+      "id": "232:14405",
+      "found": true,
+      "name": "комиссия 3",
+      "size": {
+        "x": 390,
+        "y": 844
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 844
+      },
+      "nodes": 30
+    },
+    {
+      "id": "232:14435",
+      "found": true,
+      "name": "уровень 4",
+      "size": {
+        "x": 390,
+        "y": 700
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 700
+      },
+      "nodes": 43
+    },
+    {
+      "id": "232:14478",
+      "found": true,
+      "name": "home-mobile",
+      "size": {
+        "x": 390,
+        "y": 1345
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 1345
+      },
+      "nodes": 46
+    },
+    {
+      "id": "232:14524",
+      "found": true,
+      "name": "Уровень 4",
+      "size": {
+        "x": 390,
+        "y": 631
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 631
+      },
+      "nodes": 63
+    },
+    {
+      "id": "232:14586",
+      "found": true,
+      "name": "Уровень 5",
+      "size": {
+        "x": 390,
+        "y": 631
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 631
+      },
+      "nodes": 62
+    },
+    {
+      "id": "232:14648",
+      "found": true,
+      "name": "home-mobile",
+      "size": {
+        "x": 390,
+        "y": 1276
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 1276
+      },
+      "nodes": 65
+    },
+    {
+      "id": "232:14713",
+      "found": true,
+      "name": "home-mobile",
+      "size": {
+        "x": 390,
+        "y": 1048
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 1048
+      },
+      "nodes": 102
+    },
+    {
+      "id": "232:14818",
+      "found": true,
+      "name": "home-mobile",
+      "size": {
+        "x": 390,
+        "y": 1052
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 1052
+      },
+      "nodes": 102
+    },
+    {
+      "id": "232:14921",
+      "found": true,
+      "name": "home-mobile",
+      "size": {
+        "x": 390,
+        "y": 1052
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 1052
+      },
+      "nodes": 150
+    },
+    {
+      "id": "232:15071",
+      "found": true,
+      "name": "home-mobile",
+      "size": {
+        "x": 390,
+        "y": 1052
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 1052
+      },
+      "nodes": 170
+    },
+    {
+      "id": "232:15241",
+      "found": true,
+      "name": "home-mobile",
+      "size": {
+        "x": 390,
+        "y": 1052
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 1052
+      },
+      "nodes": 167
+    },
+    {
+      "id": "232:15408",
+      "found": true,
+      "name": "home-mobile",
+      "size": {
+        "x": 390,
+        "y": 1052
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 1052
+      },
+      "nodes": 178
+    },
+    {
+      "id": "232:15586",
+      "found": true,
+      "name": "home-mobile",
+      "size": {
+        "x": 390,
+        "y": 1276
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 1276
+      },
+      "nodes": 83
+    },
+    {
+      "id": "232:15669",
+      "found": true,
+      "name": "home-mobile",
+      "size": {
+        "x": 390,
+        "y": 1030
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 1030
+      },
+      "nodes": 113
+    },
+    {
+      "id": "232:15782",
+      "found": true,
+      "name": "home-mobile",
+      "size": {
+        "x": 390,
+        "y": 1030
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 1030
+      },
+      "nodes": 113
+    },
+    {
+      "id": "232:15895",
+      "found": true,
+      "name": "home-mobile",
+      "size": {
+        "x": 390,
+        "y": 1276
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 1276
+      },
+      "nodes": 65
+    },
+    {
+      "id": "232:15960",
+      "found": true,
+      "name": "home-mobile",
+      "size": {
+        "x": 390,
+        "y": 1161
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 1161
+      },
+      "nodes": 121
+    },
+    {
+      "id": "232:16081",
+      "found": true,
+      "name": "home-mobile",
+      "size": {
+        "x": 390,
+        "y": 1186
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 1186
+      },
+      "nodes": 142
+    },
+    {
+      "id": "258:16047",
+      "found": true,
+      "name": "home-mobile",
+      "size": {
+        "x": 390,
+        "y": 1186
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 1186
+      },
+      "nodes": 149
+    },
+    {
+      "id": "232:16223",
+      "found": true,
+      "name": "home-mobile",
+      "size": {
+        "x": 390,
+        "y": 1030
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 1030
+      },
+      "nodes": 36
+    },
+    {
+      "id": "232:16259",
+      "found": true,
+      "name": "home-mobile",
+      "size": {
+        "x": 390,
+        "y": 915
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 915
+      },
+      "nodes": 92
+    },
+    {
+      "id": "232:16351",
+      "found": true,
+      "name": "home-mobile",
+      "size": {
+        "x": 390,
+        "y": 692
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 692
+      },
+      "nodes": 48
+    },
+    {
+      "id": "232:16399",
+      "found": true,
+      "name": "home-mobile",
+      "size": {
+        "x": 390,
+        "y": 1006
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 1006
+      },
+      "nodes": 47
+    },
+    {
+      "id": "232:16446",
+      "found": true,
+      "name": "home-mobile",
+      "size": {
+        "x": 390,
+        "y": 1006
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 1006
+      },
+      "nodes": 64
+    },
+    {
+      "id": "232:16510",
+      "found": true,
+      "name": "home-mobile",
+      "size": {
+        "x": 390,
+        "y": 946
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 946
+      },
+      "nodes": 92
+    },
+    {
+      "id": "232:16602",
+      "found": true,
+      "name": "home-mobile",
+      "size": {
+        "x": 390,
+        "y": 940
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 940
+      },
+      "nodes": 90
+    },
+    {
+      "id": "232:16692",
+      "found": true,
+      "name": "home-mobile",
+      "size": {
+        "x": 390,
+        "y": 1030
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 1030
+      },
+      "nodes": 83
+    },
+    {
+      "id": "232:16775",
+      "found": true,
+      "name": "home-mobile",
+      "size": {
+        "x": 390,
+        "y": 1030
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 1030
+      },
+      "nodes": 83
+    },
+    {
+      "id": "232:16858",
+      "found": true,
+      "name": "home-mobile",
+      "size": {
+        "x": 390,
+        "y": 1030
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 1030
+      },
+      "nodes": 100
+    },
+    {
+      "id": "232:16958",
+      "found": true,
+      "name": "home-mobile",
+      "size": {
+        "x": 390,
+        "y": 1030
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 1030
+      },
+      "nodes": 111
+    },
+    {
+      "id": "232:17069",
+      "found": true,
+      "name": "home-mobile",
+      "size": {
+        "x": 390,
+        "y": 1030
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 1030
+      },
+      "nodes": 100
+    },
+    {
+      "id": "232:17169",
+      "found": true,
+      "name": "home-mobile",
+      "size": {
+        "x": 390,
+        "y": 1030
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 1030
+      },
+      "nodes": 111
+    },
+    {
+      "id": "232:17280",
+      "found": true,
+      "name": "home-mobile",
+      "size": {
+        "x": 390,
+        "y": 1030
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 1030
+      },
+      "nodes": 103
+    },
+    {
+      "id": "232:17383",
+      "found": true,
+      "name": "home-mobile",
+      "size": {
+        "x": 390,
+        "y": 1030
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 1030
+      },
+      "nodes": 107
+    },
+    {
+      "id": "107:8830",
+      "found": true,
+      "name": "Дом готовые этапы",
+      "size": {
+        "x": 390,
+        "y": 955
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 955
+      },
+      "nodes": 115
+    },
+    {
+      "id": "232:17490",
+      "found": true,
+      "name": "Дом готовые этапы",
+      "size": {
+        "x": 390,
+        "y": 1600
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 1600
+      },
+      "nodes": 109
+    },
+    {
+      "id": "232:17599",
+      "found": true,
+      "name": "Коммисия 2",
+      "size": {
+        "x": 390,
+        "y": 1600
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 1600
+      },
+      "nodes": 156
+    },
+    {
+      "id": "232:17755",
+      "found": true,
+      "name": "COORDINATE",
+      "size": {
+        "x": 390,
+        "y": 1600
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 1600
+      },
+      "nodes": 173
+    },
+    {
+      "id": "232:17928",
+      "found": true,
+      "name": "COORDINATE",
+      "size": {
+        "x": 390,
+        "y": 1600
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 1600
+      },
+      "nodes": 184
+    },
+    {
+      "id": "232:18112",
+      "found": true,
+      "name": "Коммисия информация",
+      "size": {
+        "x": 390,
+        "y": 1600
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 1600
+      },
+      "nodes": 183
+    },
+    {
+      "id": "22:3657",
+      "found": true,
+      "name": "Документы всплывашка",
+      "size": {
+        "x": 390,
+        "y": 4012
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 4012
+      },
+      "nodes": 338
+    },
+    {
+      "id": "95:5965",
+      "found": true,
+      "name": "Документы неудача",
+      "size": {
+        "x": 390,
+        "y": 4220
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 4220
+      },
+      "nodes": 339
+    },
+    {
+      "id": "95:6532",
+      "found": true,
+      "name": "Документы удача",
+      "size": {
+        "x": 390,
+        "y": 3877
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 3877
+      },
+      "nodes": 368
+    },
+    {
+      "id": "104:7340",
+      "found": true,
+      "name": "Айбан",
+      "size": {
+        "x": 390,
+        "y": 3893
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 3893
+      },
+      "nodes": 401
+    },
+    {
+      "id": "104:7895",
+      "found": true,
+      "name": "Айбан ввод",
+      "size": {
+        "x": 390,
+        "y": 3893
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 3893
+      },
+      "nodes": 370
+    },
+    {
+      "id": "33:6582",
+      "found": true,
+      "name": "Ввод айбана после шагов",
+      "size": {
+        "x": 390,
+        "y": 1620
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 1620
+      },
+      "nodes": 181
+    },
+    {
+      "id": "33:6906",
+      "found": true,
+      "name": "Комиссия",
+      "size": {
+        "x": 390,
+        "y": 1620
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 1620
+      },
+      "nodes": 229
+    },
+    {
+      "id": "33:7157",
+      "found": true,
+      "name": "Комиссия",
+      "size": {
+        "x": 390,
+        "y": 1620
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 1620
+      },
+      "nodes": 247
+    },
+    {
+      "id": "19:1228",
+      "found": true,
+      "name": "profilo-mobile",
+      "size": {
+        "x": 390,
+        "y": 1495
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 1495
+      },
+      "nodes": 91
+    },
+    {
+      "id": "22:3408",
+      "found": true,
+      "name": "profilo-mobile",
+      "size": {
+        "x": 390,
+        "y": 1687
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 1687
+      },
+      "nodes": 194
+    },
+    {
+      "id": "17:2626",
+      "found": true,
+      "name": "Modifica nome",
+      "size": {
+        "x": 390,
+        "y": 1552
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 1552
+      },
+      "nodes": 209
+    },
+    {
+      "id": "22:2953",
+      "found": true,
+      "name": "Cambia email",
+      "size": {
+        "x": 390,
+        "y": 1552
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 1552
+      },
+      "nodes": 214
+    },
+    {
+      "id": "22:3181",
+      "found": true,
+      "name": "Cambia email",
+      "size": {
+        "x": 390,
+        "y": 1552
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 1552
+      },
+      "nodes": 226
+    },
+    {
+      "id": "232:18295",
+      "found": true,
+      "name": "Чат-консультант",
+      "size": {
+        "x": 390,
+        "y": 844
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 844
+      },
+      "nodes": 49
+    },
+    {
+      "id": "232:18344",
+      "found": true,
+      "name": "Чат-консультант",
+      "size": {
+        "x": 390,
+        "y": 844
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 844
+      },
+      "nodes": 49
+    },
+    {
+      "id": "232:18393",
+      "found": true,
+      "name": "Чат-консультант",
+      "size": {
+        "x": 390,
+        "y": 844
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 844
+      },
+      "nodes": 49
+    },
+    {
+      "id": "270:7789",
+      "found": true,
+      "name": "Чат-консультант",
+      "size": {
+        "x": 390,
+        "y": 844
+      },
+      "expectedSize": {
+        "x": 390,
+        "y": 844
+      },
+      "nodes": 49
+    }
+  ]
+}

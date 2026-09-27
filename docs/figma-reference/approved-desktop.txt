@@ -1,0 +1,284 @@
+const imgVector44 = "https://www.figma.com/api/mcp/asset/0b3739a4-792d-4f44-a6aa-3de3e430e675.svg";
+const imgExclude = "https://www.figma.com/api/mcp/asset/f5dc07d7-e51f-4910-aac3-24faf0ca2591.svg";
+const imgVectorStroke = "https://www.figma.com/api/mcp/asset/4acd4d9e-c4a4-48e9-83d7-3197d8ca78fe.svg";
+const imgVector = "https://www.figma.com/api/mcp/asset/7ea2bd48-b1e7-4ae1-a84a-e439a3e1610c.svg";
+const imgExclude1 = "https://www.figma.com/api/mcp/asset/5a3fd185-507e-467c-87c0-ca4fc6c089b3.svg";
+const imgVectorStroke1 = "https://www.figma.com/api/mcp/asset/ab93e797-efe6-4c97-b57e-6a95b5df1004.svg";
+const imgVector1 = "https://www.figma.com/api/mcp/asset/569fe529-575d-4488-8ea4-af3579f8200f.svg";
+const imgExclude2 = "https://www.figma.com/api/mcp/asset/5cbfdc38-644d-4028-8128-abb98221c1e0.svg";
+const imgVectorStroke2 = "https://www.figma.com/api/mcp/asset/2532a117-72ef-471d-bcd1-4f0852cfde09.svg";
+const imgVector2 = "https://www.figma.com/api/mcp/asset/643f2f53-b871-44bd-a100-f072e4f524db.svg";
+const imgEllipse54 = "https://www.figma.com/api/mcp/asset/8797bd27-02ad-486b-bd1c-33e731c2c91a.svg";
+const imgLucideIconsChevronRight = "https://www.figma.com/api/mcp/asset/ca3655af-8874-4382-ba87-b1d4bf59e2de.svg";
+
+export default function Component() {
+  return (
+    <div className="bg-white relative size-full" data-node-id="0:1177" data-name="Кредит апрув">
+      <div className="absolute bg-white border-[#2491aa] border-b border-solid h-[110px] left-0 overflow-clip shadow-[0px_2px_8px_0px_rgba(0,0,0,0.05)] top-0 w-[1440px]" data-node-id="0:1178" data-name="Логотип">
+        <div className="-translate-y-1/2 absolute contents left-[100px] top-[calc(50%+0.5px)]" data-node-id="0:1179" data-name="Группа логотипа">
+          <div className="-translate-y-1/2 absolute h-[48.835px] left-[100px] top-[calc(50%-0.46px)] w-[62.773px]" data-node-id="0:1180">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector44} />
+          </div>
+          <p className="[word-break:break-word] absolute font-['Inter:Bold'] font-bold h-[52px] leading-[normal] left-[178.2px] not-italic text-[44.505px] text-[color:var(--foreground,#09090b)] top-[29px] tracking-[-2.2253px] w-[127.758px]" data-node-id="0:1181">
+            Avanti
+          </p>
+        </div>
+      </div>
+      <div className="absolute contents left-[calc(58.33%+19px)] top-[380px]" data-node-id="0:1182" data-name="Группа карт">
+        <div className="absolute contents left-[calc(58.33%+19px)] top-[380px]" data-node-id="0:1183" data-name="Стопка карт">
+          <div className="absolute contents h-[258.196px] left-[calc(58.33%+24.13px)] top-[611.63px] w-[529.023px]" data-node-id="0:1184" data-name="Карта 1">
+            <div className="absolute flex h-[258.196px] items-center justify-center left-[calc(58.33%+24.13px)] top-[611.63px] w-[529.023px]" data-node-id="0:1185">
+              <div className="-skew-x-20 flex-none scale-y-94">
+                <div className="bg-black border-[2.29px] border-solid border-white h-[274.766px] relative rounded-[36.636px] w-[435.047px]" />
+              </div>
+            </div>
+            <div className="absolute flex h-[21.613px] items-center justify-center left-[calc(66.67%-27.79px)] top-[786.98px] w-[51.866px]" data-node-id="0:1186">
+              <div className="-skew-x-20 flex-none scale-y-94">
+                <p className="[word-break:break-word] font-['M_PLUS_1:SemiBold'] font-semibold leading-[normal] relative text-[#adadad] text-[16.028px] whitespace-nowrap">Name</p>
+              </div>
+            </div>
+            <div className="absolute flex h-[21.613px] items-center justify-center left-[calc(66.67%+3.14px)] top-[701.99px] w-[129.866px]" data-node-id="0:1187">
+              <div className="-skew-x-20 flex-none scale-y-94">
+                <p className="[word-break:break-word] font-['M_PLUS_1:SemiBold'] font-semibold leading-[normal] relative text-[#adadad] text-[16.028px] whitespace-nowrap">Credit Card No.</p>
+              </div>
+            </div>
+            <div className="absolute flex h-[21.613px] items-center justify-center left-[calc(75%-5.41px)] top-[782.68px] w-[41.866px]" data-node-id="0:1188">
+              <div className="-skew-x-20 flex-none scale-y-94">
+                <p className="[word-break:break-word] font-['M_PLUS_1:SemiBold'] font-semibold leading-[normal] relative text-[#adadad] text-[16.028px] whitespace-nowrap">Exp.</p>
+              </div>
+            </div>
+            <div className="absolute flex h-[18.794px] items-center justify-center left-[calc(75%-14.98px)] top-[814.95px] w-[49.84px]" data-node-id="0:1189">
+              <div className="-skew-x-20 flex-none scale-y-94">
+                <p className="[word-break:break-word] font-['M_PLUS_1:SemiBold'] font-semibold leading-[normal] relative text-[13.738px] text-white whitespace-nowrap">09/11</p>
+              </div>
+            </div>
+            <div className="absolute flex h-[18.794px] items-center justify-center left-[calc(66.67%-36.95px)] top-[814.95px] w-[105.84px]" data-node-id="0:1190">
+              <div className="-skew-x-20 flex-none scale-y-94">
+                <p className="[word-break:break-word] font-['M_PLUS_1:Medium'] font-medium leading-[normal] relative text-[13.738px] text-white whitespace-nowrap">MARCO ROSSI</p>
+              </div>
+            </div>
+            <div className="absolute flex h-[25.82px] items-center justify-center left-[calc(66.67%+22.03px)] top-[639.6px] w-[55.461px]" data-node-id="0:1191">
+              <div className="-skew-x-20 flex-none scale-y-94">
+                <div className="h-[27.477px] relative w-[46.064px]" data-name="Exclude">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgExclude} />
+                </div>
+              </div>
+            </div>
+            <div className="absolute flex h-[34.426px] items-center justify-center left-[calc(91.67%-5.66px)] top-[639.6px] w-[39.649px]" data-node-id="0:1192">
+              <div className="-skew-x-20 flex-none scale-y-94">
+                <div className="h-[36.636px] relative w-[27.119px]" data-name="Vector (Stroke)">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVectorStroke} />
+                </div>
+              </div>
+            </div>
+            <div className="absolute flex h-[26.311px] items-center justify-center left-[calc(66.67%-12.21px)] top-[733.19px] w-[261.577px]" data-node-id="0:1193">
+              <div className="-skew-x-20 flex-none scale-y-94">
+                <p className="[word-break:break-word] font-['M_PLUS_1_Code:Bold'] font-bold leading-[27.477px] relative text-[22.897px] text-white whitespace-pre">{`1602  0911  2019  2021`}</p>
+              </div>
+            </div>
+            <div className="absolute flex h-[34.426px] items-center justify-center left-[calc(91.67%-84.31px)] top-[808.5px] w-[58.64px]" data-node-id="0:1194">
+              <div className="-skew-x-20 flex-none scale-y-94">
+                <div className="h-[36.636px] relative w-[46.11px]" data-name="Vector">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector} />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="absolute contents h-[258.196px] left-[calc(58.33%+24.13px)] top-[487.69px] w-[529.023px]" data-node-id="0:1195" data-name="Карта 2">
+            <div className="absolute flex h-[258.196px] items-center justify-center left-[calc(58.33%+24.13px)] top-[487.69px] w-[529.023px]" data-node-id="0:1196">
+              <div className="-skew-x-20 flex-none scale-y-94">
+                <div className="bg-[#2491aa] border-[2.29px] border-solid border-white h-[274.766px] relative rounded-[36.636px] w-[435.047px]" />
+              </div>
+            </div>
+            <div className="absolute flex h-[21.613px] items-center justify-center left-[calc(66.67%-27.79px)] top-[663.05px] w-[51.866px]" data-node-id="0:1197">
+              <div className="-skew-x-20 flex-none scale-y-94">
+                <p className="[word-break:break-word] font-['M_PLUS_1:SemiBold'] font-semibold leading-[normal] relative text-[#e9e9e9] text-[16.028px] whitespace-nowrap">Name</p>
+              </div>
+            </div>
+            <div className="absolute flex h-[21.613px] items-center justify-center left-[calc(66.67%+3.14px)] top-[578.06px] w-[129.866px]" data-node-id="0:1198">
+              <div className="-skew-x-20 flex-none scale-y-94">
+                <p className="[word-break:break-word] font-['M_PLUS_1:SemiBold'] font-semibold leading-[normal] relative text-[#595959] text-[16.028px] whitespace-nowrap">Credit Card No.</p>
+              </div>
+            </div>
+            <div className="absolute flex h-[21.613px] items-center justify-center left-[calc(75%-5.41px)] top-[658.75px] w-[41.866px]" data-node-id="0:1199">
+              <div className="-skew-x-20 flex-none scale-y-94">
+                <p className="[word-break:break-word] font-['M_PLUS_1:SemiBold'] font-semibold leading-[normal] relative text-[#e9e9e9] text-[16.028px] whitespace-nowrap">Exp.</p>
+              </div>
+            </div>
+            <div className="absolute flex h-[18.794px] items-center justify-center left-[calc(75%-14.99px)] top-[691.02px] w-[49.84px]" data-node-id="0:1200">
+              <div className="-skew-x-20 flex-none scale-y-94">
+                <p className="[word-break:break-word] font-['M_PLUS_1:SemiBold'] font-semibold leading-[normal] relative text-[13.738px] text-white whitespace-nowrap">09/11</p>
+              </div>
+            </div>
+            <div className="absolute flex h-[18.794px] items-center justify-center left-[calc(66.67%-36.95px)] top-[691.02px] w-[105.84px]" data-node-id="0:1201">
+              <div className="-skew-x-20 flex-none scale-y-94">
+                <p className="[word-break:break-word] font-['M_PLUS_1:Medium'] font-medium leading-[normal] relative text-[13.738px] text-white whitespace-nowrap">MARCO ROSSI</p>
+              </div>
+            </div>
+            <div className="absolute flex h-[25.82px] items-center justify-center left-[calc(66.67%+22.03px)] top-[515.66px] w-[55.461px]" data-node-id="0:1202">
+              <div className="-skew-x-20 flex-none scale-y-94">
+                <div className="h-[27.477px] relative w-[46.064px]" data-name="Exclude">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgExclude1} />
+                </div>
+              </div>
+            </div>
+            <div className="absolute flex h-[34.426px] items-center justify-center left-[calc(91.67%-5.66px)] top-[515.66px] w-[39.649px]" data-node-id="0:1203">
+              <div className="-skew-x-20 flex-none scale-y-94">
+                <div className="h-[36.636px] relative w-[27.119px]" data-name="Vector (Stroke)">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVectorStroke1} />
+                </div>
+              </div>
+            </div>
+            <div className="absolute flex h-[26.311px] items-center justify-center left-[calc(66.67%-12.22px)] top-[609.26px] w-[261.577px]" data-node-id="0:1204">
+              <div className="-skew-x-20 flex-none scale-y-94">
+                <p className="[word-break:break-word] font-['M_PLUS_1_Code:Bold'] font-bold leading-[27.477px] relative text-[#424242] text-[22.897px] whitespace-pre">{`1602  0911  2019  2021`}</p>
+              </div>
+            </div>
+            <div className="absolute flex h-[34.426px] items-center justify-center left-[calc(91.67%-84.31px)] top-[684.57px] w-[58.64px]" data-node-id="0:1205">
+              <div className="-skew-x-20 flex-none scale-y-94">
+                <div className="h-[36.636px] relative w-[46.11px]" data-name="Vector">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector1} />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="absolute contents h-[258.196px] left-[calc(58.33%+19px)] top-[380px] w-[529.023px]" data-node-id="0:1206" data-name="Карта 3">
+            <div className="absolute flex h-[258.196px] items-center justify-center left-[calc(58.33%+19px)] top-[380px] w-[529.023px]" data-node-id="0:1207">
+              <div className="-skew-x-20 flex-none scale-y-94">
+                <div className="backdrop-blur-[6.838px] bg-[rgba(255,255,255,0.1)] border-[#2491aa] border-[2.29px] border-solid h-[274.766px] relative rounded-[36.636px] w-[435.047px]" />
+              </div>
+            </div>
+            <div className="absolute flex h-[21.613px] items-center justify-center left-[calc(66.67%-32.92px)] top-[555.36px] w-[51.866px]" data-node-id="0:1208">
+              <div className="-skew-x-20 flex-none scale-y-94">
+                <p className="[word-break:break-word] font-['M_PLUS_1:SemiBold'] font-semibold leading-[normal] relative text-[#424242] text-[16.028px] whitespace-nowrap">Name</p>
+              </div>
+            </div>
+            <div className="absolute flex h-[21.613px] items-center justify-center left-[calc(66.67%-1.99px)] top-[470.37px] w-[129.866px]" data-node-id="0:1209">
+              <div className="-skew-x-20 flex-none scale-y-94">
+                <p className="[word-break:break-word] font-['M_PLUS_1:SemiBold'] font-semibold leading-[normal] relative text-[#424242] text-[16.028px] whitespace-nowrap">Credit Card No.</p>
+              </div>
+            </div>
+            <div className="absolute flex h-[21.613px] items-center justify-center left-[calc(75%-10.54px)] top-[551.05px] w-[41.866px]" data-node-id="0:1210">
+              <div className="-skew-x-20 flex-none scale-y-94">
+                <p className="[word-break:break-word] font-['M_PLUS_1:SemiBold'] font-semibold leading-[normal] relative text-[#424242] text-[16.028px] whitespace-nowrap">Exp.</p>
+              </div>
+            </div>
+            <div className="absolute flex h-[18.794px] items-center justify-center left-[calc(75%-20.11px)] top-[583.33px] w-[49.84px]" data-node-id="0:1211">
+              <div className="-skew-x-20 flex-none scale-y-94">
+                <p className="[word-break:break-word] font-['M_PLUS_1:SemiBold'] font-semibold leading-[normal] relative text-[13.738px] text-black whitespace-nowrap">09/11</p>
+              </div>
+            </div>
+            <div className="absolute flex h-[18.794px] items-center justify-center left-[calc(58.33%+77.92px)] top-[583.33px] w-[105.84px]" data-node-id="0:1212">
+              <div className="-skew-x-20 flex-none scale-y-94">
+                <p className="[word-break:break-word] font-['M_PLUS_1:Medium'] font-medium leading-[normal] relative text-[13.738px] text-black whitespace-nowrap">MARCO ROSSI</p>
+              </div>
+            </div>
+            <div className="absolute flex h-[25.82px] items-center justify-center left-[calc(66.67%+16.9px)] top-[407.97px] w-[55.461px]" data-node-id="0:1213">
+              <div className="-skew-x-20 flex-none scale-y-94">
+                <div className="h-[27.477px] relative w-[46.064px]" data-name="Exclude">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgExclude2} />
+                </div>
+              </div>
+            </div>
+            <div className="absolute flex h-[34.426px] items-center justify-center left-[calc(91.67%-10.79px)] top-[407.97px] w-[39.649px]" data-node-id="0:1214">
+              <div className="-skew-x-20 flex-none scale-y-94">
+                <div className="h-[36.636px] relative w-[27.119px]" data-name="Vector (Stroke)">
+                  <div className="absolute inset-[-9.38%_-12.66%]">
+                    <img alt="" className="block max-w-none size-full" src={imgVectorStroke2} />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="absolute flex h-[26.311px] items-center justify-center left-[calc(66.67%-17.34px)] top-[501.57px] w-[261.577px]" data-node-id="0:1215">
+              <div className="-skew-x-20 flex-none scale-y-94">
+                <p className="[word-break:break-word] font-['M_PLUS_1_Code:Bold'] font-bold leading-[27.477px] relative text-[22.897px] text-black whitespace-pre">{`1602  0911  2019  2021`}</p>
+              </div>
+            </div>
+            <div className="absolute flex h-[34.426px] items-center justify-center left-[calc(83.33%+30.57px)] top-[576.87px] w-[58.64px]" data-node-id="0:1216">
+              <div className="-skew-x-20 flex-none scale-y-94">
+                <div className="h-[36.636px] relative w-[46.11px]" data-name="Vector">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector2} />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="absolute content-stretch flex flex-col gap-[64px] items-start left-[100px] top-[151px] w-[1145px]" data-node-id="0:1217" data-name="Блок одобрения">
+        <div className="content-stretch flex flex-col gap-[48px] items-start relative shrink-0 w-full" data-node-id="0:1218" data-name="Содержимое одобрения">
+          <div className="[word-break:break-word] content-stretch flex flex-col font-['Inter:Semi_Bold'] font-semibold gap-[16px] items-start justify-center leading-[normal] not-italic relative shrink-0 uppercase w-full" data-node-id="0:1219" data-name="Заголовок одобрения">
+            <p className="relative shrink-0 text-[52px] text-[color:var(--foreground,#09090b)] w-full" data-node-id="0:1220">
+              Il tuo credito è approvato
+            </p>
+            <p className="relative shrink-0 text-[#2491aa] text-[42px] w-full" data-node-id="0:1221">
+              Le banche partner hanno confermato la disponibilità dei fondi al tasso sociale del 3,8%.
+            </p>
+          </div>
+          <div className="content-stretch flex flex-col gap-[22px] items-start relative shrink-0 w-[633px]" data-node-id="0:1222" data-name="Детали одобрения">
+            <div className="[word-break:break-word] bg-[#f0fdff] border border-[#2491aa] border-solid content-stretch drop-shadow-[0px_8px_12px_rgba(36,145,170,0.1)] flex flex-col gap-[16px] items-center not-italic px-[40px] py-[32px] relative rounded-[24px] shrink-0 uppercase w-full" data-node-id="0:1223" data-name="Сумма и условия">
+              <p className="font-['Inter:Light'] font-light leading-[normal] relative shrink-0 text-[#2491aa] text-[22px] w-full" data-node-id="0:1224">
+                Importo approvato
+              </p>
+              <p className="font-['Inter:Bold'] font-bold leading-[normal] relative shrink-0 text-[#2491aa] text-[72px] w-full" data-node-id="0:1225">
+                12 000€
+              </p>
+              <div className="font-['Inter:Light'] font-light leading-[0] relative shrink-0 text-[#4b5563] text-[22px] w-full whitespace-pre-wrap" data-node-id="0:1226">
+                <p className="mb-0">
+                  <span className="leading-[normal]">{`Rata mensile: `}</span>
+                  <span className="[word-break:break-word] font-['Inter:Medium'] font-medium leading-[normal] not-italic">147,65 €</span>
+                  <span className="leading-[normal]">{` `}</span>
+                </p>
+                <p className="mb-0">
+                  <span className="leading-[normal]">{`Durata: `}</span>
+                  <span className="[word-break:break-word] font-['Inter:Medium'] font-medium leading-[normal] not-italic">62</span>
+                  <span className="leading-[normal]">{` `}</span>
+                  <span className="[word-break:break-word] font-['Inter:Medium'] font-medium leading-[normal] not-italic">mesi</span>
+                  <span className="leading-[normal]">{` `}</span>
+                </p>
+                <p>
+                  <span className="leading-[normal]">{`Tasso fisso al `}</span>
+                  <span className="[word-break:break-word] font-['Inter:Medium'] font-medium leading-[normal] not-italic">3,8%</span>
+                </p>
+              </div>
+            </div>
+            <div className="content-stretch flex gap-[12px] items-center justify-center relative shrink-0 w-full" data-node-id="0:1227" data-name="Примечание">
+              <div className="content-stretch flex h-[32px] items-center relative shrink-0" data-node-id="0:1228" data-name="Иконка информации">
+                <div className="relative shrink-0 size-[32px]" data-node-id="0:1229">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse54} />
+                </div>
+                <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Inter:Semi_Bold'] font-semibold h-[31px] leading-[normal] left-[calc(50%+0.5px)] not-italic text-[#2491aa] text-[25.6px] text-center top-[calc(50%-16px)] w-0" data-node-id="0:1230">
+                  i
+                </p>
+              </div>
+              <p className="[word-break:break-word] font-['Inter:Light'] font-light leading-[normal] not-italic relative shrink-0 text-[#6b7280] text-[18px] tracking-[0.72px] whitespace-nowrap" data-node-id="0:1231">{`L'offerta resta riservata per 24 ore, poi il fascicolo torna in coda.`}</p>
+            </div>
+          </div>
+        </div>
+        <div className="bg-[#2491aa] border border-solid border-white content-stretch flex gap-[12px] h-[64px] items-center justify-center overflow-clip px-[32px] py-[16px] relative rounded-[16px] shadow-[0px_4px_8px_0px_rgba(0,0,0,0.08),0px_12px_24px_0px_rgba(36,145,170,0.25)] shrink-0" data-node-id="0:1232" data-name="Кнопка — Далее">
+          <p className="[word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[var(--font\/line-height\/leading-5,20px)] not-italic relative shrink-0 text-[24px] text-white whitespace-nowrap" data-node-id="0:1233">
+            Finalizza la mia richiesta
+          </p>
+          <div className="relative shrink-0 size-[16px]" data-node-id="0:1234" data-name="Lucide Icons / chevron-right">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgLucideIconsChevronRight} />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+Component descriptions: The following components have usage descriptions or documentation links defined in Figma. These descriptions provide important context about the intended usage, best practices, and any constraints for each component. Follow these guidelines when implementing or using these components.
+
+## Lucide Icons / chevron-right
+**Node ID:** 0:13
+
+**Documentation:**
+- [https://lucide.dev/icons/](https://lucide.dev/icons/)
+Images and SVGs will be stored as constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.

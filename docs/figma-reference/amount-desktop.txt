@@ -1,0 +1,178 @@
+const img = "https://www.figma.com/api/mcp/asset/beeffd9d-7615-4715-a9a5-3b783e154ba8.svg";
+const imgEllipse54 = "https://www.figma.com/api/mcp/asset/095a8b86-2a9a-4525-8a75-46ce5a0b97dd.svg";
+const imgLucideIconsChevronRight = "https://www.figma.com/api/mcp/asset/8392bb97-78ac-459f-8fb2-71da1ef2d16b.svg";
+const imgLucideIconsChevronRight1 = "https://www.figma.com/api/mcp/asset/4b7ebfa8-6348-4a5c-8273-35a4435ce8b9.svg";
+const imgVector44 = "https://www.figma.com/api/mcp/asset/7afeaf3a-6974-4035-b0a5-195b42773ec5.svg";
+
+export default function Component() {
+  return (
+    <div className="bg-[#f8fafb] relative size-full" data-node-id="0:918" data-name="Взятие кредита">
+      <div className="absolute content-stretch flex gap-[125px] items-center left-[100px] top-[161px]" data-node-id="0:919" data-name="Основной контент">
+        <div className="content-stretch flex flex-col h-[506px] items-start justify-between relative shrink-0 w-[610px]" data-node-id="0:920" data-name="Левая колонка">
+          <div className="content-stretch flex flex-col gap-[22px] items-start relative shrink-0 w-full" data-node-id="0:921" data-name="Блок суммы кредита">
+            <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0 w-full" data-node-id="0:922" data-name="Заголовок суммы">
+              <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[normal] not-italic relative shrink-0 text-[#747474] text-[18px] tracking-[0.72px] w-[595px]" data-node-id="0:923">
+                IMPORTO DEL CREDITO
+              </p>
+              <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[0] place-items-start relative shrink-0" data-node-id="0:924" data-name="Группа подзаголовка">
+                <p className="[word-break:break-word] col-1 font-['Inter:Semi_Bold'] font-semibold leading-[normal] ml-0 mt-0 not-italic relative row-1 text-[32px] text-black uppercase w-[610px]" data-node-id="0:925">
+                  Scegli l’importo che ti serve
+                </p>
+              </div>
+            </div>
+            <div className="[word-break:break-word] content-stretch flex flex-col gap-[18px] items-start leading-[normal] not-italic relative shrink-0 w-full whitespace-nowrap" data-node-id="0:926" data-name="Ввод суммы">
+              <div className="border border-[#2491aa] border-solid font-['Inter:Semi_Bold'] font-semibold h-[85px] overflow-clip relative rounded-[19px] shadow-[0px_4px_18.6px_0px_rgba(0,0,0,0.33)] shrink-0 text-[#2491aa] text-[40px] uppercase w-full" data-node-id="0:927" data-name="Поле ввода суммы">
+                <p className="absolute left-[17px] top-[17px]" data-node-id="0:928">
+                  12.000
+                </p>
+                <p className="absolute left-[563px] top-[17px]" data-node-id="0:929">
+                  €
+                </p>
+              </div>
+              <div className="content-stretch flex font-['Inter:Regular'] font-normal items-center justify-between relative shrink-0 text-[#747474] text-[16px] tracking-[0.64px] w-full" data-node-id="0:930" data-name="Диапазон суммы">
+                <p className="relative shrink-0" data-node-id="0:931">
+                  1.000 €
+                </p>
+                <p className="relative shrink-0" data-node-id="0:932">
+                  33.000 €
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="content-stretch flex flex-col gap-[22px] items-start relative shrink-0 w-full" data-node-id="0:933" data-name="Блок срока возврата">
+            <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0 w-full" data-node-id="0:934" data-name="Заголовок срока">
+              <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[normal] not-italic relative shrink-0 text-[#747474] text-[18px] tracking-[0.72px] uppercase w-[595px]" data-node-id="0:935">
+                Scegli la durata del rimborso
+              </p>
+              <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[0] place-items-start relative shrink-0" data-node-id="0:936" data-name="Группа подзаголовка">
+                <p className="[word-break:break-word] col-1 font-['Inter:Semi_Bold'] font-semibold leading-[normal] ml-0 mt-0 not-italic relative row-1 text-[32px] text-black uppercase w-[610px]" data-node-id="0:937">
+                  Per quale durata?
+                </p>
+              </div>
+            </div>
+            <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[0] place-items-start relative shrink-0" data-node-id="0:938" data-name="Слайдер срока">
+              <p className="[word-break:break-word] col-1 font-['Inter:Semi_Bold'] font-semibold ml-[261px] mt-0 not-italic relative row-1 text-[#2491aa] text-[0px] uppercase whitespace-nowrap" data-node-id="0:939">
+                <span className="leading-[normal] text-[40px]">{`22 `}</span>
+                <span className="leading-[normal] text-[24px]">mesi</span>
+              </p>
+              <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-0 mt-[56px] place-items-start relative row-1" data-node-id="0:940" data-name="Полоса слайдера">
+                <div className="bg-[#e9e9e9] col-1 content-stretch flex flex-col h-[12px] items-start ml-0 mt-[10px] pr-[283px] relative rounded-[100px] row-1 w-[610px]" data-node-id="0:941" data-name="Трек заполненный">
+                  <div className="bg-[#2491aa] h-[12px] relative rounded-[100px] shrink-0 w-full" data-node-id="0:942" data-name="Фон трека" />
+                </div>
+                <div className="col-1 ml-[305px] mt-0 relative row-1 size-[32px]" data-node-id="0:943" data-name="Трек пустой">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={img} />
+                </div>
+              </div>
+            </div>
+            <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="0:945" data-name="Диапазон месяцев">
+              <div className="[word-break:break-word] content-stretch flex font-['Inter:Regular'] font-normal items-center justify-between leading-[normal] not-italic relative shrink-0 text-[#747474] text-[16px] tracking-[0.64px] w-full whitespace-nowrap" data-node-id="0:946" data-name="Подписи диапазона">
+                <p className="relative shrink-0" data-node-id="0:947">
+                  1 mesi
+                </p>
+                <p className="relative shrink-0" data-node-id="0:948">
+                  36 mesi
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="content-stretch flex flex-col gap-[42px] items-start relative shrink-0 w-[505px]" data-node-id="0:949" data-name="Правая колонка">
+          <div className="bg-gradient-to-b from-[#2491aa] h-[420px] overflow-clip relative rounded-[14px] shadow-[3px_6px_15.4px_0px_rgba(0,0,0,0.25)] shrink-0 to-[#1a7488] w-full" data-node-id="0:950" data-name="Карточка итогов">
+            <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute content-stretch flex flex-col gap-[36px] items-start left-[calc(50%-80.5px)] not-italic top-[calc(50%-0.5px)]" data-node-id="0:951" data-name="Содержимое карточки">
+              <div className="content-stretch flex flex-col gap-[4px] items-start relative shrink-0" data-node-id="0:952" data-name="Строка — Запрошенная сумма">
+                <p className="font-['Inter:Regular'] font-normal leading-[normal] relative shrink-0 text-[#f3f3f3] text-[28px] whitespace-nowrap" data-node-id="0:953">
+                  Importo richiesto
+                </p>
+                <p className="font-['Nunito:SemiBold'] font-semibold leading-[0] min-w-full relative shrink-0 text-[0px] text-white w-[min-content]" data-node-id="0:954">
+                  <span className="font-['Inter:Semi_Bold'] leading-[normal] text-[40px]">{`10 000 `}</span>
+                  <span className="font-['Inter:Semi_Bold'] leading-[normal] text-[24px]">€</span>
+                </p>
+              </div>
+              <div className="content-stretch flex flex-col gap-[4px] items-start relative shrink-0 whitespace-nowrap" data-node-id="0:955" data-name="Строка — Дата возврата">
+                <p className="font-['Inter:Regular'] font-normal leading-[normal] relative shrink-0 text-[#f3f3f3] text-[28px]" data-node-id="0:956">
+                  Data di restituzione
+                </p>
+                <p className="font-['Nunito:SemiBold'] font-semibold leading-[0] relative shrink-0 text-[0px] text-white" data-node-id="0:957">
+                  <span className="font-['Inter:Semi_Bold'] leading-[normal] text-[40px]">{`178 `}</span>
+                  <span className="font-['Inter:Semi_Bold'] leading-[normal] text-[24px]">€/mese</span>
+                </p>
+              </div>
+              <div className="content-stretch flex flex-col gap-[4px] items-start leading-[normal] relative shrink-0 whitespace-nowrap" data-node-id="0:958" data-name="Строка — Месяцы">
+                <p className="font-['Inter:Regular'] font-normal relative shrink-0 text-[#f3f3f3] text-[28px]" data-node-id="0:959">
+                  Mesi
+                </p>
+                <p className="font-['Inter:Semi_Bold'] font-semibold relative shrink-0 text-[40px] text-white" data-node-id="0:960">
+                  22
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="content-stretch flex gap-[8px] items-center justify-center leading-[0] relative shrink-0 w-full" data-node-id="0:961" data-name="Примечание">
+            <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid place-items-start relative shrink-0" data-node-id="0:962" data-name="Иконка и текст">
+              <p className="[word-break:break-word] col-1 font-['Inter:Semi_Bold'] font-semibold leading-[normal] ml-[16px] mt-0 not-italic relative row-1 text-[#2491aa] text-[32px] whitespace-nowrap" data-node-id="0:963">
+                i
+              </p>
+              <div className="col-1 ml-0 mt-0 relative row-1 size-[40px]" data-node-id="0:964">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse54} />
+              </div>
+            </div>
+            <p className="[word-break:break-word] font-['Inter:Regular'] font-normal not-italic relative shrink-0 text-[#747474] text-[18px] tracking-[0.72px] w-[459px]" data-node-id="0:965">
+              <span className="font-['Inter:Light'] font-light leading-[normal]">Stima indicativa basata su un tasso preferenziale del 3,8% TAN.</span>
+              <span className="font-['Inter:Bold'] font-bold leading-[normal]">{` `}</span>
+              <span className="font-['Inter:Semi_Bold'] font-semibold leading-[normal]">Offerta soggetta ad accettazione.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="absolute content-stretch flex items-center justify-between left-[100px] top-[790px] w-[1241px]" data-node-id="0:966" data-name="Пагинация">
+        <div className="border border-[#2491aa] border-solid content-stretch flex gap-[12px] h-[60px] items-center justify-center overflow-clip px-[10px] py-[8px] relative rounded-[12px] shrink-0 w-[294px]" data-node-id="0:967" data-name="Кнопка — Назад">
+          <div className="flex items-center justify-center relative shrink-0" data-node-id="0:968">
+            <div className="-scale-y-100 flex-none rotate-180">
+              <div className="relative size-[16px]" data-name="Lucide Icons / chevron-right">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgLucideIconsChevronRight} />
+              </div>
+            </div>
+          </div>
+          <p className="[word-break:break-word] font-['Inter:Medium'] font-medium leading-[var(--font\/line-height\/leading-5,20px)] not-italic relative shrink-0 text-[#2491aa] text-[24px] whitespace-nowrap" data-node-id="0:969">
+            Indietro
+          </p>
+        </div>
+        <div className="bg-[#2491aa] border border-solid border-white content-stretch flex gap-[12px] h-[60px] items-center justify-center overflow-clip px-[10px] py-[8px] relative rounded-[12px] shadow-[0px_4px_11.6px_0px_rgba(0,0,0,0.25)] shrink-0 w-[294px]" data-node-id="0:970" data-name="Кнопка — Далее">
+          <p className="[word-break:break-word] font-['Inter:Medium'] font-medium leading-[var(--font\/line-height\/leading-5,20px)] not-italic relative shrink-0 text-[24px] text-white whitespace-nowrap" data-node-id="0:971">
+            Continua
+          </p>
+          <div className="relative shrink-0 size-[16px]" data-node-id="0:972" data-name="Lucide Icons / chevron-right">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgLucideIconsChevronRight1} />
+          </div>
+        </div>
+      </div>
+      <div className="absolute bg-white border-[#2491aa] border-b-2 border-solid h-[110px] left-0 overflow-clip top-0 w-[1440px]" data-node-id="0:973" data-name="Логотип">
+        <div className="-translate-y-1/2 absolute contents left-[100px] top-[calc(50%+1px)]" data-node-id="0:974" data-name="Группа логотипа">
+          <div className="-translate-y-1/2 absolute h-[48.835px] left-[100px] top-[calc(50%-0.46px)] w-[62.773px]" data-node-id="0:975">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector44} />
+          </div>
+          <p className="[word-break:break-word] absolute font-['Inter:Bold'] font-bold h-[52px] leading-[normal] left-[178.24px] not-italic text-[44.505px] text-black top-[29px] tracking-[-2.2253px] w-[127.758px]" data-node-id="0:976">
+            Avanti
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+These styles are contained in the design: 1: .
+Component descriptions: The following components have usage descriptions or documentation links defined in Figma. These descriptions provide important context about the intended usage, best practices, and any constraints for each component. Follow these guidelines when implementing or using these components.
+
+## Lucide Icons / chevron-right
+**Node ID:** 0:13
+
+**Documentation:**
+- [https://lucide.dev/icons/](https://lucide.dev/icons/)
+Images and SVGs will be stored as constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.

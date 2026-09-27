@@ -1,0 +1,150 @@
+const imgVector44 = "https://www.figma.com/api/mcp/asset/28d41840-9272-4c4b-8710-80a57169c736.svg";
+const imgLucideIconsChevronRight = "https://www.figma.com/api/mcp/asset/bfda120f-14df-4302-b957-3269175fdfcf.svg";
+const imgLucideIconsChevronRight1 = "https://www.figma.com/api/mcp/asset/39d91266-0d04-4542-a7c8-64dcf9b9730a.svg";
+const imgLucideIconsChevronRight2 = "https://www.figma.com/api/mcp/asset/5cd634c5-50ce-4f47-b3e2-7ac20efbaadd.svg";
+
+export default function PersonalDataForm() {
+  return (
+    <div className="bg-[#f8fafb] content-stretch flex flex-col items-start relative size-full" data-node-id="0:977" data-name="Personal Data Form">
+      <div className="bg-white border-[#2491aa] border-b-2 border-solid content-stretch flex h-[110px] items-center px-[100px] relative shrink-0 w-full" data-node-id="0:978" data-name="Шапка">
+        <div className="content-stretch flex gap-[16px] items-center relative shrink-0" data-node-id="0:979" data-name="Логотип">
+          <div className="h-[48.84px] relative shrink-0 w-[62.77px]" data-node-id="0:980">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector44} />
+          </div>
+          <p className="[word-break:break-word] font-['Inter:Bold'] font-bold leading-[normal] not-italic relative shrink-0 text-[#09090b] text-[44.505px] tracking-[-2.2253px] whitespace-nowrap" data-node-id="0:981">
+            Avanti
+          </p>
+        </div>
+      </div>
+      <div className="content-stretch flex flex-col items-center pb-[80px] pt-[48px] px-[100px] relative shrink-0 w-full" data-node-id="0:982" data-name="Контейнер контента">
+        <div className="bg-white content-stretch drop-shadow-[0px_10px_15px_rgba(0,0,0,0.04)] flex flex-col gap-[40px] items-start p-[60px] relative rounded-[32px] shrink-0 w-[1117px]" data-node-id="0:983" data-name="Карточка формы">
+          <div className="[word-break:break-word] content-stretch flex flex-col gap-[12px] items-start leading-[normal] not-italic relative shrink-0 w-full" data-node-id="0:984" data-name="Заголовок формы">
+            <p className="font-['Inter:Regular'] font-normal relative shrink-0 text-[#747474] text-[18px] tracking-[0.72px] whitespace-nowrap" data-node-id="0:985">
+              Dati personali
+            </p>
+            <p className="font-['Inter:Semi_Bold'] font-semibold min-w-full relative shrink-0 text-[#09090b] text-[32px] uppercase w-[min-content]" data-node-id="0:986">
+              Dicci chi sei
+            </p>
+          </div>
+          <div className="content-stretch flex gap-[37px] items-start relative shrink-0 w-full" data-node-id="0:987" data-name="Строка имени">
+            <div className="content-stretch flex flex-[1_0_0] flex-col gap-[12px] items-start min-w-px relative" data-node-id="0:988" data-name="Группа поля — Фамилия">
+              <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[normal] not-italic relative shrink-0 text-[#464646] text-[20px] tracking-[0.8px] uppercase whitespace-nowrap" data-node-id="0:989">
+                Cognome
+              </p>
+              <div className="bg-[#f8fafb] border-[#2491aa] border-[1.5px] border-solid content-stretch drop-shadow-[0px_4px_6px_rgba(0,0,0,0.05)] flex h-[85px] items-center px-[24px] relative rounded-[19px] shrink-0 w-full" data-node-id="0:990" data-name="Поле ввода">
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[normal] not-italic relative shrink-0 text-[#747474] text-[18px] whitespace-nowrap" data-node-id="0:991">
+                  Inserisci il tuo cognome
+                </p>
+              </div>
+            </div>
+            <div className="content-stretch flex flex-[1_0_0] flex-col gap-[12px] items-start min-w-px relative" data-node-id="0:992" data-name="Группа поля — Имя">
+              <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[normal] not-italic relative shrink-0 text-[#464646] text-[20px] tracking-[0.8px] uppercase whitespace-nowrap" data-node-id="0:993">
+                Nome
+              </p>
+              <div className="bg-[#f8fafb] border-[#2491aa] border-[1.5px] border-solid content-stretch drop-shadow-[0px_4px_6px_rgba(0,0,0,0.05)] flex h-[85px] items-center px-[24px] relative rounded-[19px] shrink-0 w-full" data-node-id="0:994" data-name="Поле ввода">
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[normal] not-italic relative shrink-0 text-[#747474] text-[18px] whitespace-nowrap" data-node-id="0:995">
+                  Inserisci il tuo nome
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-full" data-node-id="0:996" data-name="Секция пола">
+            <div className="[word-break:break-word] content-stretch flex flex-col font-['Inter:Regular'] font-normal gap-[12px] items-start leading-[normal] not-italic relative shrink-0 w-full" data-node-id="0:997" data-name="Группа поля — Пол">
+              <p className="relative shrink-0 text-[#464646] text-[20px] tracking-[0.8px] uppercase w-full" data-node-id="0:998">
+                Sesso
+              </p>
+              <p className="relative shrink-0 text-[#747474] text-[18px] tracking-[0.72px] w-full" data-node-id="0:999">{`Serve per personalizzare l'animazione del prelievo.`}</p>
+            </div>
+            <div className="content-stretch flex gap-[16px] items-start relative shrink-0 w-full" data-node-id="0:1000" data-name="Кнопки выбора пола">
+              <div className="bg-[#2491aa] content-stretch drop-shadow-[0px_8px_8px_rgba(36,145,170,0.2)] flex flex-[1_0_0] h-[85px] items-center justify-center min-w-px px-[32px] relative rounded-[19px]" data-node-id="0:1001" data-name="Кнопка — Мужчина">
+                <div className="[word-break:break-word] font-['Inter:Semi_Bold'] font-semibold h-[37px] not-italic relative shrink-0 text-center text-white uppercase w-[106px] whitespace-nowrap" data-node-id="276:8394">
+                  <p className="-translate-x-1/2 absolute leading-[normal] left-[10.5px] text-[40px] top-[-11px]" data-node-id="0:1002">
+                    ♂
+                  </p>
+                  <p className="-translate-x-1/2 absolute leading-[32px] left-[70.5px] text-[22px] top-[calc(50%-15.5px)]" data-node-id="276:8392">
+                    Uomo
+                  </p>
+                </div>
+              </div>
+              <div className="bg-white border-[#2491aa] border-[1.5px] border-solid content-stretch flex flex-[1_0_0] h-[85px] items-center justify-center min-w-px px-[32px] relative rounded-[19px]" data-node-id="0:1003" data-name="Кнопка — Женщина">
+                <div className="[word-break:break-word] bg-white font-['Inter:Semi_Bold'] font-semibold h-[37px] not-italic relative shrink-0 text-[#2491aa] text-center uppercase w-[106px] whitespace-nowrap" data-node-id="276:8395">
+                  <p className="-translate-x-1/2 absolute leading-[normal] left-[10.5px] text-[40px] top-[-10px]" data-node-id="276:8396">
+                    ♀
+                  </p>
+                  <p className="-translate-x-1/2 absolute leading-[32px] left-[70px] text-[22px] top-[calc(50%-15.5px)]" data-node-id="276:8397">
+                    Donna
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0 w-full" data-node-id="0:1005" data-name="Секция документа">
+            <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[normal] not-italic relative shrink-0 text-[#464646] text-[20px] tracking-[0.8px] uppercase w-full" data-node-id="0:1006">
+              Tipo di documento
+            </p>
+            <div className="bg-[#f8fafb] border-[#2491aa] border-[1.5px] border-solid content-stretch drop-shadow-[0px_4px_6px_rgba(0,0,0,0.05)] flex h-[85px] items-center justify-between px-[24px] relative rounded-[19px] shrink-0 w-full" data-node-id="0:1007" data-name="Выпадающий список">
+              <div className="[word-break:break-word] flex flex-col font-['Inter:Regular'] font-normal h-full justify-center leading-[0] not-italic relative shrink-0 text-[#747474] text-[18px] tracking-[0.72px] w-[145px]" data-node-id="0:1008">
+                <p className="leading-[normal]">Seleziona il tipo</p>
+              </div>
+              <div className="flex items-center justify-center relative shrink-0 size-[24px]" data-node-id="0:1009">
+                <div className="flex-none rotate-90">
+                  <div className="relative size-[24px]" data-name="Lucide Icons / chevron-right">
+                    <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgLucideIconsChevronRight} />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="content-stretch flex gap-[12px] items-center relative shrink-0 w-full" data-node-id="0:1010" data-name="Согласие">
+            <div className="border border-[#2491aa] border-solid content-stretch flex items-center justify-center relative rounded-[12px] shrink-0 size-[24px]" data-node-id="0:1011" data-name="Иконка информации">
+              <div className="[word-break:break-word] flex flex-col font-['Inter:Semi_Bold'] font-semibold h-full justify-center leading-[0] not-italic relative shrink-0 text-[#2491aa] text-[14px] w-[4px]" data-node-id="0:1012">
+                <p className="leading-[normal]">i</p>
+              </div>
+            </div>
+            <p className="[word-break:break-word] font-['Inter:Light'] font-light leading-[normal] not-italic relative shrink-0 text-[#747474] text-[14px] tracking-[0.56px] whitespace-nowrap" data-node-id="0:1013">
+              Acconsento al trattamento dei miei dati personali per la verifica della richiesta.
+            </p>
+          </div>
+          <div className="content-stretch cursor-pointer flex items-center justify-between relative shrink-0 w-full" data-node-id="0:1014" data-name="Пагинация">
+            <a className="border-[#2491aa] border-[1.5px] border-solid content-stretch flex gap-[16px] h-[60px] items-center justify-center px-[10px] py-[8px] relative rounded-[12px] shrink-0 w-[294px]" data-node-id="0:1015" data-name="Кнопка — Назад">
+              <div className="flex items-center justify-center relative shrink-0" data-node-id="0:1016">
+                <div className="-scale-y-100 flex-none rotate-180">
+                  <div className="relative size-[24px]" data-name="Lucide Icons / chevron-right">
+                    <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgLucideIconsChevronRight1} />
+                  </div>
+                </div>
+              </div>
+              <p className="[word-break:break-word] font-['Inter:Medium'] font-medium leading-[var(--font\/line-height\/leading-5,20px)] not-italic relative shrink-0 text-[#2491aa] text-[24px] text-left whitespace-nowrap" data-node-id="0:1017">
+                Indietro
+              </p>
+            </a>
+            <a className="bg-[#2491aa] content-stretch drop-shadow-[0px_8px_10px_rgba(0,0,0,0.25)] flex gap-[16px] h-[60px] items-center justify-center px-[10px] py-[8px] relative rounded-[12px] shrink-0 w-[294px]" data-node-id="0:1018" data-name="Кнопка — Далее">
+              <p className="[word-break:break-word] font-['Inter:Medium'] font-medium leading-[var(--font\/line-height\/leading-5,20px)] not-italic relative shrink-0 text-[24px] text-left text-white whitespace-nowrap" data-node-id="0:1019">
+                Continua
+              </p>
+              <div className="relative shrink-0 size-[24px]" data-node-id="0:1020" data-name="Lucide Icons / chevron-right">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgLucideIconsChevronRight2} />
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+Component descriptions: The following components have usage descriptions or documentation links defined in Figma. These descriptions provide important context about the intended usage, best practices, and any constraints for each component. Follow these guidelines when implementing or using these components.
+
+## Lucide Icons / chevron-right
+**Node ID:** 0:13
+
+**Documentation:**
+- [https://lucide.dev/icons/](https://lucide.dev/icons/)
+Images and SVGs will be stored as constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.

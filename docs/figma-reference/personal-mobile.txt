@@ -1,0 +1,160 @@
+const imgVector44 = "https://www.figma.com/api/mcp/asset/b9477b56-3e20-45ed-be85-1149d1238d90.svg";
+const imgStashBurgerClassic = "https://www.figma.com/api/mcp/asset/a04d2305-1752-46ae-b33d-f31b71ddfc24.svg";
+const imgLucideIconsChevronRight = "https://www.figma.com/api/mcp/asset/1eb41c55-c5e5-4c44-90b4-a5c6dce74296.svg";
+const imgLucideIconsChevronRight1 = "https://www.figma.com/api/mcp/asset/b0a377ab-fb77-4489-9921-ccf713138cf5.svg";
+const imgLucideIconsChevronRight2 = "https://www.figma.com/api/mcp/asset/cbf4bd0b-c4de-4d15-8ac1-2bcb1fd2e9c5.svg";
+
+export default function PersonalDataFormMobile() {
+  return (
+    <div className="bg-[#f8fafb] content-stretch flex flex-col items-start relative size-full" data-node-id="4:963" data-name="personal-data-form-mobile">
+      <div className="bg-white border-[#2491aa] border-b border-solid content-stretch flex items-center justify-between px-[20px] py-[15px] relative shrink-0 w-[390px]" data-node-id="13:967">
+        <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[0] place-items-start relative shrink-0" data-node-id="13:968">
+          <div className="col-1 h-[29.788px] ml-0 mt-[0.69px] relative row-1 w-[36.941px]" data-node-id="13:969">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector44} />
+          </div>
+          <p className="[word-break:break-word] col-1 font-['Inter:Bold'] font-bold leading-[normal] ml-[46.04px] mt-0 not-italic relative row-1 text-[26.141px] text-black tracking-[-1.3071px] whitespace-nowrap" data-node-id="13:970">
+            Avanti
+          </p>
+        </div>
+        <div className="relative shrink-0 size-[40px]" data-node-id="13:971" data-name="stash:burger-classic">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgStashBurgerClassic} />
+        </div>
+      </div>
+      <div className="content-stretch flex flex-col items-center pb-[48px] pt-[24px] px-[16px] relative shrink-0 w-full" data-node-id="4:968" data-name="Контейнер контента">
+        <div className="bg-white content-stretch drop-shadow-[0px_10px_15px_rgba(0,0,0,0.04)] flex flex-col gap-[28px] items-start p-[20px] relative rounded-[24px] shrink-0 w-full" data-node-id="4:969" data-name="Карточка формы">
+          <div className="[word-break:break-word] content-stretch flex flex-col gap-[6px] items-start leading-[normal] not-italic relative shrink-0 w-full" data-node-id="4:970" data-name="Заголовок формы">
+            <p className="font-['Inter:Regular'] font-normal relative shrink-0 text-[#747474] text-[14px] tracking-[0.56px] w-full" data-node-id="4:971">
+              Dati personali
+            </p>
+            <p className="font-['Inter:Semi_Bold'] font-semibold relative shrink-0 text-[#09090b] text-[24px] uppercase w-full" data-node-id="4:972">
+              Dicci chi sei
+            </p>
+          </div>
+          <div className="content-stretch flex flex-col gap-[20px] items-start relative shrink-0 w-full" data-node-id="4:973" data-name="Строка имени">
+            <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full" data-node-id="4:974" data-name="Группа поля — Фамилия">
+              <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[normal] not-italic relative shrink-0 text-[#464646] text-[15px] tracking-[0.6px] uppercase w-full" data-node-id="4:975">
+                Cognome
+              </p>
+              <div className="bg-[#f8fafb] border-[#2491aa] border-[1.5px] border-solid content-stretch drop-shadow-[0px_4px_6px_rgba(0,0,0,0.05)] flex h-[58px] items-center px-[16px] relative rounded-[14px] shrink-0 w-full" data-node-id="4:976" data-name="Поле ввода">
+                <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular'] font-normal leading-[normal] min-w-px not-italic relative text-[#747474] text-[16px]" data-node-id="4:977">
+                  Inserisci il tuo cognome
+                </p>
+              </div>
+            </div>
+            <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full" data-node-id="4:978" data-name="Группа поля — Имя">
+              <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[normal] not-italic relative shrink-0 text-[#464646] text-[15px] tracking-[0.6px] uppercase w-full" data-node-id="4:979">
+                Nome
+              </p>
+              <div className="bg-[#f8fafb] border-[#2491aa] border-[1.5px] border-solid content-stretch drop-shadow-[0px_4px_6px_rgba(0,0,0,0.05)] flex h-[58px] items-center px-[16px] relative rounded-[14px] shrink-0 w-full" data-node-id="4:980" data-name="Поле ввода">
+                <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular'] font-normal leading-[normal] min-w-px not-italic relative text-[#747474] text-[16px]" data-node-id="4:981">
+                  Inserisci il tuo nome
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0 w-full" data-node-id="4:982" data-name="Секция пола">
+            <div className="[word-break:break-word] content-stretch flex flex-col font-['Inter:Regular'] font-normal gap-[6px] items-start leading-[normal] not-italic relative shrink-0 w-full" data-node-id="4:983" data-name="Группа поля — Пол">
+              <p className="relative shrink-0 text-[#464646] text-[15px] tracking-[0.6px] uppercase w-full" data-node-id="4:984">
+                Sesso
+              </p>
+              <p className="relative shrink-0 text-[#747474] text-[14px] tracking-[0.56px] w-full" data-node-id="4:985">{`Serve per personalizzare l'animazione del prelievo.`}</p>
+            </div>
+            <div className="content-stretch flex gap-[10px] items-start relative shrink-0 w-full" data-node-id="4:986" data-name="Кнопки выбора пола">
+              <div className="bg-[#2491aa] content-stretch drop-shadow-[0px_8px_8px_rgba(36,145,170,0.2)] flex flex-[1_0_0] h-[58px] items-center justify-center min-w-px px-[12px] relative rounded-[14px]" data-node-id="4:987" data-name="Кнопка — Мужчина">
+                <div className="[word-break:break-word] font-['Inter:Semi_Bold'] font-semibold h-[28px] not-italic relative shrink-0 text-center text-white uppercase w-[106px] whitespace-nowrap" data-node-id="276:8435">
+                  <p className="-translate-x-1/2 absolute leading-[normal] left-[20.25px] text-[23px] top-[-3px]" data-node-id="276:8436">
+                    ♂
+                  </p>
+                  <p className="-translate-x-1/2 absolute leading-[32px] left-[61.75px] text-[16px] top-[calc(50%-16px)]" data-node-id="276:8437">
+                    Uomo
+                  </p>
+                </div>
+              </div>
+              <div className="bg-white border-[#2491aa] border-[1.5px] border-solid content-stretch flex flex-[1_0_0] h-[58px] items-center justify-center min-w-px px-[12px] relative rounded-[14px]" data-node-id="4:989" data-name="Кнопка — Женщина">
+                <div className="[word-break:break-word] bg-white font-['Inter:Semi_Bold'] font-semibold h-[37px] not-italic relative shrink-0 text-[#2491aa] text-center uppercase w-[106px] whitespace-nowrap" data-node-id="276:8440">
+                  <p className="-translate-x-1/2 absolute leading-[normal] left-[25px] text-[22px] top-[3.5px]" data-node-id="276:8441">
+                    ♀
+                  </p>
+                  <p className="-translate-x-1/2 absolute leading-[32px] left-[70px] text-[16px] top-[calc(50%-15.5px)]" data-node-id="276:8442">
+                    Donna
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="content-stretch flex flex-col items-start relative rounded-[14px] shrink-0 w-full" data-node-id="4:991" data-name="Секция документа">
+            <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="246:5000">
+              <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full" data-node-id="246:5086">
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[normal] not-italic relative shrink-0 text-[#464646] text-[15px] tracking-[0.6px] uppercase w-full" data-node-id="4:992">
+                  Tipo di documento
+                </p>
+                <a className="bg-[#f8fafb] border-[#2491aa] border-[1.5px] border-solid content-stretch cursor-pointer drop-shadow-[0px_4px_6px_rgba(0,0,0,0.05)] flex flex-col items-center justify-center py-[12px] relative rounded-[14px] shrink-0 w-full" data-node-id="246:4995" data-name="Dropdown Trigger">
+                  <div className="content-stretch flex items-center px-[16px] relative shrink-0 w-full" data-node-id="246:5100">
+                    <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['Inter:Regular'] font-normal justify-center leading-[0] min-w-px not-italic relative text-[#747474] text-[15px] text-left" data-node-id="246:4996">
+                      <p className="leading-[normal]">Seleziona il tipo</p>
+                    </div>
+                    <div className="flex items-center justify-center relative shrink-0 size-[24px]" data-node-id="246:4997">
+                      <div className="flex-none rotate-90">
+                        <div className="relative size-[24px]" data-name="Lucide Icons / chevron-right">
+                          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgLucideIconsChevronRight} />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="content-stretch flex gap-[10px] items-center relative shrink-0 w-full" data-node-id="4:1009" data-name="Согласие">
+            <div className="border-[#2491aa] border-[1.5px] border-solid content-stretch flex items-center justify-center relative rounded-[10px] shrink-0 size-[20px]" data-node-id="4:1010" data-name="Иконка информации">
+              <div className="[word-break:break-word] flex flex-col font-['Inter:Semi_Bold'] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#2491aa] text-[12px] whitespace-nowrap" data-node-id="4:1011">
+                <p className="leading-[normal]">i</p>
+              </div>
+            </div>
+            <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Light'] font-light leading-[normal] min-w-px not-italic relative text-[#747474] text-[12px] tracking-[0.48px]" data-node-id="4:1012">
+              Acconsento al trattamento dei miei dati personali per la verifica della richiesta.
+            </p>
+          </div>
+          <div className="content-stretch cursor-pointer flex gap-[12px] items-center relative shrink-0 w-full" data-node-id="241:26237" data-name="Navigation Group">
+            <a className="border-[#2491aa] border-[1.5px] border-solid content-stretch flex flex-[1_0_0] gap-[8px] h-[50px] items-center justify-center min-w-px px-[10px] py-[8px] relative rounded-[12px]" data-node-id="241:26238" data-name="Button - Indietro">
+              <div className="flex items-center justify-center relative shrink-0" data-node-id="241:26239">
+                <div className="-scale-y-100 flex-none rotate-180">
+                  <div className="relative size-[24px]" data-name="Lucide Icons / chevron-right">
+                    <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgLucideIconsChevronRight1} />
+                  </div>
+                </div>
+              </div>
+              <p className="[word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[normal] not-italic relative shrink-0 text-[#2491aa] text-[16px] text-left whitespace-nowrap" data-node-id="241:26240">
+                Indietro
+              </p>
+            </a>
+            <a className="bg-[#2491aa] content-stretch drop-shadow-[0px_6px_6px_rgba(0,0,0,0.16)] flex flex-[1_0_0] gap-[8px] h-[50px] items-center justify-center min-w-px px-[10px] py-[8px] relative rounded-[12px]" data-node-id="241:26241" data-name="Button - Continua">
+              <p className="[word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[normal] not-italic relative shrink-0 text-[16px] text-left text-white whitespace-nowrap" data-node-id="241:26242">
+                Continua
+              </p>
+              <div className="relative shrink-0 size-[24px]" data-node-id="241:26243" data-name="Lucide Icons / chevron-right">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgLucideIconsChevronRight2} />
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+Component descriptions: The following components have usage descriptions or documentation links defined in Figma. These descriptions provide important context about the intended usage, best practices, and any constraints for each component. Follow these guidelines when implementing or using these components.
+
+## Lucide Icons / chevron-right
+**Node ID:** 0:13
+
+**Documentation:**
+- [https://lucide.dev/icons/](https://lucide.dev/icons/)
+Images and SVGs will be stored as constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.

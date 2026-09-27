@@ -1,0 +1,181 @@
+const imgVector44 = "https://www.figma.com/api/mcp/asset/6cbbc922-ff6f-40a5-92ff-24240b1aa7ec.svg";
+const imgStashBurgerClassic = "https://www.figma.com/api/mcp/asset/adbe0252-73e4-4157-9ed6-735744038265.svg";
+const imgSliderThumb = "https://www.figma.com/api/mcp/asset/d0fdaee1-ac60-43b3-858d-f774f57111e6.svg";
+const imgLine = "https://www.figma.com/api/mcp/asset/00c95f40-de43-4c0b-be28-4de22486681a.svg";
+const imgLucideIconsChevronRight = "https://www.figma.com/api/mcp/asset/ad3ac65b-405d-47f2-8c50-0c5d5df079bb.svg";
+const imgLucideIconsChevronRight1 = "https://www.figma.com/api/mcp/asset/7fb812f6-0df2-4817-ad7e-a377abb9aabb.svg";
+
+export default function Frame1000003509() {
+  return (
+    <div className="bg-[#f9fafb] content-stretch flex flex-col items-start relative size-full" data-node-id="1:4612">
+      <div className="bg-white border-[#2491aa] border-b border-solid content-stretch flex items-center justify-between px-[20px] py-[15px] relative shrink-0 w-[390px]" data-node-id="1:4613">
+        <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[0] place-items-start relative shrink-0" data-node-id="1:4614">
+          <div className="col-1 h-[29.788px] ml-0 mt-[0.69px] relative row-1 w-[36.941px]" data-node-id="1:4615">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector44} />
+          </div>
+          <p className="[word-break:break-word] col-1 font-['Inter:Bold'] font-bold leading-[normal] ml-[46.04px] mt-0 not-italic relative row-1 text-[26.141px] text-black tracking-[-1.3071px] whitespace-nowrap" data-node-id="1:4616">
+            Avanti
+          </p>
+        </div>
+        <div className="relative shrink-0 size-[40px]" data-node-id="1:4617" data-name="stash:burger-classic">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgStashBurgerClassic} />
+        </div>
+      </div>
+      <div className="content-stretch flex flex-col gap-[28px] items-start pb-[32px] pt-[24px] px-[20px] relative shrink-0 w-full" data-node-id="1:4619" data-name="Main-Body">
+        <div className="[word-break:break-word] content-stretch flex flex-col gap-[16px] items-start leading-[normal] not-italic relative shrink-0 w-full whitespace-nowrap" data-node-id="1:4620" data-name="Section-Amount">
+          <div className="content-stretch flex flex-col gap-[4px] items-start relative shrink-0 w-full" data-node-id="1:4621" data-name="Label-Wrapper">
+            <p className="font-['Inter:Semi_Bold'] font-semibold relative shrink-0 text-[#747474] text-[12px] tracking-[0.48px] uppercase" data-node-id="1:4622">
+              IMPORTO DEL CREDITO
+            </p>
+            <p className="font-['Inter:Bold'] font-bold relative shrink-0 text-[#111827] text-[20px]" data-node-id="1:4623">
+              Scegli l’importo che ti serve
+            </p>
+          </div>
+          <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0 w-full" data-node-id="1:4624" data-name="Input-Slider-Container">
+            <div className="bg-white border border-[#2491aa] border-solid content-stretch drop-shadow-[0px_4px_5px_rgba(0,0,0,0.05)] flex font-['Inter:Semi_Bold'] font-semibold items-center justify-between px-[16px] py-[14px] relative rounded-[14px] shrink-0 text-[#2491aa] text-[24px] w-full" data-node-id="1:4625" data-name="Input-Box">
+              <p className="relative shrink-0" data-node-id="1:4626">
+                12.000
+              </p>
+              <p className="relative shrink-0" data-node-id="1:4627">
+                €
+              </p>
+            </div>
+            <div className="content-stretch flex font-['Inter:Regular'] font-normal items-center justify-between relative shrink-0 text-[#747474] text-[13px] w-full" data-node-id="1:4628" data-name="Range-Indicators">
+              <p className="relative shrink-0" data-node-id="1:4629">
+                1.000 €
+              </p>
+              <p className="relative shrink-0" data-node-id="1:4630">
+                53.000 €
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-full" data-node-id="1:4631" data-name="Section-Duration">
+          <div className="[word-break:break-word] content-stretch flex flex-col gap-[4px] items-start leading-[normal] not-italic relative shrink-0 w-full whitespace-nowrap" data-node-id="1:4632" data-name="Label-Wrapper">
+            <p className="font-['Inter:Semi_Bold'] font-semibold relative shrink-0 text-[#747474] text-[12px] tracking-[0.48px] uppercase" data-node-id="1:4633">
+              Scegli la durata del rimborso
+            </p>
+            <p className="font-['Inter:Bold'] font-bold relative shrink-0 text-[#111827] text-[20px]" data-node-id="1:4634">
+              Per quale durata?
+            </p>
+          </div>
+          <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-full" data-node-id="1:4635" data-name="Slider-Container">
+            <div className="h-[34px] relative shrink-0 w-full" data-node-id="1:4636" data-name="Value-Bubble">
+              <p className="[word-break:break-word] absolute font-['Inter:Semi_Bold'] font-semibold leading-[0] left-[175px] not-italic text-[#2491aa] text-[0px] top-0 whitespace-nowrap" data-node-id="1:4637">
+                <span className="leading-[normal] text-[28px]">{`22 `}</span>
+                <span className="font-['Inter:Medium'] font-medium leading-[normal] text-[18px]">mesi</span>
+              </p>
+            </div>
+            <div className="content-stretch flex flex-col h-[32px] items-start justify-center relative shrink-0 w-full" data-node-id="1:4638" data-name="Slider-Track-Wrapper">
+              <div className="bg-[#e9e9e9] content-stretch flex h-[8px] items-start relative rounded-[100px] shrink-0 w-full" data-node-id="1:4639" data-name="track-bg">
+                <div className="bg-[#2491aa] h-full relative rounded-[100px] shrink-0 w-[210px]" data-node-id="1:4640" data-name="active-highlight" />
+              </div>
+              <div className="absolute left-[200px] size-[32px] top-0" data-node-id="1:4641" data-name="slider-thumb">
+                <div className="absolute inset-[-12.5%_-18.75%_-25%_-18.75%]">
+                  <img alt="" className="block max-w-none size-full" src={imgSliderThumb} />
+                </div>
+              </div>
+            </div>
+            <div className="[word-break:break-word] content-stretch flex font-['Inter:Regular'] font-normal items-center justify-between leading-[normal] not-italic relative shrink-0 text-[#747474] text-[13px] w-full whitespace-nowrap" data-node-id="1:4643" data-name="Range-Indicators">
+              <p className="relative shrink-0" data-node-id="1:4644">
+                1 mese
+              </p>
+              <p className="relative shrink-0" data-node-id="1:4645">
+                36 mesi
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="bg-[#2491aa] content-stretch drop-shadow-[0px_8px_10px_rgba(0,0,0,0.18)] flex flex-col gap-[8px] items-start p-[20px] relative rounded-[16px] shrink-0 w-full" data-node-id="1:4646" data-name="Summary-Card">
+          <div className="[word-break:break-word] content-stretch flex flex-col gap-[4px] items-start not-italic relative shrink-0 w-full whitespace-nowrap" data-node-id="1:4647" data-name="Summary-Item">
+            <p className="font-['Inter:Regular'] font-normal leading-[normal] relative shrink-0 text-[#f3f3f3] text-[14px]" data-node-id="1:4648">
+              Importo richiesto
+            </p>
+            <p className="font-['Inter:Bold'] font-bold leading-[0] relative shrink-0 text-[0px] text-white" data-node-id="1:4649">
+              <span className="leading-[normal] text-[24px]">{`10.000 `}</span>
+              <span className="font-['Inter:Medium'] font-medium leading-[normal] text-[18px]">€</span>
+            </p>
+          </div>
+          <div className="h-0 relative shrink-0 w-full" data-node-id="1:4650" data-name="Line">
+            <div className="absolute inset-[-1px_0_0_0]">
+              <img alt="" className="block max-w-none size-full" src={imgLine} />
+            </div>
+          </div>
+          <div className="[word-break:break-word] content-stretch flex flex-col gap-[4px] items-start not-italic relative shrink-0 w-full whitespace-nowrap" data-node-id="1:4651" data-name="Summary-Item">
+            <p className="font-['Inter:Regular'] font-normal leading-[normal] relative shrink-0 text-[#f3f3f3] text-[14px]" data-node-id="1:4652">
+              Rata di restituzione
+            </p>
+            <p className="font-['Inter:Bold'] font-bold leading-[0] relative shrink-0 text-[0px] text-white" data-node-id="1:4653">
+              <span className="leading-[normal] text-[24px]">{`178 `}</span>
+              <span className="font-['Inter:Medium'] font-medium leading-[normal] text-[18px]">€/mese</span>
+            </p>
+          </div>
+          <div className="h-0 relative shrink-0 w-full" data-node-id="1:4654" data-name="Line">
+            <div className="absolute inset-[-1px_0_0_0]">
+              <img alt="" className="block max-w-none size-full" src={imgLine} />
+            </div>
+          </div>
+          <div className="[word-break:break-word] content-stretch flex flex-col gap-[4px] items-start not-italic relative shrink-0 w-full whitespace-nowrap" data-node-id="1:4655" data-name="Summary-Item">
+            <p className="font-['Inter:Regular'] font-normal leading-[normal] relative shrink-0 text-[#f3f3f3] text-[14px]" data-node-id="1:4656">
+              Durata rimborso
+            </p>
+            <p className="font-['Inter:Bold'] font-bold leading-[0] relative shrink-0 text-[0px] text-white" data-node-id="1:4657">
+              <span className="leading-[normal] text-[24px]">{`22 `}</span>
+              <span className="font-['Inter:Medium'] font-medium leading-[normal] text-[18px]">mesi</span>
+            </p>
+          </div>
+        </div>
+        <div className="content-stretch flex gap-[12px] items-start relative shrink-0 w-full" data-node-id="1:4658" data-name="Disclaimer-Row">
+          <div className="border-[#2491aa] border-[1.5px] border-solid content-stretch flex flex-col items-center justify-center relative rounded-[16px] shrink-0 size-[32px]" data-node-id="1:4659" data-name="Info-Icon">
+            <p className="[word-break:break-word] font-['Inter:Bold'] font-bold leading-[normal] not-italic relative shrink-0 text-[#2491aa] text-[16px] text-center whitespace-nowrap" data-node-id="1:4660">
+              i
+            </p>
+          </div>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular'] font-normal leading-[0] min-w-px not-italic relative text-[#747474] text-[13px]" data-node-id="1:4661">
+            <span className="font-['Inter:Light'] font-light leading-[18px]">Stima indicativa basata su un tasso preferenziale del 3,8% TAN.</span>
+            <span className="leading-[18px]">{` `}</span>
+            <span className="font-['Inter:Semi_Bold'] font-semibold leading-[18px]">Offerta soggetta ad accettazione.</span>
+          </p>
+        </div>
+        <div className="content-stretch flex gap-[12px] items-start relative shrink-0 w-full" data-node-id="1:4662" data-name="Navigation-Actions">
+          <div className="border-[#2491aa] border-[1.5px] border-solid content-stretch flex flex-[1_0_0] gap-[8px] items-center justify-center min-w-px px-[16px] py-[12px] relative rounded-[12px]" data-node-id="1:4663" data-name="Btn-Back">
+            <div className="flex items-center justify-center relative shrink-0" data-node-id="1:4664">
+              <div className="-scale-y-100 flex-none rotate-180">
+                <div className="relative size-[16px]" data-name="Lucide Icons / chevron-right">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgLucideIconsChevronRight} />
+                </div>
+              </div>
+            </div>
+            <p className="[word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[normal] not-italic relative shrink-0 text-[#2491aa] text-[16px] whitespace-nowrap" data-node-id="1:4665">
+              Indietro
+            </p>
+          </div>
+          <a className="bg-[#2491aa] content-stretch cursor-pointer drop-shadow-[0px_4px_4px_rgba(0,0,0,0.16)] flex flex-[1_0_0] gap-[8px] items-center justify-center min-w-px px-[16px] py-[12px] relative rounded-[12px]" data-node-id="1:4666" data-name="Btn-Continue">
+            <p className="[word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[normal] not-italic relative shrink-0 text-[16px] text-left text-white whitespace-nowrap" data-node-id="1:4667">
+              Continua
+            </p>
+            <div className="relative shrink-0 size-[16px]" data-node-id="1:4668" data-name="Lucide Icons / chevron-right">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgLucideIconsChevronRight1} />
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+}
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+Component descriptions: The following components have usage descriptions or documentation links defined in Figma. These descriptions provide important context about the intended usage, best practices, and any constraints for each component. Follow these guidelines when implementing or using these components.
+
+## Lucide Icons / chevron-right
+**Node ID:** 0:13
+
+**Documentation:**
+- [https://lucide.dev/icons/](https://lucide.dev/icons/)
+Images and SVGs will be stored as constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.

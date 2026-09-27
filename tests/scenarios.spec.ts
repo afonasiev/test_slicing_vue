@@ -1,13 +1,14 @@
 import { describe, expect, it } from 'vitest';
 import { normalizeScenario, scenarios } from '../src/app/demo';
-import inventory from '../docs/figma-inventory.json';
+// Independent snapshot of the source Figma frames; CI does not need the local design export.
+import expectedFrameIds from './fixtures/figma-frame-ids.json';
 
 describe('Figma scenario registry', () => {
   it('covers every frame exactly once', () => {
     const ids = scenarios.flatMap((scenario) => Object.values(scenario.figma));
     expect(ids).toHaveLength(129);
     expect(new Set(ids).size).toBe(129);
-    expect([...ids].sort()).toEqual(inventory.map((frame) => frame.id).sort());
+    expect([...ids].sort()).toEqual([...expectedFrameIds].sort());
   });
   it('normalizes unsupported state and overlays', () => {
     expect(normalizeScenario('amount', 'unknown', 'password')).toEqual({});

@@ -90,7 +90,9 @@ for (const width of [320, 375, 390, 768, 1024, 1440, 1920]) {
         page
           .locator('img')
           .evaluateAll((images) =>
-            images.every((image) => image.complete && image.naturalWidth > 0),
+            images.every(
+              (image) => image instanceof HTMLImageElement && image.complete && image.naturalWidth > 0,
+            ),
           ),
       )
       .toBe(true);
