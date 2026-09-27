@@ -1,0 +1,138 @@
+@mixin styles {
+  @media (max-width: 767px) {
+    .card {
+      gap: 20px;
+    }
+    .heading {
+      gap: 12px;
+      p {
+        font-size: 11px;
+        line-height: 13px;
+      }
+      h1 {
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+    .header > p {
+      font-size: 13px;
+      line-height: 18px;
+    }
+    .bank,
+    .shield {
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      [data-profile-icon] {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .shield {
+      border-radius: 50%;
+      [data-profile-icon] {
+        width: 18px;
+        height: 18px;
+      }
+    }
+    .user {
+      strong {
+        font-size: 15px;
+        line-height: 18px;
+        margin-top: 2px;
+      }
+      p {
+        font-size: 11px;
+        line-height: 13px;
+        margin-top: 2px;
+      }
+      b {
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
+    .scanner {
+      gap: 16px;
+      align-items: center;
+    }
+    .graphic {
+      width: 110px;
+      height: 74px;
+    }
+    .scannerInfo {
+      h2 {
+        font-size: 14px;
+        line-height: 17px;
+      }
+      p {
+        font-size: 11px;
+        line-height: 14px;
+        margin-top: 4px;
+      }
+    }
+    .badge {
+      font-size: 9px;
+      line-height: 11px;
+      white-space: normal;
+      justify-content: start;
+      &::before {
+        flex: none;
+      }
+    }
+    .timeline {
+      padding: 8px 0;
+      li {
+        flex: 1;
+      }
+      strong {
+        font-size: 11px;
+        line-height: 13px;
+      }
+      small {
+        font-size: 9px;
+        line-height: 11px;
+      }
+    }
+    .timeline .connector {
+      flex: 0 0 18px;
+    }
+    .circle {
+      width: 36px;
+      height: 36px;
+      [data-profile-icon] {
+        width: 16px;
+        height: 16px;
+      }
+    }
+    .footer {
+      p {
+        font-size: 13px;
+        line-height: 16px;
+      }
+      small {
+        font-size: 12px;
+        line-height: 15px;
+      }
+    }
+    .action {
+      min-height: 48px;
+      font-size: 14px;
+    }
+  }
+  @media (max-width: 359px) {
+    .card {
+      padding: 16px;
+    }
+    .user {
+      padding: 12px;
+      gap: 8px;
+    }
+    .graphic {
+      width: 82px;
+    }
+    .scanner {
+      gap: 10px;
+      padding: 12px;
+    }
+  }
+}

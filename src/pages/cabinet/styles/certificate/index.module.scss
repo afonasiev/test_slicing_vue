@@ -1,0 +1,26 @@
+.layout {
+  max-width: 1440px;
+  margin: 20px auto 0;
+  padding: 0 72px 40px;
+  display: grid;
+  grid-template-columns: minmax(0, 792fr) minmax(0, 464fr);
+  gap: 40px;
+  align-items: start;
+}
+.column {
+  display: grid;
+  gap: 32px;
+}
+.viewerDialog {
+  width: min(793px, calc(100% - 40px));
+  padding: 0;
+  border: 0;
+}
+.mobile {
+  padding: 16px 0 100px;
+}
+@media (max-width: 1199px) {
+  .layout {
+    padding-inline: 24px;
+  }
+}

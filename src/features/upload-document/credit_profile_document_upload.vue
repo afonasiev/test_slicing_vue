@@ -102,6 +102,7 @@ function submit() {
           ref="input"
           :class="$style.fileInput"
           type="file"
+          name="document-photo"
           accept="image/jpeg,image/png,image/webp"
           aria-label="Foto del documento"
           @change="change"

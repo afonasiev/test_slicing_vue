@@ -1,0 +1,151 @@
+@mixin layout {
+  .certificate,
+  .compact {
+    padding: 24px 8px;
+    .header {
+      gap: 16px;
+      p {
+        font-size: 14px;
+        line-height: 17px;
+      }
+      h1 {
+        margin-top: 2px;
+      }
+    }
+    .bank {
+      width: 48px;
+      height: 52px;
+      [data-profile-icon] {
+        width: 24px;
+        height: 24px;
+      }
+    }
+    .description {
+      font-size: 16px;
+      line-height: 18px;
+    }
+    .caption {
+      font-size: 11px;
+      line-height: 13px;
+    }
+    .flow {
+      margin: 20px 0;
+      li,
+      li:first-child,
+      li:last-child {
+        align-items: center;
+      }
+      strong {
+        font-size: 14px;
+        line-height: 17px;
+        width: auto;
+      }
+      small {
+        font-size: 12px;
+        line-height: 15px;
+        width: auto;
+      }
+      li::before {
+        top: 24px;
+      }
+    }
+    .done,
+    .waiting {
+      width: 48px;
+      height: 48px;
+      margin: 0;
+      [data-profile-icon] {
+        width: 16px;
+        height: 16px;
+      }
+    }
+    .active {
+      width: 44px;
+      height: 44px;
+      margin: 7px;
+      [data-profile-icon] {
+        width: 22px;
+        height: 22px;
+      }
+    }
+    .summary {
+      padding-top: 20px;
+    }
+    .completion {
+      font-size: 16px;
+      line-height: 19px;
+      font-weight: 500;
+    }
+    .timer {
+      font-size: 13px;
+      line-height: 16px;
+    }
+    .progress {
+      margin-top: 20px;
+    }
+  }
+  .notice {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 14px;
+    border-radius: 10px;
+    background: var(--tint);
+    font-size: 12px;
+    line-height: 17px;
+    color: var(--muted);
+    > span {
+      width: 28px;
+      height: 28px;
+      flex-shrink: 0;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: white;
+      color: var(--accent);
+    }
+  }
+  @media (max-width: 767px) {
+    .certificate,
+    .compact {
+      .header p {
+        font-size: 11px;
+        line-height: 13px;
+      }
+      .header {
+        gap: 12px;
+      }
+      .bank {
+        width: 48px;
+        height: 44px;
+      }
+      .description {
+        font-size: 13px;
+        line-height: 18px;
+      }
+      .flow strong {
+        font-size: 12px;
+        line-height: 15px;
+      }
+      .flow small {
+        font-size: 10px;
+        line-height: 12px;
+      }
+      .completion {
+        font-size: 14px;
+        line-height: 17px;
+      }
+      .timer {
+        font-size: 11px;
+        line-height: 13px;
+      }
+    }
+  }
+  @media (max-width: 359px) {
+    .certificate .flow strong {
+      white-space: normal;
+      font-size: 11px;
+    }
+  }
+}

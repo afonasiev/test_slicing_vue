@@ -12,7 +12,7 @@ for node in nodes:
     if node.get('parentIndex'):
         children.setdefault(key(node['parentIndex']['guid']), []).append(node)
 helpers['children'] = children
-for name, node_id in [('documentFile', '246:5335'), ('documentCard', '246:5355'), ('close', '1:1368'), ('arrowLeft', '0:75'), ('paymentCard', '1:380')]:
+for name, node_id in [('telegram', '258:16601'), ('unlockDatabase', '258:15633'), ('unlockLock', '258:15642'), ('unlockWallet', '258:15651'), ('verificationBank', '258:17745'), ('verificationShield', '258:17753'), ('verificationUser', '258:17814'), ('verificationScanner', '258:17762'), ('documentFile', '246:5335'), ('documentCard', '246:5355'), ('close', '1:1368'), ('arrowLeft', '0:75'), ('paymentCard', '1:380'), ('transferBank', '246:8568'), ('transferCheck', '246:8580'), ('transferLogo', '246:8656'), ('transferClock', '246:8677'), ('transferError', '246:8897'), ('transferInfo', '246:8912'), ('certificateShield', '256:12657'), ('certificateClose', '256:12235'), ('certificateZoom', '256:12241'), ('certificateLock', '256:12248'), ('chatClose', '232:18310'), ('chatAttachment', '232:18337'), ('chatSend', '232:18342'), ('certificateProgressShield', '256:13103'), ('certificateProgressActive', '256:13180')]:
     node = next(node for node in nodes if key(node['guid']) == node_id)
     size = node['size']
     svg = f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {size["x"]} {size["y"]}">'

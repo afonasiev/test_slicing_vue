@@ -4,3 +4,6 @@ export { default as IbanPage } from './credit_profile_iban_page.vue';
 export { default as ContractPage } from './credit_profile_contract_page.vue';
 export { default as WithdrawalPage } from './credit_profile_withdrawal_page.vue';
 export { default as CommissionPage } from './credit_profile_commission_page.vue';
+export { default as TransferPage } from './credit_profile_transfer_page.vue';
+export { default as CertificatePage } from './credit_profile_certificate_page.vue';
+export { default as VerificationPage } from './credit_profile_verification_page.vue';

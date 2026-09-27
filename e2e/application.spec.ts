@@ -10,6 +10,7 @@ test('application routes preserve draft and browser history', async ({ page }) =
   await page.getByLabel('Cognome', { exact: true }).fill('Rossi');
   await page.getByLabel('Nome', { exact: true }).fill('Marco');
   await page.getByLabel('Tipo di documento').selectOption('passport');
+  await page.getByLabel('NUMERO DEL DOCUMENTO').fill('AB1232232');
   await page.getByRole('button', { name: 'Donna', exact: true }).click();
   await page.getByRole('button', { name: 'Continua' }).click();
   await expect(page).toHaveURL(/\/application\/check$/);

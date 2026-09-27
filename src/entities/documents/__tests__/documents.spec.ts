@@ -6,6 +6,8 @@ describe('local document validation', () => {
     const valid = normalizeIban('it60 x054 2811 1010 0000 0123 456');
     expect(valid).toBe('IT60X0542811101000000123456');
     expect(isValidIban(valid)).toBe(true);
+    expect(isValidIban('IT60 X054 2811 1010 0000 0123 456')).toBe(true);
+    expect(isValidIban('IT60Х0542811101000000123456')).toBe(false);
     expect(isValidIban('IT61X0542811101000000123456')).toBe(false);
     expect(isValidIban('IT00X000000000000000000000000')).toBe(false);
     expect(normalizeIban('IT' + '1'.repeat(40))).toHaveLength(27);

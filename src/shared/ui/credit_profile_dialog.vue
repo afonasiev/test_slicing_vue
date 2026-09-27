@@ -34,9 +34,13 @@ onMounted(() => {
   document.documentElement.classList.add('profile-dialog-open');
 });
 onBeforeUnmount(() => {
+  // The service host has a stable Teleport target and must survive this dialog.
+  const serviceHost = dialog.value?.querySelector<HTMLElement>('[data-demo-host]');
+  if (serviceHost) document.body.append(serviceHost);
   dialog.value?.close();
-  document.documentElement.classList.remove('profile-dialog-open');
-  previousFocus?.focus();
+  if (!document.querySelector('dialog[open]'))
+    document.documentElement.classList.remove('profile-dialog-open');
+  if (previousFocus?.isConnected) previousFocus.focus();
 });
 </script>
 <template>

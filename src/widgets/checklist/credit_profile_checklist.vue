@@ -22,8 +22,14 @@ function documents() {
     <template #header="{ expanded, toggle, contentId }">
       <header :class="$style.heading">
         <div :class="$style.title">
-          <p>Completa tutti gli step</p>
-          <h2>Per il prelievo dei fondi, completa tutti gli step</h2>
+          <p v-if="completed < 5">Completa tutti gli step</p>
+          <h2>
+            {{
+              completed === 5
+                ? 'Fondi pronti per il prelievo - procedi ora!'
+                : 'Per il prelievo dei fondi, completa tutti gli step'
+            }}
+          </h2>
         </div>
         <div :class="$style.controls">
           <ProfileBadge :class="$style.badge">{{ completed }} / 5 completati</ProfileBadge>

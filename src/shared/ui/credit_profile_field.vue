@@ -1,8 +1,11 @@
 <script setup lang="ts">
-import { useId } from 'vue';
-withDefaults(
+import { computed, useId } from 'vue';
+import { formatInput, maskInput, type InputMask } from '@/shared/lib/input-mask';
+const props = withDefaults(
   defineProps<{
     label: string;
+    mask?: InputMask;
+    inputmode?: 'text' | 'numeric' | 'email' | 'tel' | 'decimal';
     type?: string;
     autocomplete?: string;
     placeholder?: string;
@@ -16,13 +19,25 @@ withDefaults(
 );
 const value = defineModel<string>({ required: true });
 const id = useId();
+const displayed = computed(() => formatInput(value.value, props.mask));
+const keyboard = computed(
+  () => props.inputmode ?? (props.mask === 'integer' ? 'numeric' : undefined),
+);
+function input(event: Event) {
+  value.value = maskInput(event.target as HTMLInputElement, props.mask);
+}
 </script>
 <template>
   <div :class="$style.field">
     <label :for="id">{{ label }}</label>
     <input
       :id="id"
-      v-model="value"
+      :name="id"
+      :value="displayed"
+      :inputmode="keyboard"
+      :spellcheck="mask ? false : undefined"
+      :autocapitalize="mask === 'iban' ? 'characters' : undefined"
+      @input="input"
       :type="type"
       :autocomplete="autocomplete"
       :placeholder="placeholder"

@@ -77,6 +77,30 @@ export const router = createRouter({
       component: () => import('@/pages/cabinet').then((module) => module.CommissionPage),
       meta: { section: 'home' },
     },
+    {
+      path: '/transfer',
+      name: 'transfer',
+      component: () => import('@/pages/cabinet').then((module) => module.TransferPage),
+      meta: { section: 'home' },
+    },
+    {
+      path: '/certificate',
+      name: 'certificate',
+      component: () => import('@/pages/cabinet').then((module) => module.CertificatePage),
+      meta: { section: 'home' },
+    },
+    {
+      path: '/verification',
+      name: 'verification',
+      component: () => import('@/pages/cabinet').then((module) => module.VerificationPage),
+      meta: { section: 'home' },
+    },
+    {
+      path: '/assistance',
+      name: 'assistance',
+      component: () => import('@/pages/cabinet').then((module) => module.HomePage),
+      meta: { section: 'home' },
+    },
     { path: '/:pathMatch(.*)*', redirect: { name: 'home', params: {} } },
   ],
   scrollBehavior(to, from, savedPosition) {

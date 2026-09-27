@@ -1,5 +1,8 @@
 <script setup lang="ts">
-import { useRouter } from 'vue-router';
+import { computed } from 'vue';
+import { CertificateCard } from '@/widgets/certificate';
+import { UnlockedStatus } from '@/widgets/unlocked';
+import { useRoute, useRouter } from 'vue-router';
 import { ProfileHeader } from '@/widgets/header';
 import { ProfileProgress } from '@/widgets/progress';
 import { ProfilePersonalData } from '@/widgets/personal-data';
@@ -8,17 +11,55 @@ import { ProfileBalance } from '@/widgets/balance';
 import { ProfileLink, ProfileBadge, ProfileIcon } from '@/shared/ui';
 import { routePaths } from '@/shared/config';
 const router = useRouter();
+const route = useRoute();
+const state = computed(() => String(route.query.state ?? 'default'));
+const completed = computed(() => route.name === 'home' && state.value !== 'default');
+const certificate = computed(() => state.value.startsWith('certificate-'));
+const unlocked = computed(() => ['restricted', 'euroclear'].includes(state.value));
+const completedBasic = computed(() => state.value === 'completed');
+const compactHome = computed(() => state.value === 'completed-compact');
+const insurance = computed(() => state.value === 'insurance');
+const showSummary = computed(() => !insurance.value && !unlocked.value);
+const withdrawalTarget = computed(() => {
+  if (state.value === 'certificate-ready') return '/certificate';
+  if (certificate.value) return '/withdrawal?state=certificate';
+  if (unlocked.value || insurance.value) return `/withdrawal?state=${state.value}`;
+  return '/withdrawal';
+});
+function help() {
+  void router.push({ path: route.path, query: { ...route.query, overlay: 'chat' } });
+}
 function navigate(destination: string) {
   void router.push(routePaths[destination] ?? '/');
 }
 </script>
 <template>
   <ProfileHeader dashboard />
-  <main :class="$style.layout" aria-label="Home Avanti">
+  <main
+    :class="[
+      $style.layout,
+      insurance && $style.full,
+      unlocked && $style.unlocked,
+      completedBasic && $style.completedHome,
+      compactHome && $style.compactHome,
+    ]"
+    aria-label="Home Avanti"
+  >
     <div :class="$style.left">
-      <ProfileProgress compact @navigate="navigate" />
-      <ProfileBalance />
-      <section :class="$style.remaining">
+      <ProfileProgress
+        v-if="!completed || completedBasic"
+        compact
+        :completed="completed ? 5 : 3"
+        :class="completedBasic && $style.mobileProgress"
+        @navigate="navigate"
+      />
+      <ProfileBalance :ready="completed" :withdrawal-target="withdrawalTarget" />
+      <ProfilePersonalData v-if="completedBasic" :class="$style.mobileDetails" />
+      <ProfileChecklist v-if="completedBasic" :completed="5" @navigate="navigate" />
+      <CertificateCard v-if="certificate" />
+      <UnlockedStatus v-if="unlocked" @help="help" />
+      <ProfileChecklist v-if="insurance" :completed="5" @navigate="navigate" />
+      <section v-if="!completed" :class="$style.remaining">
         <span :class="$style.lock"><ProfileIcon name="locked" /></span>
         <header :class="$style.remainingTitle">
           <h2>Per il prelievo dei fondi, completa tutti gli step</h2>
@@ -36,155 +77,15 @@ function navigate(destination: string) {
         >
       </section>
     </div>
-    <aside :class="$style.right" aria-label="Riepilogo richiesta">
-      <ProfilePersonalData compact :class="$style.summary" />
-      <ProfileChecklist compact @navigate="navigate" />
+    <aside v-if="!insurance" :class="$style.right" aria-label="Riepilogo richiesta">
+      <ProfilePersonalData v-if="showSummary" compact :class="$style.summary" />
+      <ProfileChecklist
+        v-if="!completedBasic"
+        compact
+        :completed="completed ? 5 : 3"
+        @navigate="navigate"
+      />
     </aside>
   </main>
 </template>
-<style module lang="scss">
-.layout {
-  max-width: 1440px;
-  margin: 22px auto 40px;
-  padding: 0 72px;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 464px;
-  gap: 40px;
-}
-.left,
-.right {
-  min-width: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-}
-.remaining {
-  display: grid;
-  grid-template-columns: 44px minmax(0, 1fr) auto;
-  align-items: start;
-  justify-content: space-between;
-  column-gap: 16px;
-  row-gap: 6px;
-  padding: 20px;
-  border: 1px solid #c7e3ea;
-  border-radius: 16px;
-  background: var(--tint);
-}
-.remainingTitle {
-  grid-column: 2;
-}
-.remainingLinks {
-  grid-column: 2;
-  grid-row: 2;
-}
-.remaining .lock {
-  grid-row: 1 / 3;
-  align-self: center;
-}
-.completed {
-  grid-column: 3;
-  grid-row: 1;
-  background: var(--accent);
-  color: white;
-  font-size: 11px;
-}
-.lock {
-  display: grid;
-  place-items: center;
-  flex: 0 0 44px;
-  height: 44px;
-  background: var(--accent);
-  border-radius: 50%;
-}
-.lock [data-profile-icon] {
-  width: 20px;
-  height: 20px;
-}
-.checkbox {
-  width: 18px;
-  height: 18px;
-  border: 1px solid var(--accent);
-  border-radius: 4px;
-  background: white;
-}
-.remaining h2 {
-  font-size: 13px;
-  font-weight: 600;
-}
-.remaining p {
-  font-size: 12px;
-  color: var(--muted);
-  margin: 6px 0;
-}
-.remaining a {
-  display: flex;
-  gap: 8px;
-  font-size: 13px;
-  margin-top: 6px;
-}
-@media (max-width: 1199px) {
-  .layout {
-    padding-inline: 24px;
-    grid-template-columns: minmax(0, 1fr);
-  }
-  .summary {
-    display: none;
-  }
-}
-@media (max-width: 767px) {
-  .layout {
-    margin-top: 16px;
-    padding: 0 16px 80px;
-    gap: 20px;
-  }
-  .left,
-  .right {
-    gap: 20px;
-  }
-  .remaining {
-    grid-template-columns: 32px minmax(0, 1fr) auto;
-    padding: 16px;
-    gap: 12px;
-    border-color: var(--accent);
-  }
-  .remaining .lock {
-    width: 32px;
-    height: 32px;
-    grid-row: 1;
-  }
-  .lock [data-profile-icon] {
-    width: 14.222px;
-    height: 14.222px;
-  }
-  .remaining .remainingTitle {
-    grid-column: 2 / 4;
-  }
-  .remaining p {
-    font-size: 11px;
-    margin: 2px 0 0;
-  }
-  .remainingLinks {
-    grid-column: 1 / 3;
-    grid-row: 2;
-  }
-  .remaining a {
-    margin-top: 0;
-  }
-  .remaining a + a {
-    margin-top: 8px;
-  }
-  .checkbox {
-    width: 16px;
-    height: 16px;
-  }
-  .completed {
-    grid-column: 3;
-    grid-row: 2;
-    align-self: end;
-    justify-self: end;
-  }
-  .desktopLabel {
-    display: none;
-  }
-}
-</style>
+<style module lang="scss" src="./styles/dashboard/index.module.scss"></style>

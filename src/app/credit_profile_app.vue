@@ -2,16 +2,22 @@
 import { computed, onMounted, onBeforeUnmount, ref } from 'vue';
 import { RouterView, useRoute, useRouter } from 'vue-router';
 import { useApplicationStore, useBankCheckStore } from '@/entities/application';
-import { usePaymentStore } from '@/entities/payment';
+import { usePaymentStore, useTransferStore } from '@/entities/payment';
 import { useContractStore } from '@/entities/contract';
 import { useProfileStore } from '@/entities/profile';
+import { AssistanceChat } from '@/widgets/assistance';
+import { useAssistanceStore } from '@/entities/assistance';
 import { DemoPanel } from '@/widgets/demo-panel';
 import { demoPages, scenarios } from './demo';
 const route = useRoute();
 const router = useRouter();
 const check = useBankCheckStore();
+const transfer = useTransferStore();
+const running = computed(() => (route.name === 'transfer' ? transfer.running : check.running));
 const revision = ref(0);
-const portal = ref<Element | string>('body');
+const portal = document.createElement('div');
+portal.dataset.demoHost = '';
+document.body.append(portal);
 const currentPage = computed(() => String(route.name ?? 'home'));
 const currentState = computed(() =>
   String(
@@ -20,16 +26,27 @@ const currentState = computed(() =>
       'default',
   ),
 );
+const chatOpen = computed(() => route.name === 'assistance' || route.query.overlay === 'chat');
+function closeChat() {
+  if (route.name === 'assistance') void router.push('/');
+  else {
+    const query = { ...route.query };
+    delete query.overlay;
+    void router.push({ path: route.path, query });
+  }
+}
 const currentOverlay = computed(() => String(route.query.overlay ?? ''));
 let observer: MutationObserver | undefined;
+function moveServiceHost() {
+  const dialogs = document.querySelectorAll('dialog[open]');
+  const parent = dialogs[dialogs.length - 1] ?? document.body;
+  if (portal.parentElement !== parent) parent.append(portal);
+}
 onMounted(() => {
   // Native modal dialogs make the rest of the document inert. Keep the service
   // tools in the active top-layer dialog so they remain keyboard-accessible.
-  observer = new MutationObserver(() => {
-    const dialogs = document.querySelectorAll('dialog[open]');
-    const target = dialogs.item(dialogs.length - 1) ?? 'body';
-    if (portal.value !== target) portal.value = target;
-  });
+  moveServiceHost();
+  observer = new MutationObserver(moveServiceHost);
   observer.observe(document.body, {
     childList: true,
     subtree: true,
@@ -37,8 +54,12 @@ onMounted(() => {
     attributeFilter: ['open'],
   });
 });
-onBeforeUnmount(() => observer?.disconnect());
+onBeforeUnmount(() => {
+  observer?.disconnect();
+  portal.remove();
+});
 function select() {
+  transfer.pause();
   check.pause();
 }
 async function reset() {
@@ -47,22 +68,26 @@ async function reset() {
   check.reset();
   useContractStore().reset();
   usePaymentStore().reset();
+  useAssistanceStore().reset();
+  transfer.reset();
   revision.value++;
   void router.replace({ name: currentPage.value });
 }
 function simulate() {
-  check.toggle();
+  if (route.name === 'transfer' && route.query.state !== 'interrupted') transfer.toggle();
+  else if (route.name === 'check') check.toggle();
 }
 </script>
 <template>
   <RouterView :key="revision" />
+  <AssistanceChat v-if="chatOpen" @close="closeChat" />
   <Teleport :to="portal">
     <DemoPanel
       :pages="demoPages"
       :current-page="currentPage"
       :current-state="currentState"
       :current-overlay="currentOverlay"
-      :running="check.running"
+      :running="running"
       @select="select"
       @reset="reset"
       @simulate="simulate"

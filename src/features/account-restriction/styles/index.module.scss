@@ -1,0 +1,156 @@
+.dialog,
+.instructions {
+  position: relative;
+  padding: 24px;
+  border: 0;
+  width: min(544px, calc(100% - 32px));
+  border-radius: 24px;
+  h2 {
+    font-size: 28px;
+    line-height: 28px;
+    font-weight: 600;
+    margin: 20px 0;
+    padding-right: 12px;
+  }
+}
+.close {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  width: 24px;
+  height: 24px;
+}
+.error {
+  color: #dc2626;
+  background: #fef2f2;
+  border-radius: 8px;
+  padding: 6px 16px;
+  font-size: 14px;
+  line-height: 17px;
+}
+.warning {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  background: #fef2f2;
+  border-radius: 12px;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 24px;
+  [data-profile-icon] {
+    width: 16px;
+    height: 16px;
+    flex: none;
+  }
+}
+.action {
+  width: 100%;
+  min-height: 55px;
+  font-size: 22px;
+}
+.help {
+  display: flex;
+  margin: 16px auto 0;
+  color: var(--accent);
+  font-size: 16px;
+}
+.instructions {
+  width: min(720px, calc(100% - 32px));
+  h2 {
+    font-size: 22px;
+    line-height: 28px;
+    margin-top: 0;
+    padding-right: 30px;
+  }
+  > p {
+    font-size: 16px;
+    line-height: 23px;
+  }
+  ol {
+    list-style: none;
+    margin: 20px 0;
+    padding: 16px;
+    display: grid;
+    gap: 16px;
+    background: #f8fafb;
+    border-radius: 16px;
+  }
+  li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 18px;
+    line-height: 25px;
+    > span:first-child {
+      padding: 0;
+      width: 24px;
+      height: 24px;
+      flex: none;
+    }
+  }
+  .action {
+    font-size: 20px;
+  }
+}
+.back {
+  width: 100%;
+  min-height: 46px;
+  margin-top: 12px;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+@media (max-width: 767px) {
+  .dialog h2 {
+    font-size: 22px;
+    line-height: 27px;
+  }
+  .warning {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .action {
+    font-size: 15px;
+    min-height: 46px;
+  }
+  .instructions {
+    h2 {
+      font-size: 18px;
+      line-height: 23px;
+    }
+    > p {
+      font-size: 14px;
+      line-height: 20px;
+    }
+    li {
+      font-size: 14px;
+      line-height: 20px;
+    }
+    .action {
+      font-size: 15px;
+    }
+  }
+}
+
+.instructionHeader {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+  > [data-profile-icon] {
+    width: 60px;
+    height: 60px;
+  }
+  h2 {
+    margin: 0;
+    padding: 0;
+  }
+}
+@media (max-width: 767px) {
+  .instructionHeader {
+    gap: 12px;
+  }
+  .instructionHeader > [data-profile-icon] {
+    width: 40px;
+    height: 40px;
+  }
+}

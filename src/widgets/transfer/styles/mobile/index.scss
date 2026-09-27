@@ -1,0 +1,190 @@
+@mixin layout {
+  @media (max-width: 767px) {
+    .card {
+      padding: 24px 8px;
+    }
+    .header {
+      gap: 16px;
+      p {
+        font-size: 11px;
+        line-height: 13px;
+      }
+      h1 {
+        font-size: 18px;
+        line-height: 22px;
+        margin-top: 2px;
+      }
+    }
+    .bank {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      [data-profile-icon] {
+        width: 22px;
+        height: 22px;
+      }
+    }
+    .description {
+      font-size: 13px;
+      line-height: 18px;
+    }
+    .caption {
+      font-size: 11px;
+      line-height: 13px;
+    }
+    .flow {
+      margin: 20px 0;
+      li,
+      li:first-child,
+      li:last-child {
+        align-items: center;
+      }
+      li::before {
+        top: 24px;
+      }
+      strong {
+        font-size: 12px;
+        line-height: 15px;
+        white-space: nowrap;
+      }
+      small {
+        font-size: 10px;
+        line-height: 12px;
+        white-space: nowrap;
+      }
+      li:first-child strong,
+      li:first-child small,
+      li:last-child strong,
+      li:last-child small {
+        width: auto;
+      }
+    }
+    .done,
+    .waiting {
+      width: 48px;
+      height: 48px;
+      margin: 0;
+      [data-profile-icon] {
+        width: 16px;
+        height: 16px;
+      }
+    }
+    .active {
+      width: 44px;
+      height: 44px;
+      margin: 7px;
+      [data-profile-icon] {
+        width: 22px;
+        height: 17px;
+      }
+    }
+    .summary {
+      padding-top: 20px;
+    }
+    .amount {
+      strong {
+        font-size: 22px;
+        line-height: 27px;
+      }
+      span {
+        font-size: 11px;
+        line-height: 13px;
+      }
+    }
+    .timer {
+      font-size: 11px;
+      padding: 6px 10px;
+      [data-profile-icon] {
+        width: 14px;
+        height: 14px;
+      }
+    }
+    .progress {
+      margin-top: 20px;
+    }
+    .action {
+      min-height: 45px;
+      font-size: 14px;
+    }
+    .interrupted {
+      padding-block: 20px;
+      .header {
+        gap: 12px;
+        p {
+          font-size: 11px;
+          line-height: 13px;
+        }
+      }
+      .bank {
+        width: 40px;
+        height: 40px;
+      }
+      .caption {
+        font-size: 10px;
+        line-height: 12px;
+      }
+      .flow {
+        margin: 16px 0;
+        li::before {
+          top: 18px;
+        }
+        small {
+          font-size: 11px;
+          line-height: 13px;
+        }
+        strong {
+          margin-top: 6px;
+        }
+      }
+      .done,
+      .error,
+      .waiting {
+        width: 36px;
+        height: 36px;
+        [data-profile-icon] {
+          width: 20px;
+          height: 20px;
+        }
+      }
+      .warning {
+        font-size: 12px;
+        line-height: 16px;
+      }
+      .summary {
+        padding-top: 16px;
+      }
+      .amount strong {
+        font-size: 24px;
+        line-height: 29px;
+      }
+      .timer {
+        font-size: 12px;
+      }
+      .progress {
+        display: flex;
+        margin-top: 16px;
+      }
+      .progress progress::-webkit-progress-value {
+        background: #9a0606;
+      }
+      .progress progress::-moz-progress-bar {
+        background: #9a0606;
+      }
+      .action {
+        min-height: 46px;
+        font-size: 15px;
+      }
+    }
+  }
+  @media (max-width: 359px) {
+    .timer {
+      white-space: normal;
+    }
+    .flow strong {
+      font-size: 10px;
+    }
+    .flow small {
+      font-size: 9px;
+    }
+  }
+}

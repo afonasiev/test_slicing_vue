@@ -4,482 +4,680 @@
     "page": "amount",
     "state": "default",
     "overlay": null,
-    "figma": { "desktop": "0:918", "mobile": "1:4612" }
+    "figma": {
+      "desktop": "0:918",
+      "mobile": "1:4612"
+    }
   },
   {
     "id": "personal-default",
     "page": "personal",
     "state": "default",
     "overlay": null,
-    "figma": { "desktop": "0:977", "mobile": "4:963" }
+    "figma": {
+      "desktop": "0:977",
+      "mobile": "4:963"
+    }
   },
   {
     "id": "personal-document-menu",
     "page": "personal",
     "state": "document-menu",
     "overlay": null,
-    "figma": { "desktop": "0:1021" }
+    "figma": {
+      "desktop": "0:1021"
+    }
   },
   {
     "id": "personal-passport",
     "page": "personal",
     "state": "passport",
     "overlay": null,
-    "figma": { "desktop": "263:7568", "mobile": "246:5258" }
+    "figma": {
+      "desktop": "263:7568",
+      "mobile": "246:5258"
+    }
   },
   {
     "id": "check-checking",
     "page": "check",
     "state": "checking",
     "overlay": null,
-    "figma": { "desktop": "0:1077", "mobile": "1:4669" }
+    "figma": {
+      "desktop": "0:1077",
+      "mobile": "1:4669"
+    }
   },
   {
     "id": "approved-default",
     "page": "approved",
     "state": "default",
     "overlay": null,
-    "figma": { "desktop": "0:1177", "mobile": "6:966" }
+    "figma": {
+      "desktop": "0:1177",
+      "mobile": "6:966"
+    }
   },
   {
     "id": "register-default",
     "page": "register",
     "state": "default",
     "overlay": null,
-    "figma": { "desktop": "0:1235", "mobile": "7:1017" }
+    "figma": {
+      "desktop": "0:1235",
+      "mobile": "7:1017"
+    }
   },
   {
     "id": "login-default",
     "page": "login",
     "state": "default",
     "overlay": null,
-    "figma": { "desktop": "0:1338", "mobile": "8:1017" }
+    "figma": {
+      "desktop": "0:1338",
+      "mobile": "8:1017"
+    }
   },
   {
     "id": "home-default",
     "page": "home",
     "state": "default",
     "overlay": null,
-    "figma": { "desktop": "1:15", "mobile": "18:967" }
+    "figma": {
+      "desktop": "1:15",
+      "mobile": "18:967"
+    }
   },
   {
     "id": "home-completed",
     "page": "home",
     "state": "completed",
     "overlay": null,
-    "figma": { "desktop": "241:25321", "mobile": "232:17490" }
+    "figma": {
+      "desktop": "241:25321",
+      "mobile": "232:17490"
+    }
   },
   {
     "id": "home-completed-compact",
     "page": "home",
     "state": "completed-compact",
     "overlay": null,
-    "figma": { "mobile": "107:8830" }
+    "figma": {
+      "mobile": "107:8830"
+    }
   },
   {
     "id": "home-insurance",
     "page": "home",
     "state": "insurance",
     "overlay": null,
-    "figma": { "desktop": "246:7825", "mobile": "232:14405" }
+    "figma": {
+      "desktop": "246:7825",
+      "mobile": "232:14405"
+    }
   },
   {
     "id": "home-certificate-ready",
     "page": "home",
     "state": "certificate-ready",
     "overlay": null,
-    "figma": { "desktop": "256:11462", "mobile": "232:16351" }
+    "figma": {
+      "desktop": "256:11462",
+      "mobile": "232:16351"
+    }
   },
   {
     "id": "home-certificate-confirmed",
     "page": "home",
     "state": "certificate-confirmed",
     "overlay": null,
-    "figma": { "desktop": "256:12475", "mobile": "232:14435" }
+    "figma": {
+      "desktop": "256:12475",
+      "mobile": "232:14435"
+    }
   },
   {
     "id": "home-restricted",
     "page": "home",
     "state": "restricted",
     "overlay": null,
-    "figma": { "desktop": "258:14783", "mobile": "232:14524" }
+    "figma": {
+      "desktop": "258:14783",
+      "mobile": "232:14524"
+    }
   },
   {
     "id": "home-euroclear",
     "page": "home",
     "state": "euroclear",
     "overlay": null,
-    "figma": { "desktop": "258:16652", "mobile": "232:14586" }
+    "figma": {
+      "desktop": "258:16652",
+      "mobile": "232:14586"
+    }
   },
   {
     "id": "profile-default",
     "page": "profile",
     "state": "default",
     "overlay": null,
-    "figma": { "desktop": "1:2583", "mobile": "19:1228" }
+    "figma": {
+      "desktop": "1:2583",
+      "mobile": "19:1228"
+    }
   },
   {
     "id": "profile-default-name",
     "page": "profile",
     "state": "default",
     "overlay": "name",
-    "figma": { "desktop": "1:2773", "mobile": "17:2626" }
+    "figma": {
+      "desktop": "1:2773",
+      "mobile": "17:2626"
+    }
   },
   {
     "id": "profile-default-email",
     "page": "profile",
     "state": "default",
     "overlay": "email",
-    "figma": { "desktop": "1:2997", "mobile": "22:2953" }
+    "figma": {
+      "desktop": "1:2997",
+      "mobile": "22:2953"
+    }
   },
   {
     "id": "profile-default-password",
     "page": "profile",
     "state": "default",
     "overlay": "password",
-    "figma": { "desktop": "1:3226", "mobile": "22:3181" }
+    "figma": {
+      "desktop": "1:3226",
+      "mobile": "22:3181"
+    }
   },
   {
     "id": "profile-verification",
     "page": "profile",
     "state": "verification",
     "overlay": null,
-    "figma": { "desktop": "1:3463", "mobile": "22:3408" }
+    "figma": {
+      "desktop": "1:3463",
+      "mobile": "22:3408"
+    }
   },
   {
     "id": "documents-default",
     "page": "documents",
     "state": "default",
     "overlay": null,
-    "figma": { "desktop": "1:935", "mobile": "22:3657" }
+    "figma": {
+      "desktop": "1:935",
+      "mobile": "22:3657"
+    }
   },
   {
     "id": "documents-error",
     "page": "documents",
     "state": "error",
     "overlay": null,
-    "figma": { "mobile": "95:5965" }
+    "figma": {
+      "mobile": "95:5965"
+    }
   },
   {
     "id": "documents-success",
     "page": "documents",
     "state": "success",
     "overlay": null,
-    "figma": { "mobile": "95:6532" }
+    "figma": {
+      "mobile": "95:6532"
+    }
   },
   {
     "id": "iban-default",
     "page": "iban",
     "state": "default",
     "overlay": null,
-    "figma": { "desktop": "1:1254", "mobile": "104:7340" }
+    "figma": {
+      "desktop": "1:1254",
+      "mobile": "104:7340"
+    }
   },
   {
     "id": "iban-verification",
     "page": "iban",
     "state": "verification",
     "overlay": null,
-    "figma": { "desktop": "1:1409", "mobile": "104:7895" }
+    "figma": {
+      "desktop": "1:1409",
+      "mobile": "104:7895"
+    }
   },
   {
     "id": "contract-default",
     "page": "contract",
     "state": "default",
     "overlay": null,
-    "figma": { "desktop": "22:4780" }
+    "figma": {
+      "desktop": "22:4780"
+    }
   },
   {
     "id": "contract-default-signature",
     "page": "contract",
     "state": "default",
     "overlay": "signature",
-    "figma": { "desktop": "1:2060" }
+    "figma": {
+      "desktop": "1:2060"
+    }
   },
   {
     "id": "withdrawal-default",
     "page": "withdrawal",
     "state": "default",
     "overlay": null,
-    "figma": { "desktop": "31:6355", "mobile": "33:6582" }
+    "figma": {
+      "desktop": "31:6355",
+      "mobile": "33:6582"
+    }
   },
   {
     "id": "withdrawal-insurance",
     "page": "withdrawal",
     "state": "insurance",
     "overlay": null,
-    "figma": { "desktop": "246:8267", "mobile": "232:16223" }
+    "figma": {
+      "desktop": "246:8267",
+      "mobile": "232:16223"
+    }
   },
   {
     "id": "withdrawal-certificate",
     "page": "withdrawal",
     "state": "certificate",
     "overlay": null,
-    "figma": { "desktop": "256:12648", "mobile": "232:14478" }
+    "figma": {
+      "desktop": "256:12648",
+      "mobile": "232:14478"
+    }
   },
   {
     "id": "withdrawal-restricted",
     "page": "withdrawal",
     "state": "restricted",
     "overlay": null,
-    "figma": { "desktop": "258:15222", "mobile": "232:15895" }
+    "figma": {
+      "desktop": "258:15222",
+      "mobile": "232:15895"
+    }
   },
   {
     "id": "withdrawal-euroclear",
     "page": "withdrawal",
     "state": "euroclear",
     "overlay": null,
-    "figma": { "desktop": "258:17043", "mobile": "232:14648" }
+    "figma": {
+      "desktop": "258:17043",
+      "mobile": "232:14648"
+    }
   },
   {
     "id": "withdrawal-euroclear-warning",
     "page": "withdrawal",
     "state": "euroclear",
     "overlay": "warning",
-    "figma": { "desktop": "258:17357", "mobile": "232:15586" }
+    "figma": {
+      "desktop": "258:17357",
+      "mobile": "232:15586"
+    }
   },
   {
     "id": "commission-legacy",
     "page": "commission",
     "state": "legacy",
     "overlay": null,
-    "figma": { "desktop": "1:230", "mobile": "33:6906" }
+    "figma": {
+      "desktop": "1:230",
+      "mobile": "33:6906"
+    }
   },
   {
     "id": "commission-legacy-coordinates",
     "page": "commission",
     "state": "legacy",
     "overlay": "coordinates",
-    "figma": { "desktop": "1:389", "mobile": "33:7157" }
+    "figma": {
+      "desktop": "1:389",
+      "mobile": "33:7157"
+    }
   },
   {
     "id": "commission-processing",
     "page": "commission",
     "state": "processing",
     "overlay": null,
-    "figma": { "desktop": "241:23346", "mobile": "232:17599" }
+    "figma": {
+      "desktop": "241:23346",
+      "mobile": "232:17599"
+    }
   },
   {
     "id": "commission-processing-coordinates",
     "page": "commission",
     "state": "processing",
     "overlay": "coordinates",
-    "figma": { "desktop": "241:23505", "mobile": "232:17755" }
+    "figma": {
+      "desktop": "241:23505",
+      "mobile": "232:17755"
+    }
   },
   {
     "id": "commission-processing-details",
     "page": "commission",
     "state": "processing",
     "overlay": "details",
-    "figma": { "desktop": "246:6568", "mobile": "232:18112" }
+    "figma": {
+      "desktop": "246:6880",
+      "mobile": "232:18112"
+    }
   },
   {
     "id": "commission-processing-sepa",
     "page": "commission",
     "state": "processing",
     "overlay": "sepa",
-    "figma": { "desktop": "246:6880", "mobile": "232:17928" }
+    "figma": {
+      "desktop": "246:6568",
+      "mobile": "232:17928"
+    }
   },
   {
     "id": "commission-processing-chat",
     "page": "commission",
     "state": "processing",
     "overlay": "chat",
-    "figma": { "desktop": "246:7170" }
+    "figma": {
+      "desktop": "246:7170"
+    }
   },
   {
     "id": "commission-insurance",
     "page": "commission",
     "state": "insurance",
     "overlay": null,
-    "figma": { "desktop": "246:8972", "mobile": "232:16692" }
+    "figma": {
+      "desktop": "246:8972",
+      "mobile": "232:16692"
+    }
   },
   {
     "id": "commission-insurance-details",
     "page": "commission",
     "state": "insurance",
     "overlay": "details",
-    "figma": { "desktop": "246:10018", "mobile": "232:17280" }
+    "figma": {
+      "desktop": "246:10018",
+      "mobile": "232:17280"
+    }
   },
   {
     "id": "commission-insurance-coordinates",
     "page": "commission",
     "state": "insurance",
     "overlay": "coordinates",
-    "figma": { "desktop": "246:10479", "mobile": "232:17069" }
+    "figma": {
+      "desktop": "246:10479",
+      "mobile": "232:17069"
+    }
   },
   {
     "id": "commission-insurance-sepa",
     "page": "commission",
     "state": "insurance",
     "overlay": "sepa",
-    "figma": { "desktop": "256:10785", "mobile": "232:17169" }
+    "figma": {
+      "desktop": "256:10785",
+      "mobile": "232:17169"
+    }
   },
   {
     "id": "commission-insurance-chat",
     "page": "commission",
     "state": "insurance",
     "overlay": "chat",
-    "figma": { "desktop": "256:11100", "mobile": "232:18344" }
+    "figma": {
+      "desktop": "256:11100",
+      "mobile": "232:18344"
+    }
   },
   {
     "id": "commission-certificate",
     "page": "commission",
     "state": "certificate",
     "overlay": null,
-    "figma": { "desktop": "256:13251", "mobile": "232:16775" }
+    "figma": {
+      "desktop": "256:13251",
+      "mobile": "232:16775"
+    }
   },
   {
     "id": "commission-certificate-details",
     "page": "commission",
     "state": "certificate",
     "overlay": "details",
-    "figma": { "desktop": "256:13554", "mobile": "232:17383" }
+    "figma": {
+      "desktop": "256:13554",
+      "mobile": "232:17383"
+    }
   },
   {
     "id": "commission-certificate-coordinates",
     "page": "commission",
     "state": "certificate",
     "overlay": "coordinates",
-    "figma": { "desktop": "256:13848", "mobile": "232:16858" }
+    "figma": {
+      "desktop": "256:13848",
+      "mobile": "232:16858"
+    }
   },
   {
     "id": "commission-certificate-sepa",
     "page": "commission",
     "state": "certificate",
     "overlay": "sepa",
-    "figma": { "desktop": "256:14170", "mobile": "232:16958" }
+    "figma": {
+      "desktop": "256:14170",
+      "mobile": "232:16958"
+    }
   },
   {
     "id": "withdrawal-certificate-chat",
     "page": "withdrawal",
     "state": "certificate",
     "overlay": "chat",
-    "figma": { "desktop": "256:14444", "mobile": "232:18393" }
+    "figma": {
+      "desktop": "256:14444",
+      "mobile": "232:18393"
+    }
   },
   {
     "id": "certificate-default",
     "page": "certificate",
     "state": "default",
     "overlay": null,
-    "figma": { "desktop": "256:11916", "mobile": "232:16399" }
+    "figma": {
+      "desktop": "256:11916",
+      "mobile": "232:16399"
+    }
   },
   {
     "id": "certificate-confirm",
     "page": "certificate",
     "state": "confirm",
     "overlay": null,
-    "figma": { "desktop": "256:12255", "mobile": "232:16446" }
+    "figma": {
+      "desktop": "256:12255",
+      "mobile": "232:16446"
+    }
   },
   {
     "id": "transfer-processing",
     "page": "transfer",
     "state": "processing",
     "overlay": null,
-    "figma": { "desktop": "246:8463", "mobile": "232:16259" }
+    "figma": {
+      "desktop": "246:8463",
+      "mobile": "232:16259"
+    }
   },
   {
     "id": "transfer-interrupted",
     "page": "transfer",
     "state": "interrupted",
     "overlay": null,
-    "figma": { "desktop": "246:8687", "mobile": "232:16602" }
+    "figma": {
+      "desktop": "246:8687",
+      "mobile": "232:16602"
+    }
   },
   {
     "id": "transfer-certificate",
     "page": "transfer",
     "state": "certificate",
     "overlay": null,
-    "figma": { "desktop": "256:12837", "mobile": "232:16510" }
+    "figma": {
+      "desktop": "256:12837",
+      "mobile": "232:16510"
+    }
   },
   {
     "id": "transfer-restricted-processing",
     "page": "transfer",
     "state": "restricted-processing",
     "overlay": null,
-    "figma": { "desktop": "258:15407", "mobile": "232:15960" }
+    "figma": {
+      "desktop": "258:15407",
+      "mobile": "232:15960"
+    }
   },
   {
     "id": "transfer-restricted",
     "page": "transfer",
     "state": "restricted",
     "overlay": null,
-    "figma": { "desktop": "258:15657", "mobile": "232:16081" }
+    "figma": {
+      "desktop": "258:15657",
+      "mobile": "232:16081"
+    }
   },
   {
     "id": "transfer-restricted-instructions",
     "page": "transfer",
     "state": "restricted",
     "overlay": "instructions",
-    "figma": { "desktop": "258:16335", "mobile": "258:16047" }
+    "figma": {
+      "desktop": "258:16335",
+      "mobile": "258:16047"
+    }
   },
   {
     "id": "home-restricted-chat",
     "page": "home",
     "state": "restricted",
     "overlay": "chat",
-    "figma": { "desktop": "258:15000", "mobile": "232:15669" }
+    "figma": {
+      "desktop": "258:15000",
+      "mobile": "232:15669"
+    }
   },
   {
     "id": "home-euroclear-chat",
     "page": "home",
     "state": "euroclear",
     "overlay": "chat",
-    "figma": { "desktop": "258:16821", "mobile": "232:15782" }
+    "figma": {
+      "desktop": "258:16821",
+      "mobile": "232:15782"
+    }
   },
   {
     "id": "verification-processing",
     "page": "verification",
     "state": "processing",
     "overlay": null,
-    "figma": { "desktop": "258:17512", "mobile": "232:14713" }
+    "figma": {
+      "desktop": "258:17512",
+      "mobile": "232:14713"
+    }
   },
   {
     "id": "verification-checking",
     "page": "verification",
     "state": "checking",
     "overlay": null,
-    "figma": { "desktop": "258:17836", "mobile": "232:14818" }
+    "figma": {
+      "desktop": "258:17836",
+      "mobile": "232:14818"
+    }
   },
   {
     "id": "verification-commission",
     "page": "verification",
     "state": "commission",
     "overlay": null,
-    "figma": { "desktop": "258:18018", "mobile": "232:14921" }
+    "figma": {
+      "desktop": "258:18018",
+      "mobile": "232:14921"
+    }
   },
   {
     "id": "verification-commission-details",
     "page": "verification",
     "state": "commission",
     "overlay": "details",
-    "figma": { "desktop": "258:18239", "mobile": "232:15071" }
+    "figma": {
+      "desktop": "258:18239",
+      "mobile": "232:15071"
+    }
   },
   {
     "id": "verification-commission-coordinates",
     "page": "verification",
     "state": "commission",
     "overlay": "coordinates",
-    "figma": { "desktop": "258:18694", "mobile": "232:15241" }
+    "figma": {
+      "desktop": "258:18694",
+      "mobile": "232:15241"
+    }
   },
   {
     "id": "verification-commission-sepa",
     "page": "verification",
     "state": "commission",
     "overlay": "sepa",
-    "figma": { "desktop": "258:18982", "mobile": "232:15408" }
+    "figma": {
+      "desktop": "258:18982",
+      "mobile": "232:15408"
+    }
   },
   {
     "id": "assistance-default",
     "page": "assistance",
     "state": "default",
     "overlay": null,
-    "figma": { "mobile": "232:18295" }
+    "figma": {
+      "mobile": "232:18295"
+    }
   },
   {
     "id": "assistance-conversation",
     "page": "assistance",
     "state": "conversation",
     "overlay": null,
-    "figma": { "mobile": "270:7789" }
+    "figma": {
+      "mobile": "270:7789"
+    }
   }
 ]

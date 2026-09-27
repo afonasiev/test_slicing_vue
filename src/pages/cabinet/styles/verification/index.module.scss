@@ -1,0 +1,39 @@
+.layout {
+  max-width: 1440px;
+  margin: 20px auto 0;
+  padding: 0 72px 40px;
+  display: grid;
+  gap: 40px;
+}
+.details {
+  width: min(550px, calc(100% - 32px));
+}
+.copy {
+  display: grid;
+  gap: 20px;
+  font-size: 16px;
+  line-height: 22px;
+  overflow-wrap: anywhere;
+  dd {
+    margin: 0;
+  }
+  aside {
+    padding: 16px;
+    border-radius: 12px;
+    background: var(--tint);
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+@media (max-width: 1199px) {
+  .layout {
+    padding-inline: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .layout {
+    margin-top: 16px;
+    padding: 0 16px 100px;
+    gap: 40px;
+  }
+}

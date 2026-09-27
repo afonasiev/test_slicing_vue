@@ -5,13 +5,16 @@ import { defineStore } from 'pinia';
 export const usePaymentStore = defineStore('payment', () => {
   const iban = ref('');
   const holder = ref('');
-  function setDetails(nextIban: string, nextHolder: string) {
+  const amount = ref(8300);
+  function setDetails(nextIban: string, nextHolder: string, nextAmount = 8300) {
     iban.value = nextIban;
     holder.value = nextHolder;
+    amount.value = nextAmount;
   }
   function reset() {
     iban.value = '';
     holder.value = '';
+    amount.value = 8300;
   }
-  return { iban, holder, setDetails, reset };
+  return { iban, holder, amount, setDetails, reset };
 });

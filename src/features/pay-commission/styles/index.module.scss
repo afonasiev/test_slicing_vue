@@ -1,4 +1,5 @@
 @use './coordinates';
+@use './insurance';
 
 .dialog {
   width: min(681px, calc(100% - 40px));
@@ -249,3 +250,9 @@
 }
 
 @include coordinates.layout;
+
+@include insurance.layout;
+
+.coordinateDialog {
+  font-family: Geist, Inter, sans-serif;
+}

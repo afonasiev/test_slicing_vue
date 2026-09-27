@@ -1,0 +1,59 @@
+.card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 20px;
+  display: grid;
+  gap: 20px;
+  header {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    p {
+      font-size: 11px;
+      line-height: 13px;
+      color: var(--accent);
+    }
+    h2 {
+      margin-top: 4px;
+      font-size: 18px;
+      line-height: 22px;
+      font-weight: 600;
+    }
+  }
+}
+.badge {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: var(--tint);
+  [data-profile-icon] {
+    width: 20px;
+    height: 20px;
+  }
+}
+.description {
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--muted);
+}
+.code {
+  font-size: 12px;
+  line-height: 15px;
+  color: var(--muted);
+}
+.action {
+  width: min(318px, 100%);
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: var(--accent);
+  color: white;
+  font-size: 16px;
+  line-height: 20px;
+}

@@ -42,7 +42,9 @@ function close() {
   void router.replace({ path: route.path, query });
 }
 async function saved(message: string) {
-  close();
+  if (editKind.value === 'email') {
+    void router.replace({ path: route.path, query: { state: 'verification' } });
+  } else close();
   clearTimeout(statusTimer);
   status.value = '';
   await nextTick();
@@ -61,7 +63,7 @@ function navigate(destination: string) {
     <div :class="$style.left">
       <ProfileProgress @navigate="navigate" />
       <ProfilePersonalData @edit="editName" />
-      <ProfileSecurity @edit="edit" />
+      <ProfileSecurity :verification="route.query.state === 'verification'" @edit="edit" />
     </div>
     <aside :class="$style.right" aria-label="Riepilogo richiesta">
       <ProfilePersonalData compact :class="$style.summary" />

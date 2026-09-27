@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue';
 import { useApplicationStore } from '@/entities/application';
+import { maskInput } from '@/shared/lib/input-mask';
 import { ProfileRange } from '@/shared/ui';
 const store = useApplicationStore();
 const amount = ref(store.application.amount.toLocaleString('it-IT'));
@@ -11,7 +12,9 @@ const desktopSummary = computed(() => summary.value.replaceAll('.', ' '));
 const summary = computed(() =>
   touched.value ? Number(amount.value.replace(/\D/g, '')).toLocaleString('it-IT') : '10.000',
 );
-function change() {
+function change(event: Event) {
+  amount.value = maskInput(event.target as HTMLInputElement, 'integer').slice(0, 6);
+  (event.target as HTMLInputElement).value = amount.value;
   touched.value = true;
 }
 async function save() {
@@ -37,7 +40,9 @@ defineExpose({ save });
         </header>
         <label :class="$style.amount">
           <input
-            v-model="amount"
+            :value="amount"
+            type="text"
+            name="credit-amount"
             inputmode="numeric"
             aria-label="Importo del credito"
             @input="change"

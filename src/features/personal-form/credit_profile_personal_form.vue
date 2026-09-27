@@ -1,12 +1,25 @@
 <script setup lang="ts">
-import { reactive, ref, useTemplateRef } from 'vue';
+import { reactive, ref, watch, useTemplateRef } from 'vue';
 import { useApplicationStore } from '@/entities/application';
 import { ProfileButton, ProfileField, ProfileSelect } from '@/shared/ui';
+const props = defineProps<{ preset?: string }>();
 const emit = defineEmits<{ saved: [] }>();
 const store = useApplicationStore();
 const draft = reactive({ ...store.application });
 const form = useTemplateRef('form');
 const error = ref('');
+const menuOpen = ref(false);
+watch(
+  () => props.preset,
+  (preset) => {
+    menuOpen.value = preset === 'document-menu';
+    if (preset === 'passport') draft.documentType = 'passport';
+  },
+  { immediate: true },
+);
+function closeMenu() {
+  menuOpen.value = false;
+}
 const documentOptions = [
   { value: 'passport', label: 'Passaporto' },
   { value: 'identity', label: 'Carta d’identità nazionale' },
@@ -95,6 +108,17 @@ defineExpose({ save });
       label="Tipo di documento"
       placeholder="Seleziona il tipo"
       :options="documentOptions"
+      required
+      :menu-open="menuOpen"
+      @close="closeMenu"
+    />
+    <ProfileField
+      v-if="draft.documentType"
+      v-model="draft.documentNumber"
+      :class="$style.field"
+      label="NUMERO DEL DOCUMENTO"
+      placeholder="Es.AB1232232"
+      mask="alphanumeric"
       required
     />
     <p :class="$style.consent">

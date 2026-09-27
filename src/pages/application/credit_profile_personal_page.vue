@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import { useTemplateRef } from 'vue';
-import { useRouter } from 'vue-router';
+import { useRoute, useRouter } from 'vue-router';
 import { ApplicationShell, ApplicationNavigation } from '@/widgets/application-shell';
 import { PersonalForm } from '@/features/personal-form';
 const router = useRouter();
+const route = useRoute();
 const form = useTemplateRef('form');
 function back() {
   void router.push({ name: 'amount' });
@@ -17,7 +18,7 @@ async function next() {
 <template>
   <ApplicationShell>
     <main :class="$style.content">
-      <PersonalForm ref="form"
+      <PersonalForm ref="form" :preset="String(route.query.state ?? 'default')"
         ><ApplicationNavigation :class="$style.navigation" @back="back" @next="next"
       /></PersonalForm>
     </main>

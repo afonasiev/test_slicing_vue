@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ProfileEmailVerification } from '@/features/verify-email';
 import { ProfileButton, ProfileIcon } from '@/shared/ui';
+withDefaults(defineProps<{ verification?: boolean }>(), { verification: true });
 const emit = defineEmits<{ edit: [kind: 'password' | 'email'] }>();
 function password() {
   emit('edit', 'password');
@@ -23,7 +24,7 @@ function email() {
       <p>Cambia l'indirizzo email del tuo account.</p>
       <ProfileButton @click="email">Cambia email</ProfileButton>
     </div>
-    <ProfileEmailVerification />
+    <ProfileEmailVerification v-if="verification" />
   </section>
 </template>
 <style module lang="scss">

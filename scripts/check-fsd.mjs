@@ -21,6 +21,7 @@ async function resolve(base) {
     base,
     ...[".ts", ".vue", ".scss"].map((ext) => base + ext),
     path.join(base, "index.ts"),
+    path.join(base, "index.scss"),
   ]) {
     if (
       await stat(candidate)

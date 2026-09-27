@@ -1,11 +1,13 @@
 <script setup lang="ts">
-import { computed, useTemplateRef } from 'vue';
+import { computed, useTemplateRef, useId } from 'vue';
 const code = defineModel<string>({ required: true });
 defineProps<{ invalid?: boolean }>();
+const fieldId = useId();
 const group = useTemplateRef('group');
 const digits = computed(() =>
   Array.from({ length: 6 }, (_, index) => ({
     index,
+    id: `${fieldId}-${index}`,
     label: `Cifra ${index + 1}`,
     value: code.value[index] === ' ' ? '' : code.value[index] || '',
   })),
@@ -66,6 +68,9 @@ function select(event: FocusEvent) {
     <input
       v-for="digit in digits"
       :key="digit.index"
+      :id="digit.id"
+      :name="digit.id"
+      type="text"
       :data-index="digit.index"
       :value="digit.value"
       :aria-label="digit.label"

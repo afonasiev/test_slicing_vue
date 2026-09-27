@@ -1,0 +1,54 @@
+@mixin layout {
+  .breakdown {
+    display: flex;
+    flex-direction: column;
+  }
+  .insurance {
+    composes: dialog;
+    .help {
+      order: -1;
+      margin: 0 0 24px;
+    }
+  }
+  .help {
+    width: 100%;
+    display: flex;
+    gap: 12px;
+    padding: 14px 12px;
+    margin-top: 24px;
+    background: var(--background);
+    border-radius: 8px;
+    text-align: left;
+    > span:first-child {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: var(--tint);
+      color: var(--accent);
+      text-align: center;
+      flex-shrink: 0;
+    }
+    strong {
+      display: block;
+      font-size: 12px;
+      line-height: 15px;
+      font-weight: 500;
+    }
+    small {
+      display: block;
+      font-size: 10px;
+      line-height: 12px;
+      margin-top: 2px;
+      color: var(--muted);
+    }
+  }
+  @media (max-width: 767px) {
+    .insurance .help {
+      order: 0;
+      margin: 20px 0 0;
+    }
+    .insurance .payment > [data-profile-icon] {
+      display: none;
+    }
+  }
+}

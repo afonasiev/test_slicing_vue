@@ -12,6 +12,11 @@ const props = defineProps<{
   running: boolean;
 }>();
 const emit = defineEmits<{ select: [scenario: DemoScenario]; reset: []; simulate: [] }>();
+const simulationAvailable = computed(
+  () =>
+    props.currentPage === 'check' ||
+    (props.currentPage === 'transfer' && props.currentState !== 'interrupted'),
+);
 const expanded = ref(false);
 const search = ref('');
 const message = ref('');
@@ -81,7 +86,7 @@ function scenarioUrl(page: DemoPage, scenario: DemoScenario) {
         <p>Локальный просмотр · без реальных операций</p>
       </header>
       <label :class="$style.search"
-        >Поиск страницы или состояния<input v-model="search" type="search"
+        >Поиск страницы или состояния<input v-model="search" type="search" name="scenario-search"
       /></label>
       <p v-if="!filtered.length" role="status">Ничего не найдено</p>
       <div :class="$style.actions">
@@ -89,8 +94,8 @@ function scenarioUrl(page: DemoPage, scenario: DemoScenario) {
         <ProfileButton @click="reset">Сбросить</ProfileButton>
         <ProfileButton
           :aria-pressed="running"
-          :disabled="currentPage !== 'check'"
-          title="Локальная симуляция доступна на странице проверки банков"
+          :disabled="!simulationAvailable"
+          title="Локальная симуляция проверки банков и перевода"
           @click="simulate"
           >{{ running ? 'Пауза' : 'Запустить' }}</ProfileButton
         >

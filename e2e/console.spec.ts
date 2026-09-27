@@ -8,6 +8,16 @@ test('modal routes and tabs have no browser console errors', async ({ page }) =>
   });
   await page.goto('./unknown-page');
   await expect(page).toHaveURL(/\/$/);
+  await expect(page.getByRole('main', { name: 'Home Avanti' })).toBeVisible();
+  await expect
+    .poll(() =>
+      page
+        .locator('[data-profile-icon]')
+        .evaluateAll(
+          (nodes) => nodes.length > 0 && nodes.every((node) => node.querySelector('svg')),
+        ),
+    )
+    .toBe(true);
   await page.goto('./auth/register');
   for (let index = 0; index < 3; index++) {
     await expect(

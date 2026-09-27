@@ -36,9 +36,6 @@ function confirm() {
   }
   emit('confirmed', props.value);
 }
-function normalize() {
-  input.value = normalizeIban(input.value);
-}
 </script>
 <template>
   <ProfileDialog title="IBAN per l’accredito" :dialog-class="$style.dialog" @close="close">
@@ -63,10 +60,10 @@ function normalize() {
       <ProfileField
         v-model="input"
         label="IBAN"
+        mask="iban"
         placeholder="IT00 X000 0000 0000 0000 0000 000"
         required
         :invalid="!!error"
-        @input="normalize"
       />
       <p :class="$style.note">
         <ProfileIcon name="info" /><span

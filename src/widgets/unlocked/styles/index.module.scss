@@ -1,0 +1,100 @@
+.card {
+  padding: 16px;
+  border-radius: 20px;
+  background: white;
+  box-shadow: 0 4px 16px #1a233208;
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  h2 {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+  }
+  header button {
+    flex: none;
+    color: var(--accent);
+    font-size: 16px;
+    padding: 6px 10px;
+    background: var(--tint);
+    border-radius: 8px;
+  }
+  ol {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    padding: 16px 8px;
+    margin: 0;
+    background: #f8fafb;
+    border-radius: 16px;
+  }
+  li {
+    text-align: center;
+    position: relative;
+  }
+  li + li::before {
+    content: '';
+    position: absolute;
+    left: -16px;
+    top: 20px;
+    width: 16px;
+    height: 1px;
+    background: #cde3e8;
+  }
+  li > span {
+    display: grid;
+    place-items: center;
+    margin: 0 auto 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--tint);
+  }
+  [data-profile-icon] {
+    width: 18px;
+    height: 18px;
+  }
+  h3 {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+  }
+  p {
+    margin-top: 2px;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--muted);
+  }
+}
+@media (max-width: 767px) {
+  .card {
+    h2 {
+      font-size: 14px;
+      line-height: 17px;
+    }
+    header button {
+      font-size: 10px;
+      padding: 6px;
+    }
+    ol {
+      gap: 8px;
+    }
+    li + li::before {
+      left: -8px;
+      width: 8px;
+    }
+    h3 {
+      font-size: 11px;
+      line-height: 13px;
+    }
+    p {
+      font-size: 9px;
+      line-height: 12px;
+    }
+  }
+}

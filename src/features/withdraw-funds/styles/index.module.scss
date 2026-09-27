@@ -1,3 +1,4 @@
+@use './receive';
 .panel {
   background: white;
   border-radius: 23px;
@@ -112,3 +113,9 @@
     padding: 2.5px 28px;
   }
 }
+
+.method small {
+  display: block;
+  font: inherit;
+}
+@include receive.layout;
